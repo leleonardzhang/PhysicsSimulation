@@ -1,0 +1,12 @@
+<Events startTimestamp="1615415720342" logVersion="1.0.0.202101171653">
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Wed Mar 10 17:35:20 EST 2021" projectName="null" starttimestamp="1615415720342" timestamp="128">
+    <filePath><![CDATA[null]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="0" date="Wed Mar 10 17:35:20 EST 2021" docOffset="0" starttimestamp="1615415720342" timestamp="174" />
+  <Command __id="2" _type="ShellCommand" date="Wed Mar 10 17:35:21 EST 2021" starttimestamp="1615415720342" timestamp="712" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="4" _type="MoveCaretCommand" caretOffset="0" date="Wed Mar 10 17:35:26 EST 2021" docOffset="0" starttimestamp="1615415720342" timestamp="6632" />
+  <Command __id="5" _type="ShellCommand" date="Wed Mar 10 17:35:37 EST 2021" starttimestamp="1615415720342" timestamp="17008" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="6" _type="ShellCommand" date="Wed Mar 10 17:35:41 EST 2021" starttimestamp="1615415720342" timestamp="21577" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="7" _type="ShellCommand" date="Wed Mar 10 17:35:41 EST 2021" starttimestamp="1615415720342" timestamp="21629" type="ECLIPSE_LOST_FOCUS" />
+</Events>

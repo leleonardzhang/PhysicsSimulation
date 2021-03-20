@@ -1,0 +1,10 @@
+<Events startTimestamp="1612916775799" logVersion="1.0.0.202101171653">
+  <Command __id="5" _type="ShellCommand" date="Tue Feb 09 19:26:42 EST 2021" starttimestamp="1612916775799" timestamp="26988" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="6" _type="ShellCommand" date="Tue Feb 09 19:26:45 EST 2021" starttimestamp="1612916775799" timestamp="29955" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="7" _type="ShellCommand" date="Tue Feb 09 19:26:51 EST 2021" starttimestamp="1612916775799" timestamp="35746" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="8" _type="ShellCommand" date="Tue Feb 09 19:26:51 EST 2021" starttimestamp="1612916775799" timestamp="35837" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="25" _type="EclipseCommand" commandID="" date="Tue Feb 09 19:29:22 EST 2021" starttimestamp="1612916775799" timestamp="186462" />
+  <Command __id="26" _type="ShellCommand" date="Tue Feb 09 19:29:23 EST 2021" starttimestamp="1612916775799" timestamp="187252" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="27" _type="ShellCommand" date="Tue Feb 09 19:29:25 EST 2021" starttimestamp="1612916775799" timestamp="189254" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="28" _type="ShellCommand" date="Tue Feb 09 19:29:25 EST 2021" starttimestamp="1612916775799" timestamp="189345" type="ECLIPSE_LOST_FOCUS" />
+</Events>

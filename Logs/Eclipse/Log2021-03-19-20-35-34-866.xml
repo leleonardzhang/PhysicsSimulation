@@ -1,0 +1,33 @@
+<Events startTimestamp="1616200534866" logVersion="1.0.0.202101171653">
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Fri Mar 19 20:35:34 EDT 2021" docASTNodeCount="55" docActiveCodeLength="365" docExpressionCount="30" docLength="433" projectName="TaskBox" starttimestamp="1616200534866" timestamp="72">
+    <filePath><![CDATA[C:\Users\leleo\eclipse-workspace\TaskBox\src\components\curve\fitting\ExpFunction.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package components.curve.fitting;
+
+import org.apache.commons.math3.analysis.ParametricUnivariateFunction;
+
+public class ExpFunction implements ParametricUnivariateFunction{
+
+	@Override
+	public double[] gradient(double arg0, double... arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double value(double arg0, double... arg1) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="433" date="Fri Mar 19 20:35:34 EDT 2021" docOffset="433" starttimestamp="1616200534866" timestamp="118" />
+  <Command __id="3" _type="MoveCaretCommand" caretOffset="0" date="Fri Mar 19 20:36:07 EDT 2021" docOffset="0" starttimestamp="1616200534866" timestamp="32965" />
+  <Command __id="4" _type="ShellCommand" date="Fri Mar 19 20:37:14 EDT 2021" starttimestamp="1616200534866" timestamp="99464" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="5" _type="ShellCommand" date="Fri Mar 19 20:37:14 EDT 2021" starttimestamp="1616200534866" timestamp="99549" type="ECLIPSE_MINIMIZED" />
+  <Command __id="6" _type="ShellCommand" date="Fri Mar 19 21:34:08 EDT 2021" starttimestamp="1616200534866" timestamp="3513164" type="ECLIPSE_MAXIMIZED" />
+  <Command __id="7" _type="ShellCommand" date="Fri Mar 19 21:34:08 EDT 2021" starttimestamp="1616200534866" timestamp="3513269" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="8" _type="ShellCommand" date="Fri Mar 19 21:34:11 EDT 2021" starttimestamp="1616200534866" timestamp="3516431" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="9" _type="ShellCommand" date="Fri Mar 19 21:57:55 EDT 2021" starttimestamp="1616200534866" timestamp="4940297" type="ECLIPSE_GAINED_FOCUS" />
+</Events>

@@ -1,0 +1,6 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+1,,Thu Feb 18 19:38:25 EST 2021,ObserverPendulum.java,1613695105296,13783,0,(R)6(I)1(R)1(I)4(R)2(I)4(R)6(I)1,0.4,0.0,0.0,0.0,0.0,0.0,1.9230769230769231,0.0,0.0,0.0,0.0,1.1538461538461537,0.7692307692307693,0.0,[]
+,/modelData/A0UserStudy2010.arff,Thu Feb 18 19:38:25 EST 2021,ObserverPendulum.java, 1613695105296
+2,,Thu Feb 18 19:38:39 EST 2021,ObserverPendulum.java,1613695119437,8502,8502,(I)6(R)16,0.2727272727272727,0.0,0.0,0.0,0.0,0.0,2.75,0.0,0.0,0.0,0.0,2.0,0.75,0.0,[]
+3,,Thu Feb 18 19:38:48 EST 2021,ObserverPendulum.java,1613695128190,52262,0,(R)1(I)2(R)1(I)12,0.875,0.0,0.0,0.0,0.0,0.0,0.3076923076923077,0.0,0.0,0.0,0.0,0.038461538461538464,0.2692307692307692,0.0,[]
+4,,Thu Feb 18 19:39:40 EST 2021,ObserverPendulum.java,1613695180892,8939,8939,(I)2(R)1(I)2(D)2(F)1,0.5,25.0,0.0,12.5,0.0,0.0,1.0,0.0,0.25,0.125,0.0,0.125,0.5,0.0,[]

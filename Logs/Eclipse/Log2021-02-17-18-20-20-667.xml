@@ -1,0 +1,121 @@
+<Events startTimestamp="1613604020667" logVersion="1.0.0.202101171653">
+  <Command __id="1" _type="RunCommand" date="Wed Feb 17 18:20:32 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1613604020667" timestamp="11951" type="Run" />
+  <Command __id="2" _type="ShellCommand" date="Wed Feb 17 18:20:33 EST 2021" starttimestamp="1613604020667" timestamp="12541" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="3" _type="ConsoleOutput" date="Wed Feb 17 18:20:33 EST 2021" overflow="false" starttimestamp="1613604020667" timestamp="12916" type="ConsoleOutput">
+    <outputString><![CDATA[ObjectEditor(Version 22, built on Sat Jan 16 20:25:10 EST 2021). Copyright Prasun Dewan, 2012, All rights reserved. US Patent Appl. No.: 12/532,327
+E*** For editable property pendulum of MainPanel please define a setter with the header:
+	public void setPendulum(java.util.List <parameter name>)
+E*** For property gravity of MainPanel please define a getter with the header:
+	public <T> getGravity()
+]]></outputString>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="4" _type="ConsoleOutput" date="Wed Feb 17 18:20:33 EST 2021" overflow="false" starttimestamp="1613604020667" timestamp="13100" type="ConsoleOutput">
+    <outputString><![CDATA[W*** public void components.ruler.Ruler.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: height of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: x of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"ObjectEditor(Version 22, built on Sat Jan 16 20:25:10 EST 2021). Copyright Prasun Dewan, 2012, All rights res"), Diff(INSERT,"W*** public void components.ruler.Ruler.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: height of class class components.ruler.Ruler not consid"), Diff(EQUAL,"er"), Diff(DELETE,"v"), Diff(EQUAL,"ed"), Diff(DELETE,". US Patent Appl. No.: 12/532,327¶E*** For"), Diff(INSERT," editable as it is not in editable property names list. ¶¶W*** Implicitly"), Diff(EQUAL," editable property"), Diff(DELETE," pendulum of MainPanel please define a setter with the header:¶	public void setPendulum(java.util.List <parameter name>)¶E*** For"), Diff(INSERT,": width of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable"), Diff(EQUAL," property"), Diff(DELETE," gravity of MainPanel please define a getter with the header:¶	public <T> getGravity()"), Diff(INSERT,": y of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="5" _type="ConsoleOutput" date="Wed Feb 17 18:20:33 EST 2021" overflow="false" starttimestamp="1613604020667" timestamp="13168" type="ConsoleOutput">
+    <outputString><![CDATA[W*** public void components.pendulum.imageprotractor.ImageProtractor.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: height of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: x of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicit property animator of  ObserverPendulum ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** Implicitly editable property: barPair of class class components.pendulum.pendulum.ObserverPendulum not considered editable as it is not in editable property names list. 
+
+W*** Implicit property model of  ObserverPendulum ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** public void components.pendulum.string.PendulumString.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: stroke of class class components.pendulum.string.PendulumString not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"W*** public void components."), Diff(DELETE,"ruler.Rule"), Diff(INSERT,"pendulum.imageprotractor.ImageProtracto"), Diff(EQUAL,"r.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: height of class class components."), Diff(DELETE,"ruler.Rule"), Diff(INSERT,"pendulum.imageprotractor.ImageProtracto"), Diff(EQUAL,"r not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components."), Diff(DELETE,"ruler.Rule"), Diff(INSERT,"pendulum.imageprotractor.ImageProtracto"), Diff(EQUAL,"r not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components."), Diff(DELETE,"ruler.Ruler not considered editable as it is not in editable property names list. ¶"), Diff(INSERT,"pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicit property animator of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter."), Diff(EQUAL,"¶W*** Implicitly editable property: "), Diff(DELETE,"y"), Diff(INSERT,"barPair"), Diff(EQUAL," of class class components."), Diff(DELETE,"ruler.Ruler"), Diff(INSERT,"pendulum.pendulum.ObserverPendulum not considered editable as it is not in editable property names list. ¶¶W*** Implicit property model of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** public void components.pendulum.string.PendulumString.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: stroke of class class components.pendulum.string.PendulumString"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶")]]]></diff>
+  </Command>
+  <Command __id="8" _type="RunCommand" date="Wed Feb 17 18:20:35 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1613604020667" timestamp="15239" type="Run" />
+  <Command __id="9" _type="ShellCommand" date="Wed Feb 17 18:20:35 EST 2021" starttimestamp="1613604020667" timestamp="15251" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="10" _type="ShellCommand" date="Wed Feb 17 18:20:39 EST 2021" starttimestamp="1613604020667" timestamp="18611" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="11" _type="ShellCommand" date="Wed Feb 17 18:20:41 EST 2021" starttimestamp="1613604020667" timestamp="20864" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="12" _type="ShellCommand" date="Wed Feb 17 18:20:42 EST 2021" starttimestamp="1613604020667" timestamp="22320" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="15" _type="RunCommand" date="Wed Feb 17 18:22:38 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1613604020667" timestamp="138321" type="Run" />
+  <Command __id="16" _type="ShellCommand" date="Wed Feb 17 18:22:39 EST 2021" starttimestamp="1613604020667" timestamp="138927" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="17" _type="ConsoleOutput" date="Wed Feb 17 18:22:39 EST 2021" overflow="false" starttimestamp="1613604020667" timestamp="139153" type="ConsoleOutput">
+    <outputString><![CDATA[ObjectEditor(Version 22, built on Sat Jan 16 20:25:10 EST 2021). Copyright Prasun Dewan, 2012, All rights reserved. US Patent Appl. No.: 12/532,327
+E*** For editable property pendulum of MainPanel please define a setter with the header:
+	public void setPendulum(java.util.List <parameter name>)
+E*** For property gravity of MainPanel please define a getter with the header:
+	public <T> getGravity()
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"W*** public void components.pendulum.load.Load.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: color of class class components.pendulum.load.Load not consid"), Diff(INSERT,"ObjectEditor(Version 22, built on Sat Jan 16 20:25:10 EST 2021). Copyright Prasun Dewan, 2012, All rights res"), Diff(EQUAL,"er"), Diff(INSERT,"v"), Diff(EQUAL,"ed"), Diff(DELETE," editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: filled of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: height of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.barchart.bar.BarPair not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.barchart.bar.BarPair not considered editable as it is not in editable property names list. ¶¶W*** public void components.barchart.bar.Bar.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener"), Diff(INSERT,". US Patent Appl. No.: 12/532,327¶E*** For editable property pendulum of MainPanel please define a setter with the header:¶	public void setPendulum(java.util.List <parameter name>)¶E*** For property gravity of MainPanel please define a getter with the header:¶	public <T> getGravity("), Diff(EQUAL,")¶")]]]></diff>
+  </Command>
+  <Command __id="18" _type="ConsoleOutput" date="Wed Feb 17 18:22:39 EST 2021" overflow="false" starttimestamp="1613604020667" timestamp="139279" type="ConsoleOutput">
+    <outputString><![CDATA[W*** public void components.ruler.Ruler.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: height of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: x of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"ObjectEditor(Version 22, built on Sat Jan 16 20:25:10 EST 2021). Copyright Prasun Dewan, 2012, All rights res"), Diff(INSERT,"W*** public void components.ruler.Ruler.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: height of class class components.ruler.Ruler not consid"), Diff(EQUAL,"er"), Diff(DELETE,"v"), Diff(EQUAL,"ed"), Diff(DELETE,". US Patent Appl. No.: 12/532,327¶E*** For"), Diff(INSERT," editable as it is not in editable property names list. ¶¶W*** Implicitly"), Diff(EQUAL," editable property"), Diff(DELETE," pendulum of MainPanel please define a setter with the header:¶	public void setPendulum(java.util.List <parameter name>)¶E*** For"), Diff(INSERT,": width of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable"), Diff(EQUAL," property"), Diff(DELETE," gravity of MainPanel please define a getter with the header:¶	public <T> getGravity()"), Diff(INSERT,": y of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="19" _type="ConsoleOutput" date="Wed Feb 17 18:22:40 EST 2021" overflow="false" starttimestamp="1613604020667" timestamp="139392" type="ConsoleOutput">
+    <outputString><![CDATA[W*** public void components.pendulum.imageprotractor.ImageProtractor.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: height of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: x of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicit property animator of  ObserverPendulum ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** Implicitly editable property: barPair of class class components.pendulum.pendulum.ObserverPendulum not considered editable as it is not in editable property names list. 
+
+W*** Implicit property model of  ObserverPendulum ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** public void components.pendulum.string.PendulumString.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: stroke of class class components.pendulum.string.PendulumString not considered editable as it is not in editable property names list. 
+
+W*** public void components.pendulum.load.Load.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: color of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: filled of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: height of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: x of class class components.barchart.bar.BarPair not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.barchart.bar.BarPair not considered editable as it is not in editable property names list. 
+
+W*** public void components.barchart.bar.Bar.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"W*** public void components."), Diff(DELETE,"ruler.Rule"), Diff(INSERT,"pendulum.imageprotractor.ImageProtracto"), Diff(EQUAL,"r.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: height of class class components."), Diff(DELETE,"ruler.Rule"), Diff(INSERT,"pendulum.imageprotractor.ImageProtracto"), Diff(EQUAL,"r not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components."), Diff(DELETE,"ruler.Ruler not considered editable as it is not in editable property names list. ¶"), Diff(INSERT,"pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicit property animator of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter."), Diff(EQUAL,"¶W*** Implicitly editable property: "), Diff(DELETE,"x"), Diff(INSERT,"barPair"), Diff(EQUAL," of class class components."), Diff(DELETE,"ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶"), Diff(INSERT,"pendulum.pendulum.ObserverPendulum not considered editable as it is not in editable property names list. ¶¶W*** Implicit property model of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** public void components.pendulum.string.PendulumString.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: stroke of class class components.pendulum.string.PendulumString not considered editable as it is not in editable property names list. ¶¶W*** public void components.pendulum.load.Load.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: color of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: filled of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: height of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.barchart.bar.BarPair not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.barchart.bar.BarPair not considered editable as it is not in editable property names list. ¶¶W*** public void components.barchart.bar.Bar.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="20" _type="ShellCommand" date="Wed Feb 17 18:23:40 EST 2021" starttimestamp="1613604020667" timestamp="200216" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="21" _type="ShellCommand" date="Wed Feb 17 18:23:44 EST 2021" starttimestamp="1613604020667" timestamp="203720" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="22" _type="ShellCommand" date="Wed Feb 17 18:23:45 EST 2021" starttimestamp="1613604020667" timestamp="205081" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="23" _type="ShellCommand" date="Wed Feb 17 18:23:45 EST 2021" starttimestamp="1613604020667" timestamp="205157" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="24" _type="ShellCommand" date="Wed Feb 17 18:25:23 EST 2021" starttimestamp="1613604020667" timestamp="302963" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="25" _type="ShellCommand" date="Wed Feb 17 18:25:23 EST 2021" starttimestamp="1613604020667" timestamp="302984" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="26" _type="ShellCommand" date="Wed Feb 17 18:25:24 EST 2021" starttimestamp="1613604020667" timestamp="303586" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="27" _type="ShellCommand" date="Wed Feb 17 18:25:25 EST 2021" starttimestamp="1613604020667" timestamp="304351" type="ECLIPSE_LOST_FOCUS" />
+</Events>

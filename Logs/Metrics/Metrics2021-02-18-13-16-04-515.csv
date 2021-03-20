@@ -1,0 +1,2 @@
+Id,Prediction,Date,File,StartTime,ElapsedTime,BusyTime,Commands,editOrInsertPercentage,debugPercentage,navigationPercentage,focusPercentage,removePercentage,editPercentage,COMMAND_RATE,NAVIGATION_RATE,DEBUG_RATE,FOCUS_RATE,EDIT_RATE,REMOVE_RATE,INSERT_RATE,webLinkTimes,Web Page Visits
+15,,Thu Feb 18 14:29:45 EST 2021,MainPanel.java,1613676585623,-6157,-6157,(I)3(F)2(D)2(F)1(D)2(F)1(I)3(F)4(D)2(F)1(I)1(R)1,0.30434782608695654,26.08695652173913,0.0,39.130434782608695,0.0,0.0,0.0,0.0,0.0,0.0,0.0,null,0.0,0.0,[]

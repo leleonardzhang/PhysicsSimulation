@@ -1,0 +1,514 @@
+<Events startTimestamp="1616211149217" logVersion="1.0.0.202101171653">
+  <Command __id="2585" _type="DiffBasedFileOpenCommand" date="Sat Mar 20 00:05:37 EDT 2021" docASTNodeCount="277" docActiveCodeLength="1915" docExpressionCount="166" docLength="1915" projectName="TaskBox" starttimestamp="1616211149217" timestamp="1988212">
+    <filePath><![CDATA[C:\Users\leleo\eclipse-workspace\TaskBox\src\components\curve\point\CurvePoint.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.curve.point;¶¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import components.listenersupport.PropertyListenerSupport;¶import components.observableshapes.ObservablePointInterface;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶¶@StructurePattern(StructurePatternNames.POINT_PATTERN)¶@PropertyNames({"x", "y"})¶public class CurvePoint implements ObservablePointInterface{¶	private int x, y;¶	private double angle, radius;¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	¶	"), Diff(INSERT,"¶	public CurvePoint(int newX, int newY) {¶		setX(newX);¶		setY(newY);¶	}¶	¶	"), Diff(EQUAL,"@Override¶	public int getX() {¶		return x;¶	}¶¶	@Override¶	public void setX(int newX) {¶		int oldX = x;¶		x = newX;¶		propertyListenerSupport.notifyAllListeners(new PropertyChangeEvent(this, "x", oldX, x));¶	}¶¶	@Override¶	public int getY() {¶		return y;¶	}¶¶	@Override¶	public void setY(int newY) {¶		int oldY = y;¶		y = newY;¶		propertyListenerSupport.notifyAllListeners(new PropertyChangeEvent(this, "y", oldY, y));¶	}¶¶	@Override¶	public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);¶	}¶¶	@Override¶	public double getAngle() {¶		return angle;¶	}¶¶	@Override¶	public void setAngle(double newAngle) {¶		double oldAngle = angle;¶		angle = newAngle;¶		propertyListenerSupport.notifyAllListeners(new PropertyChangeEvent(this, "angle", oldAngle, angle));¶	}¶¶	@Override¶	public double getRadius() {¶		return radius;¶	}¶¶	@Override¶	public void setRadius(double newRadius) {¶		double oldRadius = radius;¶		radius = newRadius;¶		propertyListenerSupport.notifyAllListeners(new PropertyChangeEvent(this, "radius", oldRadius, radius));¶	}¶¶¶¶}¶")]]]></diff>
+    <snapshot><![CDATA[package components.curve.point;
+
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+
+import components.listenersupport.PropertyListenerSupport;
+import components.observableshapes.ObservablePointInterface;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+
+
+@StructurePattern(StructurePatternNames.POINT_PATTERN)
+@PropertyNames({"x", "y"})
+public class CurvePoint implements ObservablePointInterface{
+	private int x, y;
+	private double angle, radius;
+	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();
+	
+	
+	public CurvePoint(int newX, int newY) {
+		setX(newX);
+		setY(newY);
+	}
+	
+	@Override
+	public int getX() {
+		return x;
+	}
+
+	@Override
+	public void setX(int newX) {
+		int oldX = x;
+		x = newX;
+		propertyListenerSupport.notifyAllListeners(new PropertyChangeEvent(this, "x", oldX, x));
+	}
+
+	@Override
+	public int getY() {
+		return y;
+	}
+
+	@Override
+	public void setY(int newY) {
+		int oldY = y;
+		y = newY;
+		propertyListenerSupport.notifyAllListeners(new PropertyChangeEvent(this, "y", oldY, y));
+	}
+
+	@Override
+	public void addPropertyChangeListener(PropertyChangeListener aListener) {
+		propertyListenerSupport.addElement(aListener);
+	}
+
+	@Override
+	public double getAngle() {
+		return angle;
+	}
+
+	@Override
+	public void setAngle(double newAngle) {
+		double oldAngle = angle;
+		angle = newAngle;
+		propertyListenerSupport.notifyAllListeners(new PropertyChangeEvent(this, "angle", oldAngle, angle));
+	}
+
+	@Override
+	public double getRadius() {
+		return radius;
+	}
+
+	@Override
+	public void setRadius(double newRadius) {
+		double oldRadius = radius;
+		radius = newRadius;
+		propertyListenerSupport.notifyAllListeners(new PropertyChangeEvent(this, "radius", oldRadius, radius));
+	}
+
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="2600" _type="DiffBasedFileOpenCommand" date="Sat Mar 20 00:06:28 EDT 2021" docASTNodeCount="10" docActiveCodeLength="65" docExpressionCount="6" docLength="65" projectName="TaskBox" starttimestamp="1616211149217" timestamp="2039262">
+    <filePath><![CDATA[C:\Users\leleo\eclipse-workspace\TaskBox\src\components\curve\line\CurveLine.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package components.curve.line;
+
+public class CurveLine {
+
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="2603" _type="Insert" date="Sat Mar 20 00:06:30 EDT 2021" docASTNodeCount="12" docActiveCodeLength="94" docExpressionCount="7" docLength="94" length="29" offset="57" repeat="29" starttimestamp="1616211149217" timestamp="2040840" timestamp2="2045743">
+    <text><![CDATA[implements ObservableLineIntr]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2661" _type="Delete" date="Sat Mar 20 00:06:35 EDT 2021" docASTNodeCount="12" docActiveCodeLength="93" docExpressionCount="7" docLength="93" endLine="2" length="1" offset="85" startLine="2" starttimestamp="1616211149217" timestamp="2046548">
+    <text><![CDATA[r]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2663" _type="Insert" date="Sat Mar 20 00:06:35 EDT 2021" docASTNodeCount="12" docActiveCodeLength="99" docExpressionCount="7" docLength="99" length="6" offset="85" repeat="6" starttimestamp="1616211149217" timestamp="2046635" timestamp2="2047258">
+    <text><![CDATA[erface]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2681" _type="Delete" date="Sat Mar 20 00:06:39 EDT 2021" docASTNodeCount="12" docActiveCodeLength="95" docExpressionCount="7" docLength="95" endLine="2" length="4" offset="30" startLine="0" starttimestamp="1616211149217" timestamp="2050020">
+    <text><![CDATA[
+
+]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2682" _type="Insert" date="Sat Mar 20 00:06:39 EDT 2021" docASTNodeCount="18" docActiveCodeLength="162" docExpressionCount="12" docLength="162" length="67" offset="30" repeat="3" starttimestamp="1616211149217" timestamp="2050022" timestamp2="2050022">
+    <text><![CDATA[
+
+import components.observableshapes.ObservableLineInterface;
+
+]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2691" _type="Insert" date="Sat Mar 20 00:06:41 EDT 2021" docASTNodeCount="126" docActiveCodeLength="885" docExpressionCount="59" docLength="1259" length="1097" offset="155" repeat="44" starttimestamp="1616211149217" timestamp="2052460" timestamp2="2052476">
+    <text><![CDATA[
+
+	@Override
+	public void addPropertyChangeListener(PropertyChangeListener aListener) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getX() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setX(int newX) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getY() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setY(int newY) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getWidth() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getHeight() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setWidth(int newWidth) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setHeight(int newHeight) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Stroke getStroke() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setStroke(Stroke newStroke) {
+		// TODO Auto-generated method stub
+		
+	}]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2735" _type="Insert" date="Sat Mar 20 00:06:41 EDT 2021" docASTNodeCount="138" docActiveCodeLength="955" docExpressionCount="69" docLength="1329" length="70" offset="34" repeat="4" starttimestamp="1616211149217" timestamp="2052476" timestamp2="2052477">
+    <text><![CDATA[import java.awt.Stroke;
+import java.beans.PropertyChangeListener;
+
+]]></text>
+  </DocumentChange>
+  <Command __id="2689" _type="ShellCommand" date="Sat Mar 20 00:06:41 EDT 2021" starttimestamp="1616211149217" timestamp="2052366" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2690" _type="ShellCommand" date="Sat Mar 20 00:06:41 EDT 2021" starttimestamp="1616211149217" timestamp="2052435" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2739" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Sat Mar 20 00:06:41 EDT 2021" starttimestamp="1616211149217" timestamp="2052688" />
+  <Command __id="2740" _type="EclipseCommand" commandID="" date="Sat Mar 20 00:06:42 EDT 2021" starttimestamp="1616211149217" timestamp="2052836" />
+  <Command __id="2741" _type="EclipseCommand" commandID="" date="Sat Mar 20 00:06:42 EDT 2021" starttimestamp="1616211149217" timestamp="2052850" />
+  <Command __id="2742" _type="MoveCaretCommand" caretOffset="966" date="Sat Mar 20 00:06:42 EDT 2021" docOffset="966" starttimestamp="1616211149217" timestamp="2052937" />
+  <Command __id="2744" _type="MoveCaretCommand" caretOffset="0" date="Sat Mar 20 00:06:55 EDT 2021" docOffset="0" starttimestamp="1616211149217" timestamp="2066218" />
+  <Command __id="2745" _type="SelectTextCommand" caretOffset="2242" date="Sat Mar 20 00:07:03 EDT 2021" end="2242" start="1102" starttimestamp="1616211149217" timestamp="2073831" />
+  <Command __id="2746" _type="CopyCommand" date="Sat Mar 20 00:07:03 EDT 2021" starttimestamp="1616211149217" timestamp="2074734" />
+  <Command __id="2747" _type="CopyCommand" date="Sat Mar 20 00:07:07 EDT 2021" starttimestamp="1616211149217" timestamp="2078700" />
+  <Command __id="2748" _type="ShellCommand" date="Sat Mar 20 00:07:09 EDT 2021" starttimestamp="1616211149217" timestamp="2080311" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2751" _type="DiffBasedFileOpenCommand" date="Sat Mar 20 00:10:22 EDT 2021" docASTNodeCount="138" docActiveCodeLength="955" docExpressionCount="69" docLength="1329" projectName="TaskBox" starttimestamp="1616211149217" timestamp="2272924">
+    <filePath><![CDATA[C:\Users\leleo\eclipse-workspace\TaskBox\src\components\curve\line\CurveLine.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.curve.line;¶¶"), Diff(DELETE,"public class CurveLine {"), Diff(INSERT,"import java.awt.Stroke;¶import java.beans.PropertyChangeListener;¶¶import components.observableshapes.ObservableLineInterface;¶¶public class CurveLine implements ObservableLineInterface{¶¶	@Override¶	public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		// TODO Auto-generated method stub¶		¶	}¶¶	@Override¶	public int getX() {¶		// TODO Auto-generated method stub¶		return 0;¶	}¶¶	@Override¶	public void setX(int newX) {¶		// TODO Auto-generated method stub¶		¶	}¶¶	@Override¶	public int getY() {¶		// TODO Auto-generated method stub¶		return 0;¶	}¶¶	@Override¶	public void setY(int newY) {¶		// TODO Auto-generated method stub¶		¶	}¶¶	@Override¶	public int getWidth() {¶		// TODO Auto-generated method stub¶		return 0;¶	}¶¶	@Override¶	public int getHeight() {¶		// TODO Auto-generated method stub¶		return 0;¶	}¶¶	@Override¶	public void setWidth(int newWidth) {¶		// TODO Auto-generated method stub¶		¶	}¶¶	@Override¶	public void setHeight(int newHeight) {¶		// TODO Auto-generated method stub¶		¶	}¶¶	@Override¶	public Stroke getStroke() {¶		// TODO Auto-generated method stub¶		return null;¶	}¶¶	@Override¶	public void setStroke(Stroke newStroke) {¶		// TODO Auto-generated method stub¶		¶	}"), Diff(EQUAL,"¶¶}¶")]]]></diff>
+    <snapshot><![CDATA[package components.curve.line;
+
+import java.awt.Stroke;
+import java.beans.PropertyChangeListener;
+
+import components.observableshapes.ObservableLineInterface;
+
+public class CurveLine implements ObservableLineInterface{
+
+	@Override
+	public void addPropertyChangeListener(PropertyChangeListener aListener) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getX() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setX(int newX) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getY() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setY(int newY) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getWidth() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getHeight() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setWidth(int newWidth) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setHeight(int newHeight) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Stroke getStroke() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setStroke(Stroke newStroke) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="2754" _type="Replace" date="Sat Mar 20 00:10:32 EDT 2021" docASTNodeCount="221" docActiveCodeLength="1440" docExpressionCount="131" docLength="1440" endLine="73" insertionLength="1204" int_docASTNodeCount="30" int_docActiveCodeLength="236" int_docExpressionCount="22" int_docLength="236" length="1093" offset="229" startLine="9" starttimestamp="1616211149217" timestamp="2283688">
+    <deletedText><![CDATA[	@Override
+	public void addPropertyChangeListener(PropertyChangeListener aListener) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getX() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setX(int newX) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getY() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setY(int newY) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getWidth() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getHeight() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setWidth(int newWidth) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setHeight(int newHeight) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Stroke getStroke() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setStroke(Stroke newStroke) {
+		// TODO Auto-generated method stub
+		
+	}]]></deletedText>
+    <insertedText><![CDATA[	@Override
+	public int getX() {
+		return x;
+	}
+
+	@Override
+	public void setX(int newX) {
+		int oldX = x;
+		x = newX;
+		model.setX(x);
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "x", oldX, x));
+	}
+
+	@Override
+	public int getY() {
+		return y;
+	}
+
+	@Override
+	public void setY(int newY) {
+		int oldY = y;
+		y = newY;
+		model.setY(y);
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "y", oldY, y));
+	}
+
+	@Override
+	public int getWidth() {
+		return width;
+	}
+
+	@Override
+	public void setWidth(int newWidth) {
+		int oldWidth = width;
+		width = newWidth;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "width", oldWidth, width));
+	}
+
+	@Override
+	public int getHeight() {
+		return height;
+	}
+
+	@Override
+	public void setHeight(int newHeight) {
+		int oldHeight = height;
+		height = newHeight;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "height", oldHeight, height));
+	}
+
+
+	@Override
+	public Stroke getStroke() {
+		return stroke;
+	}
+
+	@Override
+	public void setStroke(Stroke newStroke) {
+		stroke = newStroke;
+	}]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="2755" _type="Insert" date="Sat Mar 20 00:10:32 EDT 2021" docASTNodeCount="227" docActiveCodeLength="1480" docExpressionCount="136" docLength="1480" length="40" offset="57" repeat="2" starttimestamp="1616211149217" timestamp="2283741" timestamp2="2283742">
+    <text><![CDATA[
+import java.beans.PropertyChangeEvent;]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2763" _type="Insert" date="Sat Mar 20 00:10:41 EDT 2021" docASTNodeCount="238" docActiveCodeLength="1582" docExpressionCount="141" docLength="1616" length="136" offset="1473" repeat="4" starttimestamp="1616211149217" timestamp="2291992" timestamp2="2291993">
+    <text><![CDATA[
+
+	@Override
+	public void addPropertyChangeListener(PropertyChangeListener aListener) {
+		// TODO Auto-generated method stub
+		
+	}]]></text>
+  </DocumentChange>
+  <Command __id="2767" _type="MoveCaretCommand" caretOffset="1473" date="Sat Mar 20 00:10:44 EDT 2021" docOffset="1473" starttimestamp="1616211149217" timestamp="2295631" />
+  <Command __id="2768" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Sat Mar 20 00:10:45 EDT 2021" starttimestamp="1616211149217" timestamp="2296151" />
+  <Command __id="2769" _type="EclipseCommand" commandID="" date="Sat Mar 20 00:10:45 EDT 2021" starttimestamp="1616211149217" timestamp="2296253" />
+  <Command __id="2770" _type="EclipseCommand" commandID="" date="Sat Mar 20 00:10:45 EDT 2021" starttimestamp="1616211149217" timestamp="2296269" />
+  <Command __id="2772" _type="MoveCaretCommand" caretOffset="2159" date="Sat Mar 20 00:10:53 EDT 2021" docOffset="2591" starttimestamp="1616211149217" timestamp="2304464" />
+  <DocumentChange __id="2803" _type="Insert" date="Sat Mar 20 00:11:16 EDT 2021" docASTNodeCount="307" docActiveCodeLength="2107" docExpressionCount="185" docLength="2141" length="2" offset="654" repeat="2" starttimestamp="1616211149217" timestamp="2327770" timestamp2="2327818">
+    <text><![CDATA[, ]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2811" _type="Delete" date="Sat Mar 20 00:11:20 EDT 2021" docASTNodeCount="304" docActiveCodeLength="2069" docExpressionCount="182" docLength="2103" endLine="16" length="38" offset="662" startLine="16" starttimestamp="1616211149217" timestamp="2331008">
+    <text><![CDATA[ = PendulumModelFactory.DEFAULT_HEIGHT]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2817" _type="Delete" date="Sat Mar 20 00:11:22 EDT 2021" docASTNodeCount="304" docActiveCodeLength="2064" docExpressionCount="182" docLength="2098" endLine="16" length="5" offset="644" repeat="4" startLine="15" starttimestamp="1616211149217" timestamp="2332788" timestamp2="2333344">
+    <text><![CDATA[
+			]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2826" _type="Delete" date="Sat Mar 20 00:11:26 EDT 2021" docASTNodeCount="301" docActiveCodeLength="2024" docExpressionCount="179" docLength="2058" endLine="15" length="40" offset="559" startLine="15" starttimestamp="1616211149217" timestamp="2336794">
+    <text><![CDATA[ = PendulumModelFactory.DEFAULT_STRING_X]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2832" _type="Delete" date="Sat Mar 20 00:11:29 EDT 2021" docASTNodeCount="298" docActiveCodeLength="1984" docExpressionCount="176" docLength="2018" endLine="15" length="40" offset="562" startLine="15" starttimestamp="1616211149217" timestamp="2340280">
+    <text><![CDATA[ = PendulumModelFactory.DEFAULT_STRING_Y]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2839" _type="Delete" date="Sat Mar 20 00:11:31 EDT 2021" docASTNodeCount="292" docActiveCodeLength="1944" docExpressionCount="174" docLength="1978" endLine="17" length="40" offset="627" repeat="2" startLine="16" starttimestamp="1616211149217" timestamp="2342705" timestamp2="2342887">
+    <text><![CDATA[
+	private PendulumModelInterface model;]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2849" _type="Delete" date="Sat Mar 20 00:11:34 EDT 2021" docASTNodeCount="292" docActiveCodeLength="1941" docExpressionCount="174" docLength="1975" endLine="16" length="3" offset="621" repeat="3" startLine="16" starttimestamp="1616211149217" timestamp="2345710" timestamp2="2346059">
+    <text><![CDATA[2.5]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2855" _type="Insert" date="Sat Mar 20 00:11:35 EDT 2021" docASTNodeCount="292" docActiveCodeLength="1944" docExpressionCount="174" docLength="1978" length="3" offset="621" repeat="3" starttimestamp="1616211149217" timestamp="2346671" timestamp2="2347217">
+    <text><![CDATA[0.5]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2869" _type="Delete" date="Sat Mar 20 00:11:41 EDT 2021" docASTNodeCount="287" docActiveCodeLength="1926" docExpressionCount="170" docLength="1960" endLine="27" length="18" offset="755" repeat="2" startLine="26" starttimestamp="1616211149217" timestamp="2352634" timestamp2="2352802">
+    <text><![CDATA[
+		model.setX(x);]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2874" _type="Delete" date="Sat Mar 20 00:11:44 EDT 2021" docASTNodeCount="282" docActiveCodeLength="1908" docExpressionCount="166" docLength="1942" endLine="40" length="18" offset="985" repeat="2" startLine="39" starttimestamp="1616211149217" timestamp="2354929" timestamp2="2355086">
+    <text><![CDATA[
+		model.setY(y);]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2879" _type="Delete" date="Sat Mar 20 00:11:48 EDT 2021" docASTNodeCount="282" docActiveCodeLength="1904" docExpressionCount="166" docLength="1904" endLine="84" length="38" offset="1893" startLine="83" starttimestamp="1616211149217" timestamp="2359499">
+    <text><![CDATA[// TODO Auto-generated method stub
+		]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2881" _type="Insert" date="Sat Mar 20 00:11:49 EDT 2021" docASTNodeCount="284" docActiveCodeLength="1907" docExpressionCount="167" docLength="1907" length="3" offset="1893" repeat="3" starttimestamp="1616211149217" timestamp="2360173" timestamp2="2360385">
+    <text><![CDATA[pro]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2890" _type="Replace" date="Sat Mar 20 00:11:50 EDT 2021" docASTNodeCount="284" docActiveCodeLength="1927" docExpressionCount="167" docLength="1927" endLine="83" insertionLength="23" int_docASTNodeCount="282" int_docActiveCodeLength="1904" int_docExpressionCount="166" int_docLength="1904" length="3" offset="1893" startLine="83" starttimestamp="1616211149217" timestamp="2361170">
+    <deletedText><![CDATA[pro]]></deletedText>
+    <insertedText><![CDATA[propertyListenerSupport]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="2892" _type="Insert" date="Sat Mar 20 00:11:51 EDT 2021" docASTNodeCount="286" docActiveCodeLength="1932" docExpressionCount="169" docLength="1932" length="5" offset="1916" repeat="5" starttimestamp="1616211149217" timestamp="2361818" timestamp2="2362247">
+    <text><![CDATA[.asdd]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2901" _type="Delete" date="Sat Mar 20 00:11:51 EDT 2021" docASTNodeCount="284" docActiveCodeLength="1927" docExpressionCount="167" docLength="1927" endLine="83" length="5" offset="1916" repeat="5" startLine="83" starttimestamp="1616211149217" timestamp="2362678" timestamp2="2363291">
+    <text><![CDATA[.asdd]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2911" _type="Insert" date="Sat Mar 20 00:11:52 EDT 2021" docASTNodeCount="286" docActiveCodeLength="1931" docExpressionCount="169" docLength="1931" length="4" offset="1916" repeat="4" starttimestamp="1616211149217" timestamp="2363752" timestamp2="2364190">
+    <text><![CDATA[.add]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2918" _type="Replace" date="Sat Mar 20 00:11:53 EDT 2021" docASTNodeCount="287" docActiveCodeLength="1942" docExpressionCount="170" docLength="1942" endLine="83" insertionLength="14" int_docASTNodeCount="284" int_docActiveCodeLength="1928" int_docExpressionCount="167" int_docLength="1928" length="3" offset="1917" startLine="83" starttimestamp="1616211149217" timestamp="2364367">
+    <deletedText><![CDATA[add]]></deletedText>
+    <insertedText><![CDATA[addElement(l);]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="2921" _type="Replace" date="Sat Mar 20 00:11:54 EDT 2021" docASTNodeCount="287" docActiveCodeLength="1950" docExpressionCount="170" docLength="1950" endLine="83" insertionLength="9" int_docASTNodeCount="286" int_docActiveCodeLength="1941" int_docExpressionCount="169" int_docLength="1941" length="1" offset="1928" startLine="83" starttimestamp="1616211149217" timestamp="2365100">
+    <deletedText><![CDATA[l]]></deletedText>
+    <insertedText><![CDATA[aListener]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="2930" _type="Delete" date="Sat Mar 20 00:12:16 EDT 2021" docASTNodeCount="275" docActiveCodeLength="1856" docExpressionCount="160" docLength="1856" endLine="10" length="94" offset="293" repeat="2" startLine="8" starttimestamp="1616211149217" timestamp="2387182" timestamp2="2387326">
+    <text><![CDATA[
+import models.pendulum.PendulumModelFactory;
+import models.pendulum.PendulumModelInterface;]]></text>
+  </DocumentChange>
+  <Command __id="2929" _type="SelectTextCommand" caretOffset="295" date="Sat Mar 20 00:12:15 EDT 2021" end="387" start="295" starttimestamp="1616211149217" timestamp="2386416" />
+  <Command __id="2931" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Sat Mar 20 00:12:16 EDT 2021" starttimestamp="1616211149217" timestamp="2387191" />
+  <Command __id="2933" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Sat Mar 20 00:12:16 EDT 2021" starttimestamp="1616211149217" timestamp="2387335" />
+  <Command __id="2934" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Sat Mar 20 00:12:16 EDT 2021" starttimestamp="1616211149217" timestamp="2387561" />
+  <Command __id="2935" _type="EclipseCommand" commandID="" date="Sat Mar 20 00:12:16 EDT 2021" starttimestamp="1616211149217" timestamp="2387662" />
+  <Command __id="2936" _type="EclipseCommand" commandID="" date="Sat Mar 20 00:12:16 EDT 2021" starttimestamp="1616211149217" timestamp="2387676" />
+  <Command __id="2938" _type="SelectTextCommand" caretOffset="496" date="Sat Mar 20 00:12:22 EDT 2021" end="864" start="496" starttimestamp="1616211149217" timestamp="2393275" />
+  <Command __id="2939" _type="SelectTextCommand" caretOffset="68" date="Sat Mar 20 00:12:26 EDT 2021" end="231" start="68" starttimestamp="1616211149217" timestamp="2396996" />
+  <Command __id="2940" _type="CopyCommand" date="Sat Mar 20 00:12:27 EDT 2021" starttimestamp="1616211149217" timestamp="2397832" />
+  <Command __id="2941" _type="CopyCommand" date="Sat Mar 20 00:12:28 EDT 2021" starttimestamp="1616211149217" timestamp="2399524" />
+  <Command __id="2942" _type="CopyCommand" date="Sat Mar 20 00:12:31 EDT 2021" starttimestamp="1616211149217" timestamp="2402026" />
+  <Command __id="2943" _type="MoveCaretCommand" caretOffset="231" date="Sat Mar 20 00:12:32 EDT 2021" docOffset="663" starttimestamp="1616211149217" timestamp="2403700" />
+</Events>

@@ -1,0 +1,961 @@
+<Events startTimestamp="1613529222459" logVersion="1.0.0.202101171653">
+  <Command __id="2" _type="ShellCommand" date="Tue Feb 16 21:34:09 EST 2021" starttimestamp="1613529222459" timestamp="26564" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="4" _type="MoveCaretCommand" caretOffset="1082" date="Tue Feb 16 21:34:14 EST 2021" docOffset="1947" starttimestamp="1613529222459" timestamp="32061" />
+  <Command __id="5" _type="MoveCaretCommand" caretOffset="1107" date="Tue Feb 16 21:34:17 EST 2021" docOffset="1972" starttimestamp="1613529222459" timestamp="35447" />
+  <Command __id="7" _type="InsertStringCommand" date="Tue Feb 16 21:34:18 EST 2021" starttimestamp="1613529222459" timestamp="36173" timestamp2="36173">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <Command __id="9" _type="InsertStringCommand" date="Tue Feb 16 21:34:18 EST 2021" starttimestamp="1613529222459" timestamp="36290" timestamp2="36290">
+    <data><![CDATA[y]]></data>
+  </Command>
+  <Command __id="11" _type="InsertStringCommand" date="Tue Feb 16 21:34:18 EST 2021" starttimestamp="1613529222459" timestamp="36463" timestamp2="36463">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="13" _type="InsertStringCommand" date="Tue Feb 16 21:34:19 EST 2021" starttimestamp="1613529222459" timestamp="36637" timestamp2="36637">
+    <data><![CDATA[c]]></data>
+  </Command>
+  <Command __id="15" _type="InsertStringCommand" date="Tue Feb 16 21:34:19 EST 2021" starttimestamp="1613529222459" timestamp="36789" timestamp2="36789">
+    <data><![CDATA[h]]></data>
+  </Command>
+  <Command __id="17" _type="InsertStringCommand" date="Tue Feb 16 21:34:19 EST 2021" starttimestamp="1613529222459" timestamp="36945" timestamp2="36945">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="19" _type="InsertStringCommand" date="Tue Feb 16 21:34:19 EST 2021" starttimestamp="1613529222459" timestamp="37124" timestamp2="37124">
+    <data><![CDATA[o]]></data>
+  </Command>
+  <Command __id="21" _type="InsertStringCommand" date="Tue Feb 16 21:34:19 EST 2021" starttimestamp="1613529222459" timestamp="37130" timestamp2="37130">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="23" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 16 21:34:20 EST 2021" starttimestamp="1613529222459" timestamp="37766" />
+  <Command __id="25" _type="InsertStringCommand" date="Tue Feb 16 21:34:20 EST 2021" starttimestamp="1613529222459" timestamp="38397" timestamp2="38397">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="27" _type="InsertStringCommand" date="Tue Feb 16 21:34:21 EST 2021" starttimestamp="1613529222459" timestamp="38567" timestamp2="38567">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="29" _type="InsertStringCommand" date="Tue Feb 16 21:34:21 EST 2021" starttimestamp="1613529222459" timestamp="38630" timestamp2="38630">
+    <data><![CDATA[z]]></data>
+  </Command>
+  <Command __id="31" _type="InsertStringCommand" date="Tue Feb 16 21:34:21 EST 2021" starttimestamp="1613529222459" timestamp="38824" timestamp2="38824">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="33" _type="InsertStringCommand" date="Tue Feb 16 21:34:21 EST 2021" starttimestamp="1613529222459" timestamp="38915" timestamp2="38915">
+    <data><![CDATA[d]]></data>
+  </Command>
+  <Command __id="35" _type="InsertStringCommand" date="Tue Feb 16 21:34:21 EST 2021" starttimestamp="1613529222459" timestamp="39102" timestamp2="39102">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="36" _type="MoveCaretCommand" caretOffset="1726" date="Tue Feb 16 21:34:22 EST 2021" docOffset="2591" starttimestamp="1613529222459" timestamp="40061" />
+  <Command __id="37" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Tue Feb 16 21:34:22 EST 2021" starttimestamp="1613529222459" timestamp="40434" />
+  <Command __id="40" _type="SelectTextCommand" caretOffset="1107" date="Tue Feb 16 21:34:25 EST 2021" end="1119" start="1107" starttimestamp="1613529222459" timestamp="43516" />
+  <Command __id="41" _type="CopyCommand" date="Tue Feb 16 21:34:26 EST 2021" starttimestamp="1613529222459" timestamp="44185" />
+  <Command __id="42" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Tue Feb 16 21:34:27 EST 2021" starttimestamp="1613529222459" timestamp="44608" />
+  <Command __id="43" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Tue Feb 16 21:34:27 EST 2021" starttimestamp="1613529222459" timestamp="44856" />
+  <Command __id="44" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Tue Feb 16 21:34:27 EST 2021" starttimestamp="1613529222459" timestamp="44906" />
+  <Command __id="45" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Tue Feb 16 21:34:27 EST 2021" starttimestamp="1613529222459" timestamp="44956" />
+  <Command __id="46" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Tue Feb 16 21:34:27 EST 2021" starttimestamp="1613529222459" timestamp="45006" />
+  <Command __id="47" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Tue Feb 16 21:34:27 EST 2021" starttimestamp="1613529222459" timestamp="45376" />
+  <Command __id="49" _type="PasteCommand" date="Tue Feb 16 21:34:28 EST 2021" starttimestamp="1613529222459" timestamp="45608" />
+  <Command __id="51" _type="InsertStringCommand" date="Tue Feb 16 21:34:28 EST 2021" starttimestamp="1613529222459" timestamp="45949" timestamp2="45949">
+    <data><![CDATA[ ]]></data>
+  </Command>
+  <Command __id="52" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:28 EST 2021" starttimestamp="1613529222459" timestamp="46171" />
+  <Command __id="53" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:28 EST 2021" starttimestamp="1613529222459" timestamp="46422" />
+  <Command __id="54" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:28 EST 2021" starttimestamp="1613529222459" timestamp="46472" />
+  <Command __id="55" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:28 EST 2021" starttimestamp="1613529222459" timestamp="46522" />
+  <Command __id="56" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:29 EST 2021" starttimestamp="1613529222459" timestamp="46572" />
+  <Command __id="57" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:29 EST 2021" starttimestamp="1613529222459" timestamp="46626" />
+  <Command __id="58" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:29 EST 2021" starttimestamp="1613529222459" timestamp="46672" />
+  <Command __id="59" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:29 EST 2021" starttimestamp="1613529222459" timestamp="46722" />
+  <Command __id="60" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:29 EST 2021" starttimestamp="1613529222459" timestamp="46772" />
+  <Command __id="61" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:29 EST 2021" starttimestamp="1613529222459" timestamp="46822" />
+  <Command __id="62" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:29 EST 2021" starttimestamp="1613529222459" timestamp="46872" />
+  <Command __id="63" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:29 EST 2021" starttimestamp="1613529222459" timestamp="46922" />
+  <Command __id="64" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:29 EST 2021" starttimestamp="1613529222459" timestamp="46972" />
+  <Command __id="65" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:29 EST 2021" starttimestamp="1613529222459" timestamp="47022" />
+  <Command __id="66" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:29 EST 2021" starttimestamp="1613529222459" timestamp="47072" />
+  <Command __id="67" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:29 EST 2021" starttimestamp="1613529222459" timestamp="47122" />
+  <Command __id="68" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Tue Feb 16 21:34:29 EST 2021" starttimestamp="1613529222459" timestamp="47171" />
+  <Command __id="70" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 16 21:34:30 EST 2021" starttimestamp="1613529222459" timestamp="47774" />
+  <Command __id="72" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 16 21:34:30 EST 2021" starttimestamp="1613529222459" timestamp="48024" />
+  <Command __id="74" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 16 21:34:30 EST 2021" starttimestamp="1613529222459" timestamp="48072" />
+  <Command __id="76" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 16 21:34:30 EST 2021" starttimestamp="1613529222459" timestamp="48124" />
+  <Command __id="78" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 16 21:34:30 EST 2021" starttimestamp="1613529222459" timestamp="48174" />
+  <Command __id="80" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 16 21:34:30 EST 2021" starttimestamp="1613529222459" timestamp="48221" />
+  <Command __id="82" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 16 21:34:30 EST 2021" starttimestamp="1613529222459" timestamp="48273" />
+  <Command __id="84" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 16 21:34:30 EST 2021" starttimestamp="1613529222459" timestamp="48323" />
+  <Command __id="86" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 16 21:34:30 EST 2021" starttimestamp="1613529222459" timestamp="48373" />
+  <Command __id="88" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 16 21:34:30 EST 2021" starttimestamp="1613529222459" timestamp="48422" />
+  <Command __id="90" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 16 21:34:31 EST 2021" starttimestamp="1613529222459" timestamp="48559" />
+  <Command __id="92" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 16 21:34:31 EST 2021" starttimestamp="1613529222459" timestamp="48716" />
+  <Command __id="94" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Tue Feb 16 21:34:31 EST 2021" starttimestamp="1613529222459" timestamp="49089" />
+  <Command __id="3" _type="DiffBasedFileOpenCommand" date="Tue Feb 16 21:34:14 EST 2021" docASTNodeCount="710" docActiveCodeLength="4431" docExpressionCount="492" docLength="4431" projectName="PhysicsSimulation" starttimestamp="1613529222459" timestamp="31954">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/pendulum/ObserverPendulum.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package components.pendulum.pendulum;
+
+import java.beans.PropertyChangeEvent;
+
+import javax.swing.JSlider;
+
+import components.barchart.bar.BarPair;
+import components.barchart.bar.BarPairInterface;
+import components.mainpanel.MainPanel;
+import components.pendulum.animator.PendulumAnimatorCommand;
+import components.pendulum.load.Load;
+import components.pendulum.load.LoadInterface;
+import components.pendulum.string.PendulumString;
+import components.pendulum.string.PendulumStringInterface;
+import models.pendulum.PendulumModel;
+import models.pendulum.PendulumModelFactory;
+import models.pendulum.PendulumModelInterface;
+import util.annotations.EditablePropertyNames;
+import util.annotations.MaxValue;
+import util.annotations.MinValue;
+import util.annotations.PreferredWidgetClass;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Visible;
+
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"string", "load", "length", "mass", "angle", "barPair"})
+@EditablePropertyNames({"string", "load", "length", "mass", "angle"})
+public class ObserverPendulum implements ObserverPendulumInterface{
+	
+	private int length = PendulumModelFactory.DEFAULT_LENGTH, 
+			mass = PendulumModelFactory.DEFAULT_MASS, 
+			angle = PendulumModelFactory.DEFAULT_ANGLE;
+	private LoadInterface load = new Load();
+	private PendulumStringInterface string;
+	private PendulumModelInterface model;
+	private PendulumAnimatorCommand animator;
+	private boolean enable;
+	private BarPairInterface barPair;
+	
+	public ObserverPendulum(PendulumModelInterface newModel, boolean isEnable, BarPairInterface newBarPair) {
+		enable = isEnable;
+		model = newModel;
+		string = new PendulumString(model);
+		model.addPropertyChangeListener(this);
+		animator = new PendulumAnimatorCommand(model);
+		barPair = newBarPair;
+		if (!enable) {
+			stop();
+		}
+		animator.start();
+	}
+	
+	@Override
+	public void propertyChange(PropertyChangeEvent evt) {
+		if (evt.getSource() == model) {
+			if ("height".equals(evt.getPropertyName())) {
+				
+				string.setHeight((int) evt.getNewValue());
+				load.setY(string.getY() + (int) evt.getNewValue() - load.getHeight()/2);	
+				
+				barPair.getBars().get(0).setHeight((int) (model.getLength()) - (int) evt.getNewValue());
+				barPair.getBars().get(1).setHeight((int) evt.getNewValue() - (int) (model.getLength() * Math.cos(model.getMaxAngle())));
+			}
+			else if ("width".equals(evt.getPropertyName())) {
+				string.setWidth((int) evt.getNewValue());
+				load.setX(string.getX() + (int) evt.getNewValue() - load.getWidth()/2);
+			}
+		}
+		
+	}
+
+	@Override
+	public PendulumStringInterface getString() {
+		return string;
+	}
+
+	@Override
+	public LoadInterface getLoad() {
+		return load;
+	}
+
+	@Override
+	public void setString(PendulumStringInterface newString) {
+		string = newString;
+	}
+
+	@Override
+	public void setLoad(LoadInterface newLoad) {
+		load = newLoad;
+	}
+	
+	@Override
+	public void setLength(int l) {
+		length = l;
+		setModel();
+	}
+
+	@Override
+	public void setMass(int m) {
+		mass = m;
+		setModel();
+	}
+	
+	@Override
+	public void setAngle(int a) {
+		angle = a;
+		setModel();
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	@MaxValue(500)
+	@MinValue(10)
+	public int getLength() {
+		return length;
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	@MaxValue(50)
+	@MinValue(1)
+	public int getMass() {
+		return mass;
+	}
+	
+	@Override
+	public int getAngle() {
+		return angle;
+	}
+
+	@Override
+	@Visible(false)
+	public void setModel() {
+		PendulumModelInterface oldModel = model;
+		model = new PendulumModel(
+				PendulumModelFactory.DEFAULT_STRING_X, 
+				PendulumModelFactory.DEFAULT_STRING_Y, 
+				length, 
+				MainPanel.gravity, 
+				mass, 
+				MainPanel.friction, 
+				angle);
+		
+		model.addPropertyChangeListener(this);
+		if (!enable) {
+			stop();
+		}
+		animator.setNewModel(model);
+		oldModel.removePropertyChangeListener(this);
+	}
+
+	@Override
+	public PendulumModelInterface getModel() {
+		return model;
+	}
+
+	@Override
+	public PendulumAnimatorCommand getAnimator() {
+		return animator;
+	}
+
+	@Override
+	public void stop() {
+		model.stopTimer();
+		enable = false;
+	}
+
+	@Override
+	public void resume() {
+		model.resumeTimer();
+		enable = true;
+	}
+
+	@Override
+	public BarPairInterface getBarPair() {
+		return barPair;
+	}
+
+	@Override
+	public void setBarPair(BarPairInterface newBarPair) {
+		barPair = newBarPair;
+	}
+
+
+	
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="6" _type="Insert" date="Tue Feb 16 21:34:18 EST 2021" docASTNodeCount="710" docActiveCodeLength="4439" docExpressionCount="492" docLength="4439" length="8" offset="1972" repeat="8" starttimestamp="1613529222459" timestamp="36169" timestamp2="37129">
+    <text><![CDATA[synchroi]]></text>
+  </DocumentChange>
+  <DocumentChange __id="22" _type="Delete" date="Tue Feb 16 21:34:20 EST 2021" docASTNodeCount="710" docActiveCodeLength="4438" docExpressionCount="492" docLength="4438" endLine="55" length="1" offset="1979" startLine="55" starttimestamp="1613529222459" timestamp="37761">
+    <text><![CDATA[i]]></text>
+  </DocumentChange>
+  <DocumentChange __id="24" _type="Insert" date="Tue Feb 16 21:34:20 EST 2021" docASTNodeCount="710" docActiveCodeLength="4444" docExpressionCount="492" docLength="4444" length="6" offset="1979" repeat="6" starttimestamp="1613529222459" timestamp="38394" timestamp2="39101">
+    <text><![CDATA[nized ]]></text>
+  </DocumentChange>
+  <DocumentChange __id="48" _type="Insert" date="Tue Feb 16 21:34:28 EST 2021" docASTNodeCount="711" docActiveCodeLength="4457" docExpressionCount="492" docLength="4457" length="13" offset="1967" repeat="2" starttimestamp="1613529222459" timestamp="45604" timestamp2="45947">
+    <text><![CDATA[synchronized ]]></text>
+  </DocumentChange>
+  <DocumentChange __id="69" _type="Delete" date="Tue Feb 16 21:34:30 EST 2021" docASTNodeCount="711" docActiveCodeLength="4444" docExpressionCount="492" docLength="4444" endLine="55" length="13" offset="1984" repeat="13" startLine="55" starttimestamp="1613529222459" timestamp="47771" timestamp2="49087">
+    <text><![CDATA[ synchronized]]></text>
+  </DocumentChange>
+  <Command __id="104" _type="RunCommand" date="Tue Feb 16 21:34:38 EST 2021" kind="HitBreakPoint" projectName="Comp533" starttimestamp="1613529222459" timestamp="55599" type="Run" />
+  <Command __id="105" _type="RunCommand" date="Tue Feb 16 21:34:38 EST 2021" kind="HitBreakPoint" projectName="Comp533" starttimestamp="1613529222459" timestamp="55600" type="Run" />
+  <Command __id="106" _type="ShellCommand" date="Tue Feb 16 21:34:38 EST 2021" starttimestamp="1613529222459" timestamp="55629" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="107" _type="DiffBasedFileOpenCommand" date="Tue Feb 16 21:34:42 EST 2021" docASTNodeCount="126" docActiveCodeLength="718" docExpressionCount="94" docLength="718" projectName="PhysicsSimulation" starttimestamp="1613529222459" timestamp="59852">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/main/TestFrame.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package main;
+
+import javax.swing.JButton;
+import javax.swing.JSlider;
+
+import bus.uigen.OEFrame;
+import bus.uigen.ObjectEditor;
+import components.mainpanel.MainPanel;
+import components.mainpanel.MainPanelInterface;
+import components.pendulum.load.Load;
+import components.pendulum.load.LoadInterface;
+import components.pendulum.protractor.Protractor;
+import components.pendulum.protractor.ProtractorInterface;
+import components.pendulum.string.PendulumString;
+import components.pendulum.string.PendulumStringInterface;
+import javafx.scene.control.Slider;
+
+public class TestFrame {
+	public static void main(String[] args) {
+		MainPanelInterface panel = new MainPanel();
+		OEFrame frame = ObjectEditor.edit(panel);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="117" _type="RunCommand" date="Tue Feb 16 21:35:16 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1613529222459" timestamp="94460" type="Run" />
+  <Command __id="118" _type="RunCommand" date="Tue Feb 16 21:35:16 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1613529222459" timestamp="94461" type="Run" />
+  <Command __id="119" _type="ShellCommand" date="Tue Feb 16 21:35:16 EST 2021" starttimestamp="1613529222459" timestamp="94470" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="120" _type="DiffBasedFileOpenCommand" date="Tue Feb 16 21:35:18 EST 2021" docASTNodeCount="711" docActiveCodeLength="4444" docExpressionCount="492" docLength="4444" projectName="PhysicsSimulation" starttimestamp="1613529222459" timestamp="95789">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/pendulum/ObserverPendulum.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.pendulum;¶¶import java.beans.PropertyChangeEvent;¶¶import javax.swing.JSlider;¶¶import components.barchart.bar.BarPair;¶import components.barchart.bar.BarPairInterface;¶import components.mainpanel.MainPanel;¶import components.pendulum.animator.PendulumAnimatorCommand;¶import components.pendulum.load.Load;¶import components.pendulum.load.LoadInterface;¶import components.pendulum.string.PendulumString;¶import components.pendulum.string.PendulumStringInterface;¶import models.pendulum.PendulumModel;¶import models.pendulum.PendulumModelFactory;¶import models.pendulum.PendulumModelInterface;¶import util.annotations.EditablePropertyNames;¶import util.annotations.MaxValue;¶import util.annotations.MinValue;¶import util.annotations.PreferredWidgetClass;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶import util.annotations.Visible;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"string", "load", "length", "mass", "angle", "barPair"})¶@EditablePropertyNames({"string", "load", "length", "mass", "angle"})¶public class ObserverPendulum implements ObserverPendulumInterface{¶	¶	private int length = PendulumModelFactory.DEFAULT_LENGTH, ¶			mass = PendulumModelFactory.DEFAULT_MASS, ¶			angle = PendulumModelFactory.DEFAULT_ANGLE;¶	private LoadInterface load = new Load();¶	private PendulumStringInterface string;¶	private PendulumModelInterface model;¶	private PendulumAnimatorCommand animator;¶	private boolean enable;¶	private BarPairInterface barPair;¶	¶	public ObserverPendulum(PendulumModelInterface newModel, boolean isEnable, BarPairInterface newBarPair) {¶		enable = isEnable;¶		model = newModel;¶		string = new PendulumString(model);¶		model.addPropertyChangeListener(this);¶		animator = new PendulumAnimatorCommand(model);¶		barPair = newBarPair;¶		if (!enable) {¶			stop();¶		}¶		animator.start();¶	}¶	¶	@Override¶	public "), Diff(INSERT,"synchronized "), Diff(EQUAL,"void propertyChange(PropertyChangeEvent evt) {¶		if (evt.getSource() == model) {¶			if ("height".equals(evt.getPropertyName())) {¶				¶				string.setHeight((int) evt.getNewValue());¶				load.setY(string.getY() + (int) evt.getNewValue() - load.getHeight()/2);	¶				¶				barPair.getBars().get(0).setHeight((int) (model.getLength()) - (int) evt.getNewValue());¶				barPair.getBars().get(1).setHeight((int) evt.getNewValue() - (int) (model.getLength() * Math.cos(model.getMaxAngle())));¶			}¶			else if ("width".equals(evt.getPropertyName())) {¶				string.setWidth((int) evt.getNewValue());¶				load.setX(string.getX() + (int) evt.getNewValue() - load.getWidth()/2);¶			}¶		}¶		¶	}¶¶	@Override¶	public PendulumStringInterface getString() {¶		return string;¶	}¶¶	@Override¶	public LoadInterface getLoad() {¶		return load;¶	}¶¶	@Override¶	public void setString(PendulumStringInterface newString) {¶		string = newString;¶	}¶¶	@Override¶	public void setLoad(LoadInterface newLoad) {¶		load = newLoad;¶	}¶	¶	@Override¶	public void setLength(int l) {¶		length = l;¶		setModel();¶	}¶¶	@Override¶	public void setMass(int m) {¶		mass = m;¶		setModel();¶	}¶	¶	@Override¶	public void setAngle(int a) {¶		angle = a;¶		setModel();¶	}¶¶	@Override¶	@PreferredWidgetClass(JSlider.class)¶	@MaxValue(500)¶	@MinValue(10)¶	public int getLength() {¶		return length;¶	}¶¶	@Override¶	@PreferredWidgetClass(JSlider.class)¶	@MaxValue(50)¶	@MinValue(1)¶	public int getMass() {¶		return mass;¶	}¶	¶	@Override¶	public int getAngle() {¶		return angle;¶	}¶¶	@Override¶	@Visible(false)¶	public void setModel() {¶		PendulumModelInterface oldModel = model;¶		model = new PendulumModel(¶				PendulumModelFactory.DEFAULT_STRING_X, ¶				PendulumModelFactory.DEFAULT_STRING_Y, ¶				length, ¶				MainPanel.gravity, ¶				mass, ¶				MainPanel.friction, ¶				angle);¶		¶		model.addPropertyChangeListener(this);¶		if (!enable) {¶			stop();¶		}¶		animator.setNewModel(model);¶		oldModel.removePropertyChangeListener(this);¶	}¶¶	@Override¶	public PendulumModelInterface getModel() {¶		return model;¶	}¶¶	@Override¶	public PendulumAnimatorCommand getAnimator() {¶		return animator;¶	}¶¶	@Override¶	public void stop() {¶		model.stopTimer();¶		enable = false;¶	}¶¶	@Override¶	public void resume() {¶		model.resumeTimer();¶		enable = true;¶	}¶¶	@Override¶	public BarPairInterface getBarPair() {¶		return barPair;¶	}¶¶	@Override¶	public void setBarPair(BarPairInterface newBarPair) {¶		barPair = newBarPair;¶	}¶¶¶	¶}¶")]]]></diff>
+    <snapshot><![CDATA[package components.pendulum.pendulum;
+
+import java.beans.PropertyChangeEvent;
+
+import javax.swing.JSlider;
+
+import components.barchart.bar.BarPair;
+import components.barchart.bar.BarPairInterface;
+import components.mainpanel.MainPanel;
+import components.pendulum.animator.PendulumAnimatorCommand;
+import components.pendulum.load.Load;
+import components.pendulum.load.LoadInterface;
+import components.pendulum.string.PendulumString;
+import components.pendulum.string.PendulumStringInterface;
+import models.pendulum.PendulumModel;
+import models.pendulum.PendulumModelFactory;
+import models.pendulum.PendulumModelInterface;
+import util.annotations.EditablePropertyNames;
+import util.annotations.MaxValue;
+import util.annotations.MinValue;
+import util.annotations.PreferredWidgetClass;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Visible;
+
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"string", "load", "length", "mass", "angle", "barPair"})
+@EditablePropertyNames({"string", "load", "length", "mass", "angle"})
+public class ObserverPendulum implements ObserverPendulumInterface{
+	
+	private int length = PendulumModelFactory.DEFAULT_LENGTH, 
+			mass = PendulumModelFactory.DEFAULT_MASS, 
+			angle = PendulumModelFactory.DEFAULT_ANGLE;
+	private LoadInterface load = new Load();
+	private PendulumStringInterface string;
+	private PendulumModelInterface model;
+	private PendulumAnimatorCommand animator;
+	private boolean enable;
+	private BarPairInterface barPair;
+	
+	public ObserverPendulum(PendulumModelInterface newModel, boolean isEnable, BarPairInterface newBarPair) {
+		enable = isEnable;
+		model = newModel;
+		string = new PendulumString(model);
+		model.addPropertyChangeListener(this);
+		animator = new PendulumAnimatorCommand(model);
+		barPair = newBarPair;
+		if (!enable) {
+			stop();
+		}
+		animator.start();
+	}
+	
+	@Override
+	public synchronized void propertyChange(PropertyChangeEvent evt) {
+		if (evt.getSource() == model) {
+			if ("height".equals(evt.getPropertyName())) {
+				
+				string.setHeight((int) evt.getNewValue());
+				load.setY(string.getY() + (int) evt.getNewValue() - load.getHeight()/2);	
+				
+				barPair.getBars().get(0).setHeight((int) (model.getLength()) - (int) evt.getNewValue());
+				barPair.getBars().get(1).setHeight((int) evt.getNewValue() - (int) (model.getLength() * Math.cos(model.getMaxAngle())));
+			}
+			else if ("width".equals(evt.getPropertyName())) {
+				string.setWidth((int) evt.getNewValue());
+				load.setX(string.getX() + (int) evt.getNewValue() - load.getWidth()/2);
+			}
+		}
+		
+	}
+
+	@Override
+	public PendulumStringInterface getString() {
+		return string;
+	}
+
+	@Override
+	public LoadInterface getLoad() {
+		return load;
+	}
+
+	@Override
+	public void setString(PendulumStringInterface newString) {
+		string = newString;
+	}
+
+	@Override
+	public void setLoad(LoadInterface newLoad) {
+		load = newLoad;
+	}
+	
+	@Override
+	public void setLength(int l) {
+		length = l;
+		setModel();
+	}
+
+	@Override
+	public void setMass(int m) {
+		mass = m;
+		setModel();
+	}
+	
+	@Override
+	public void setAngle(int a) {
+		angle = a;
+		setModel();
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	@MaxValue(500)
+	@MinValue(10)
+	public int getLength() {
+		return length;
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	@MaxValue(50)
+	@MinValue(1)
+	public int getMass() {
+		return mass;
+	}
+	
+	@Override
+	public int getAngle() {
+		return angle;
+	}
+
+	@Override
+	@Visible(false)
+	public void setModel() {
+		PendulumModelInterface oldModel = model;
+		model = new PendulumModel(
+				PendulumModelFactory.DEFAULT_STRING_X, 
+				PendulumModelFactory.DEFAULT_STRING_Y, 
+				length, 
+				MainPanel.gravity, 
+				mass, 
+				MainPanel.friction, 
+				angle);
+		
+		model.addPropertyChangeListener(this);
+		if (!enable) {
+			stop();
+		}
+		animator.setNewModel(model);
+		oldModel.removePropertyChangeListener(this);
+	}
+
+	@Override
+	public PendulumModelInterface getModel() {
+		return model;
+	}
+
+	@Override
+	public PendulumAnimatorCommand getAnimator() {
+		return animator;
+	}
+
+	@Override
+	public void stop() {
+		model.stopTimer();
+		enable = false;
+	}
+
+	@Override
+	public void resume() {
+		model.resumeTimer();
+		enable = true;
+	}
+
+	@Override
+	public BarPairInterface getBarPair() {
+		return barPair;
+	}
+
+	@Override
+	public void setBarPair(BarPairInterface newBarPair) {
+		barPair = newBarPair;
+	}
+
+
+	
+}
+]]></snapshot>
+  </Command>
+  <Command __id="121" _type="MoveCaretCommand" caretOffset="1077" date="Tue Feb 16 21:35:18 EST 2021" docOffset="1942" starttimestamp="1613529222459" timestamp="95844" />
+  <Command __id="122" _type="DiffBasedFileOpenCommand" date="Tue Feb 16 21:35:19 EST 2021" docASTNodeCount="133" docActiveCodeLength="901" docExpressionCount="76" docLength="901" projectName="PhysicsSimulation" starttimestamp="1613529222459" timestamp="97037">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/pendulum/ObserverPendulumInterface.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package components.pendulum.pendulum;
+
+import java.beans.PropertyChangeListener;
+
+import components.barchart.bar.BarPairInterface;
+import components.pendulum.animator.PendulumAnimatorCommand;
+import components.pendulum.load.LoadInterface;
+import components.pendulum.string.PendulumStringInterface;
+import models.pendulum.PendulumModelInterface;
+
+public interface ObserverPendulumInterface extends PropertyChangeListener{
+	PendulumStringInterface getString();
+	LoadInterface getLoad();
+	void setString(PendulumStringInterface newString) ;
+	void setLoad(LoadInterface newLoad);
+	int getLength();
+	void setLength(int l);
+	int getMass();
+	void setMass(int m);
+	int getAngle();
+	void setAngle(int a);
+	void setModel();
+	PendulumModelInterface getModel();
+	PendulumAnimatorCommand getAnimator();
+	void stop();
+	void resume();
+	BarPairInterface getBarPair();
+	void setBarPair(BarPairInterface newBarPair);
+}
+]]></snapshot>
+  </Command>
+  <Command __id="123" _type="MoveCaretCommand" caretOffset="37" date="Tue Feb 16 21:35:19 EST 2021" docOffset="37" starttimestamp="1613529222459" timestamp="97131" />
+  <Command __id="124" _type="DiffBasedFileOpenCommand" date="Tue Feb 16 21:35:20 EST 2021" docASTNodeCount="74" docActiveCodeLength="504" docExpressionCount="33" docLength="504" projectName="PhysicsSimulation" starttimestamp="1613529222459" timestamp="98408">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/models/pendulum/PendulumModelInterface.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package models.pendulum;
+
+import java.beans.PropertyChangeListener;
+
+import util.models.PropertyListenerRegisterer;
+
+public interface PendulumModelInterface extends PropertyListenerRegisterer{
+	void nextPosition();
+	void setX(int newX);
+	void setY(int newY);
+	void setHeight(int h);
+	void setWidth(int w);
+	void removePropertyChangeListener(PropertyChangeListener aListener);
+	void resetTimer();
+	void stopTimer();
+	void resumeTimer();
+	boolean getEnable();
+	double getLength();
+	double getMaxAngle();
+}
+]]></snapshot>
+  </Command>
+  <Command __id="125" _type="MoveCaretCommand" caretOffset="453" date="Tue Feb 16 21:35:21 EST 2021" docOffset="501" starttimestamp="1613529222459" timestamp="98581" />
+  <Command __id="126" _type="DiffBasedFileOpenCommand" date="Tue Feb 16 21:35:21 EST 2021" docASTNodeCount="757" docActiveCodeLength="4708" docExpressionCount="533" docLength="4708" projectName="PhysicsSimulation" starttimestamp="1613529222459" timestamp="99201">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/mainpanel/MainPanel.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package components.mainpanel;
+
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.JButton;
+import javax.swing.JSlider;
+
+import components.barchart.bar.BarPair;
+import components.pendulum.imageprotractor.ImageProtractor;
+import components.pendulum.imageprotractor.ImageProtractorInterface;
+import components.pendulum.pendulum.ObserverPendulum;
+import components.pendulum.pendulum.ObserverPendulumInterface;
+import components.ruler.Ruler;
+import components.ruler.RulerInterface;
+import models.pendulum.PendulumModelFactory;
+import models.pendulum.PendulumModelInterface;
+import util.annotations.Column;
+import util.annotations.EditablePropertyNames;
+import util.annotations.Label;
+import util.annotations.MaxValue;
+import util.annotations.MinValue;
+import util.annotations.PreferredWidgetClass;
+import util.annotations.PropertyNames;
+import util.annotations.Row;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Visible;
+
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"numberOfPendulum", "gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})
+@EditablePropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})
+public class MainPanel implements MainPanelInterface{
+	
+	public static int gravity, 
+			friction = PendulumModelFactory.DEFAULT_FRICTION;
+	public static final int MARGIN_BTW_PAIR = 10, MARGIN = 5, BAR_WIDTH = 10, BARCHART_X = 1000, BARCHART_Y = 0;
+	private Planet planet;
+	private int numberOfPendulum = 0;
+	private List<ObserverPendulumInterface> pendulum = new ArrayList<ObserverPendulumInterface> ();
+	private RulerInterface ruler = new Ruler(20, 20, 675, 60);
+	private ImageProtractorInterface protractor = new ImageProtractor(350, 20, 150, 300);
+	private boolean enable = true;
+	
+
+	public MainPanel() {
+		increaseNumberOfPendulum();
+		setPlanet(Planet.Earth);
+	}
+
+	@Override
+	public void setGravity(int g) {
+		gravity = g;
+		planet = Planet.Other;
+		setModel();
+	}
+
+	@Override
+	public void setFriction(int f) {
+		friction = f;
+		setModel();
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	@MaxValue(25)
+	@MinValue(1)
+	@Row(1)
+	@Column(0)
+	public int getGravity() {
+		return gravity;
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	@MaxValue(9)
+	@MinValue(0)
+	@Row(2)
+	@Column(0)
+	public int getFriction() {
+		return friction;
+	}
+
+
+	@Override
+	@Row(2)
+	@Column(0)
+	public List<ObserverPendulumInterface> getPendulum() {
+		return pendulum;
+	}
+
+
+	@Override
+	public RulerInterface getRuler() {
+		return ruler;
+	}
+
+	@Override
+	public void setRuler(RulerInterface newRuler) {
+		ruler = newRuler;
+	}
+
+
+	@Override
+	public int getNumberOfPendulum() {
+		return numberOfPendulum;
+	}
+
+	
+	@Override
+	public ImageProtractorInterface getProtractor() {
+		return protractor;
+	}
+
+	@Override
+	public void setProtractor(ImageProtractorInterface newProtractor) {
+		protractor = newProtractor;
+	}
+
+	@Override
+	@Visible(false)
+	public void setModel() {
+		for (int i = 0; i < numberOfPendulum; i ++) {
+			pendulum.get(i).setModel();
+		}
+	}
+
+	@Override
+	@Row(5)
+	@Column(0)
+	@Label("\u25B6")
+	public void pause() {
+		if (enable) {
+			for (int i = 0; i < numberOfPendulum; i ++) {
+				pendulum.get(i).stop();
+			}
+			enable = false;
+		}
+		else {
+			for (int i = 0; i < numberOfPendulum; i ++) {
+				pendulum.get(i).resume();
+			}
+			enable = true;
+		}
+	}
+
+	@Override
+	@Row(5)
+	@Column(1)
+	@Label("\u25A0")
+	public void reset() {
+		for (int i = 0; i < numberOfPendulum; i ++) {
+			pendulum.get(i).setAngle(0);
+		}
+	}
+
+	@Override
+	@PreferredWidgetClass(JButton.class)
+	@Row(4)
+	@Column(0)
+	@Label("+")
+	public void increaseNumberOfPendulum() {
+		if (numberOfPendulum < PendulumModelFactory.MAX_CAPACITY) {
+			PendulumModelInterface newModel = PendulumModelFactory.getDefaultModel();
+			ObserverPendulumInterface newPendulum = new ObserverPendulum(newModel, enable, 
+					new BarPair(BARCHART_X + pendulum.size() * (BAR_WIDTH + MARGIN + BAR_WIDTH + MARGIN_BTW_PAIR), BARCHART_Y));
+	
+			
+			pendulum.add(newPendulum);
+			numberOfPendulum ++;
+		}
+	}
+
+	@Override
+	@PreferredWidgetClass(JButton.class)
+	@Row(4)
+	@Column(1)
+	@Label("-")
+	public void decreaseNumberOfPendulum() {
+		if (numberOfPendulum > 0) {
+			numberOfPendulum --;
+			pendulum.get(numberOfPendulum).getAnimator().interrupt();
+			pendulum.get(numberOfPendulum).getModel().removePropertyChangeListener(pendulum.get(numberOfPendulum));
+			pendulum.remove(numberOfPendulum);
+		}
+	}
+
+	@Override
+	@Row(0)
+	@Column(0)
+	public Planet getPlanet() {
+		return planet;
+	}
+
+	@Override
+	public void setPlanet(Planet newPlanet) {
+		setGravity(newPlanet.getValue());
+		planet = newPlanet;
+	}
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="127" _type="MoveCaretCommand" caretOffset="3349" date="Tue Feb 16 21:35:21 EST 2021" docOffset="4292" starttimestamp="1613529222459" timestamp="99265" />
+  <Command __id="128" _type="DiffBasedFileOpenCommand" date="Tue Feb 16 21:35:22 EST 2021" docASTNodeCount="126" docActiveCodeLength="718" docExpressionCount="94" docLength="718" projectName="PhysicsSimulation" starttimestamp="1613529222459" timestamp="99644">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/main/TestFrame.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package main;¶¶import javax.swing.JButton;¶import javax.swing.JSlider;¶¶import bus.uigen.OEFrame;¶import bus.uigen.ObjectEditor;¶import components.mainpanel.MainPanel;¶import components.mainpanel.MainPanelInterface;¶import components.pendulum.load.Load;¶import components.pendulum.load.LoadInterface;¶import components.pendulum.protractor.Protractor;¶import components.pendulum.protractor.ProtractorInterface;¶import components.pendulum.string.PendulumString;¶import components.pendulum.string.PendulumStringInterface;¶import javafx.scene.control.Slider;¶¶public class TestFrame {¶	public static void main(String[] args) {¶		MainPanelInterface panel = new MainPanel();¶		OEFrame frame = ObjectEditor.edit(panel);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="129" _type="MoveCaretCommand" caretOffset="511" date="Tue Feb 16 21:35:22 EST 2021" docOffset="511" starttimestamp="1613529222459" timestamp="99680" />
+  <Command __id="130" _type="DiffBasedFileOpenCommand" date="Tue Feb 16 21:35:22 EST 2021" docASTNodeCount="757" docActiveCodeLength="4708" docExpressionCount="533" docLength="4708" projectName="PhysicsSimulation" starttimestamp="1613529222459" timestamp="100395">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/mainpanel/MainPanel.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.mainpanel;¶¶import java.util.ArrayList;¶import java.util.List;¶import javax.swing.JButton;¶import javax.swing.JSlider;¶¶import components.barchart.bar.BarPair;¶import components.pendulum.imageprotractor.ImageProtractor;¶import components.pendulum.imageprotractor.ImageProtractorInterface;¶import components.pendulum.pendulum.ObserverPendulum;¶import components.pendulum.pendulum.ObserverPendulumInterface;¶import components.ruler.Ruler;¶import components.ruler.RulerInterface;¶import models.pendulum.PendulumModelFactory;¶import models.pendulum.PendulumModelInterface;¶import util.annotations.Column;¶import util.annotations.EditablePropertyNames;¶import util.annotations.Label;¶import util.annotations.MaxValue;¶import util.annotations.MinValue;¶import util.annotations.PreferredWidgetClass;¶import util.annotations.PropertyNames;¶import util.annotations.Row;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶import util.annotations.Visible;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"numberOfPendulum", "gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})¶@EditablePropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})¶public class MainPanel implements MainPanelInterface{¶	¶	public static int gravity, ¶			friction = PendulumModelFactory.DEFAULT_FRICTION;¶	public static final int MARGIN_BTW_PAIR = 10, MARGIN = 5, BAR_WIDTH = 10, BARCHART_X = 1000, BARCHART_Y = 0;¶	private Planet planet;¶	private int numberOfPendulum = 0;¶	private List<ObserverPendulumInterface> pendulum = new ArrayList<ObserverPendulumInterface> ();¶	private RulerInterface ruler = new Ruler(20, 20, 675, 60);¶	private ImageProtractorInterface protractor = new ImageProtractor(350, 20, 150, 300);¶	private boolean enable = true;¶	¶¶	public MainPanel() {¶		increaseNumberOfPendulum();¶		setPlanet(Planet.Earth);¶	}¶¶	@Override¶	public void setGravity(int g) {¶		gravity = g;¶		planet = Planet.Other;¶		setModel();¶	}¶¶	@Override¶	public void setFriction(int f) {¶		friction = f;¶		setModel();¶	}¶¶	@Override¶	@PreferredWidgetClass(JSlider.class)¶	@MaxValue(25)¶	@MinValue(1)¶	@Row(1)¶	@Column(0)¶	public int getGravity() {¶		return gravity;¶	}¶¶	@Override¶	@PreferredWidgetClass(JSlider.class)¶	@MaxValue(9)¶	@MinValue(0)¶	@Row(2)¶	@Column(0)¶	public int getFriction() {¶		return friction;¶	}¶¶¶	@Override¶	@Row(2)¶	@Column(0)¶	public List<ObserverPendulumInterface> getPendulum() {¶		return pendulum;¶	}¶¶¶	@Override¶	public RulerInterface getRuler() {¶		return ruler;¶	}¶¶	@Override¶	public void setRuler(RulerInterface newRuler) {¶		ruler = newRuler;¶	}¶¶¶	@Override¶	public int getNumberOfPendulum() {¶		return numberOfPendulum;¶	}¶¶	¶	@Override¶	public ImageProtractorInterface getProtractor() {¶		return protractor;¶	}¶¶	@Override¶	public void setProtractor(ImageProtractorInterface newProtractor) {¶		protractor = newProtractor;¶	}¶¶	@Override¶	@Visible(false)¶	public void setModel() {¶		for (int i = 0; i < numberOfPendulum; i ++) {¶			pendulum.get(i).setModel();¶		}¶	}¶¶	@Override¶	@Row(5)¶	@Column(0)¶	@Label("\u25B6")¶	public void pause() {¶		if (enable) {¶			for (int i = 0; i < numberOfPendulum; i ++) {¶				pendulum.get(i).stop();¶			}¶			enable = false;¶		}¶		else {¶			for (int i = 0; i < numberOfPendulum; i ++) {¶				pendulum.get(i).resume();¶			}¶			enable = true;¶		}¶	}¶¶	@Override¶	@Row(5)¶	@Column(1)¶	@Label("\u25A0")¶	public void reset() {¶		for (int i = 0; i < numberOfPendulum; i ++) {¶			pendulum.get(i).setAngle(0);¶		}¶	}¶¶	@Override¶	@PreferredWidgetClass(JButton.class)¶	@Row(4)¶	@Column(0)¶	@Label("+")¶	public void increaseNumberOfPendulum() {¶		if (numberOfPendulum < PendulumModelFactory.MAX_CAPACITY) {¶			PendulumModelInterface newModel = PendulumModelFactory.getDefaultModel();¶			ObserverPendulumInterface newPendulum = new ObserverPendulum(newModel, enable, ¶					new BarPair(BARCHART_X + pendulum.size() * (BAR_WIDTH + MARGIN + BAR_WIDTH + MARGIN_BTW_PAIR), BARCHART_Y));¶	¶			¶			pendulum.add(newPendulum);¶			numberOfPendulum ++;¶		}¶	}¶¶	@Override¶	@PreferredWidgetClass(JButton.class)¶	@Row(4)¶	@Column(1)¶	@Label("-")¶	public void decreaseNumberOfPendulum() {¶		if (numberOfPendulum > 0) {¶			numberOfPendulum --;¶			pendulum.get(numberOfPendulum).getAnimator().interrupt();¶			pendulum.get(numberOfPendulum).getModel().removePropertyChangeListener(pendulum.get(numberOfPendulum));¶			pendulum.remove(numberOfPendulum);¶		}¶	}¶¶	@Override¶	@Row(0)¶	@Column(0)¶	public Planet getPlanet() {¶		return planet;¶	}¶¶	@Override¶	public void setPlanet(Planet newPlanet) {¶		setGravity(newPlanet.getValue());¶		planet = newPlanet;¶	}¶¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="131" _type="MoveCaretCommand" caretOffset="3349" date="Tue Feb 16 21:35:22 EST 2021" docOffset="4292" starttimestamp="1613529222459" timestamp="100448" />
+  <Command __id="132" _type="DiffBasedFileOpenCommand" date="Tue Feb 16 21:35:23 EST 2021" docASTNodeCount="74" docActiveCodeLength="504" docExpressionCount="33" docLength="504" projectName="PhysicsSimulation" starttimestamp="1613529222459" timestamp="101062">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/models/pendulum/PendulumModelInterface.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package models.pendulum;¶¶import java.beans.PropertyChangeListener;¶¶import util.models.PropertyListenerRegisterer;¶¶public interface PendulumModelInterface extends PropertyListenerRegisterer{¶	void nextPosition();¶	void setX(int newX);¶	void setY(int newY);¶	void setHeight(int h);¶	void setWidth(int w);¶	void removePropertyChangeListener(PropertyChangeListener aListener);¶	void resetTimer();¶	void stopTimer();¶	void resumeTimer();¶	boolean getEnable();¶	double getLength();¶	double getMaxAngle();¶}¶")]]]></diff>
+  </Command>
+  <Command __id="133" _type="MoveCaretCommand" caretOffset="453" date="Tue Feb 16 21:35:23 EST 2021" docOffset="501" starttimestamp="1613529222459" timestamp="101093" />
+  <Command __id="134" _type="DiffBasedFileOpenCommand" date="Tue Feb 16 21:35:23 EST 2021" docASTNodeCount="555" docActiveCodeLength="3209" docExpressionCount="341" docLength="3308" projectName="PhysicsSimulation" starttimestamp="1613529222459" timestamp="101484">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/models/pendulum/PendulumModel.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package models.pendulum;
+
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import components.listenersupport.PropertyListenerSupport;
+
+public class PendulumModel extends PropertyListenerSupport implements PendulumModelInterface {
+	
+	private static final int MILLISECOND_PER_SECOND = 1000;
+	private static final double LENGTH_SCALE = 0.1;
+	private static final int GRAM_PER_KILOGRAM = 1000;
+	private static final double FRICTION_SCALE = 1; 
+	
+	private PropertyListenerSupport aPropertyListenerSupport = new PropertyListenerSupport();
+	private double length, mass, gravity, friction, angle;
+	private int x, y, height, width;
+	private long timer, stoptimer;
+	private double maxAngle;
+	private boolean enable = true;
+	
+	public PendulumModel() {};
+
+	public PendulumModel(int newX, int newY, double l, double m, double g, double f, double a) {
+		timer = System.currentTimeMillis();
+		setX(newX);
+		setY(newY);
+		length = l;
+		mass = m;
+		gravity = g;
+		friction = Math.sqrt(f / 10 * gravity / length * mass * mass * 4) ;
+		angle = a * Math.PI/180;
+	}
+
+	@Override
+	public void addPropertyChangeListener(PropertyChangeListener aListener) {
+		aPropertyListenerSupport.addElement(aListener);
+	}
+	
+	@Override
+	public void nextPosition() {
+		double h = Math.sqrt(gravity / length - friction * friction / 4 / mass / mass);
+		long t;
+		if (enable) {
+			t = System.currentTimeMillis() - timer;
+		}
+		else {
+			t = stoptimer - timer;
+		}
+		
+		double timeInSecond = t/MILLISECOND_PER_SECOND;
+		// double angleAtT = angle * Math.cos((Math.sqrt(gravity/(length * LENGTH_SCALE)) * timeInSecond));
+		
+		maxAngle = angle * Math.exp(friction / 2 / mass * (-1) * timeInSecond);
+		
+		double angleAtT = maxAngle * (Math.cos(h * timeInSecond) + friction / 2 / mass / h * Math.sin(h * timeInSecond));
+		setHeight((int) Math.round(Math.cos(angleAtT) * length));
+		setWidth((int) Math.round(Math.sin(angleAtT) * length));
+		
+		
+	}
+	
+	@Override
+	public void resetTimer() {
+		timer = System.currentTimeMillis();
+	}
+
+	@Override
+	public void setX(int newX) {
+		int oldX = x;
+		x = newX;
+		aPropertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "x", oldX, x));
+	}
+
+	@Override
+	public void setY(int newY) {
+		int oldY = y;
+		y = newY;
+		aPropertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "y", oldY, y));
+	}
+
+	@Override
+	public void setHeight(int h) {
+		int oldHeight = height;
+		height = h;
+		aPropertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "height", oldHeight, height));
+	}
+
+	@Override
+	public void setWidth(int w) {
+		int oldWidth = width;
+		width = w;
+		aPropertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "width", oldWidth, width));
+	}
+	
+
+	@Override
+	public void removePropertyChangeListener(PropertyChangeListener aListener) {
+		aPropertyListenerSupport.removeElement(aListener);
+	}
+
+	@Override
+	public void stopTimer() {
+		stoptimer = System.currentTimeMillis();
+		enable = false;
+	}
+
+	@Override
+	public void resumeTimer() {
+		timer = System.currentTimeMillis() - stoptimer + timer;
+		enable = true;
+	}
+
+	@Override
+	public boolean getEnable() {
+		return enable;
+	}
+	
+	@Override
+	public double getLength() {
+		return length;
+	}
+
+	@Override
+	public double getMaxAngle() {
+		return maxAngle;
+	}
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="135" _type="MoveCaretCommand" caretOffset="3088" date="Tue Feb 16 21:35:24 EST 2021" docOffset="3189" starttimestamp="1613529222459" timestamp="101634" />
+  <Command __id="136" _type="DiffBasedFileOpenCommand" date="Tue Feb 16 21:35:24 EST 2021" docASTNodeCount="133" docActiveCodeLength="901" docExpressionCount="76" docLength="901" projectName="PhysicsSimulation" starttimestamp="1613529222459" timestamp="102144">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/pendulum/ObserverPendulumInterface.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.pendulum;¶¶import java.beans.PropertyChangeListener;¶¶import components.barchart.bar.BarPairInterface;¶import components.pendulum.animator.PendulumAnimatorCommand;¶import components.pendulum.load.LoadInterface;¶import components.pendulum.string.PendulumStringInterface;¶import models.pendulum.PendulumModelInterface;¶¶public interface ObserverPendulumInterface extends PropertyChangeListener{¶	PendulumStringInterface getString();¶	LoadInterface getLoad();¶	void setString(PendulumStringInterface newString) ;¶	void setLoad(LoadInterface newLoad);¶	int getLength();¶	void setLength(int l);¶	int getMass();¶	void setMass(int m);¶	int getAngle();¶	void setAngle(int a);¶	void setModel();¶	PendulumModelInterface getModel();¶	PendulumAnimatorCommand getAnimator();¶	void stop();¶	void resume();¶	BarPairInterface getBarPair();¶	void setBarPair(BarPairInterface newBarPair);¶}¶")]]]></diff>
+  </Command>
+  <Command __id="137" _type="MoveCaretCommand" caretOffset="37" date="Tue Feb 16 21:35:24 EST 2021" docOffset="37" starttimestamp="1613529222459" timestamp="102219" />
+  <Command __id="138" _type="DiffBasedFileOpenCommand" date="Tue Feb 16 21:35:25 EST 2021" docASTNodeCount="711" docActiveCodeLength="4444" docExpressionCount="492" docLength="4444" projectName="PhysicsSimulation" starttimestamp="1613529222459" timestamp="102768">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/pendulum/ObserverPendulum.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.pendulum;¶¶import java.beans.PropertyChangeEvent;¶¶import javax.swing.JSlider;¶¶import components.barchart.bar.BarPair;¶import components.barchart.bar.BarPairInterface;¶import components.mainpanel.MainPanel;¶import components.pendulum.animator.PendulumAnimatorCommand;¶import components.pendulum.load.Load;¶import components.pendulum.load.LoadInterface;¶import components.pendulum.string.PendulumString;¶import components.pendulum.string.PendulumStringInterface;¶import models.pendulum.PendulumModel;¶import models.pendulum.PendulumModelFactory;¶import models.pendulum.PendulumModelInterface;¶import util.annotations.EditablePropertyNames;¶import util.annotations.MaxValue;¶import util.annotations.MinValue;¶import util.annotations.PreferredWidgetClass;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶import util.annotations.Visible;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"string", "load", "length", "mass", "angle", "barPair"})¶@EditablePropertyNames({"string", "load", "length", "mass", "angle"})¶public class ObserverPendulum implements ObserverPendulumInterface{¶	¶	private int length = PendulumModelFactory.DEFAULT_LENGTH, ¶			mass = PendulumModelFactory.DEFAULT_MASS, ¶			angle = PendulumModelFactory.DEFAULT_ANGLE;¶	private LoadInterface load = new Load();¶	private PendulumStringInterface string;¶	private PendulumModelInterface model;¶	private PendulumAnimatorCommand animator;¶	private boolean enable;¶	private BarPairInterface barPair;¶	¶	public ObserverPendulum(PendulumModelInterface newModel, boolean isEnable, BarPairInterface newBarPair) {¶		enable = isEnable;¶		model = newModel;¶		string = new PendulumString(model);¶		model.addPropertyChangeListener(this);¶		animator = new PendulumAnimatorCommand(model);¶		barPair = newBarPair;¶		if (!enable) {¶			stop();¶		}¶		animator.start();¶	}¶	¶	@Override¶	public synchronized void propertyChange(PropertyChangeEvent evt) {¶		if (evt.getSource() == model) {¶			if ("height".equals(evt.getPropertyName())) {¶				¶				string.setHeight((int) evt.getNewValue());¶				load.setY(string.getY() + (int) evt.getNewValue() - load.getHeight()/2);	¶				¶				barPair.getBars().get(0).setHeight((int) (model.getLength()) - (int) evt.getNewValue());¶				barPair.getBars().get(1).setHeight((int) evt.getNewValue() - (int) (model.getLength() * Math.cos(model.getMaxAngle())));¶			}¶			else if ("width".equals(evt.getPropertyName())) {¶				string.setWidth((int) evt.getNewValue());¶				load.setX(string.getX() + (int) evt.getNewValue() - load.getWidth()/2);¶			}¶		}¶		¶	}¶¶	@Override¶	public PendulumStringInterface getString() {¶		return string;¶	}¶¶	@Override¶	public LoadInterface getLoad() {¶		return load;¶	}¶¶	@Override¶	public void setString(PendulumStringInterface newString) {¶		string = newString;¶	}¶¶	@Override¶	public void setLoad(LoadInterface newLoad) {¶		load = newLoad;¶	}¶	¶	@Override¶	public void setLength(int l) {¶		length = l;¶		setModel();¶	}¶¶	@Override¶	public void setMass(int m) {¶		mass = m;¶		setModel();¶	}¶	¶	@Override¶	public void setAngle(int a) {¶		angle = a;¶		setModel();¶	}¶¶	@Override¶	@PreferredWidgetClass(JSlider.class)¶	@MaxValue(500)¶	@MinValue(10)¶	public int getLength() {¶		return length;¶	}¶¶	@Override¶	@PreferredWidgetClass(JSlider.class)¶	@MaxValue(50)¶	@MinValue(1)¶	public int getMass() {¶		return mass;¶	}¶	¶	@Override¶	public int getAngle() {¶		return angle;¶	}¶¶	@Override¶	@Visible(false)¶	public void setModel() {¶		PendulumModelInterface oldModel = model;¶		model = new PendulumModel(¶				PendulumModelFactory.DEFAULT_STRING_X, ¶				PendulumModelFactory.DEFAULT_STRING_Y, ¶				length, ¶				MainPanel.gravity, ¶				mass, ¶				MainPanel.friction, ¶				angle);¶		¶		model.addPropertyChangeListener(this);¶		if (!enable) {¶			stop();¶		}¶		animator.setNewModel(model);¶		oldModel.removePropertyChangeListener(this);¶	}¶¶	@Override¶	public PendulumModelInterface getModel() {¶		return model;¶	}¶¶	@Override¶	public PendulumAnimatorCommand getAnimator() {¶		return animator;¶	}¶¶	@Override¶	public void stop() {¶		model.stopTimer();¶		enable = false;¶	}¶¶	@Override¶	public void resume() {¶		model.resumeTimer();¶		enable = true;¶	}¶¶	@Override¶	public BarPairInterface getBarPair() {¶		return barPair;¶	}¶¶	@Override¶	public void setBarPair(BarPairInterface newBarPair) {¶		barPair = newBarPair;¶	}¶¶¶	¶}¶")]]]></diff>
+  </Command>
+  <Command __id="139" _type="MoveCaretCommand" caretOffset="1077" date="Tue Feb 16 21:35:25 EST 2021" docOffset="1942" starttimestamp="1613529222459" timestamp="102819" />
+  <Command __id="141" _type="MoveCaretCommand" caretOffset="853" date="Tue Feb 16 21:35:25 EST 2021" docOffset="1113" starttimestamp="1613529222459" timestamp="103406" />
+</Events>

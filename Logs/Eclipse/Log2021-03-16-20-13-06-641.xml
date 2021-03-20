@@ -1,0 +1,4 @@
+<Events startTimestamp="1615939986641" logVersion="1.0.0.202101171653">
+  <Command __id="116" _type="ShellCommand" date="Tue Mar 16 20:37:34 EDT 2021" starttimestamp="1615939986641" timestamp="1467916" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="136" _type="ShellCommand" date="Tue Mar 16 20:40:24 EDT 2021" starttimestamp="1615939986641" timestamp="1638339" type="ECLIPSE_LOST_FOCUS" />
+</Events>

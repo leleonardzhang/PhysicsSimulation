@@ -1,0 +1,1284 @@
+<Events startTimestamp="1613336864282" logVersion="1.0.0.202101171653">
+  <Command __id="1" _type="MoveCaretCommand" caretOffset="832" date="Sun Feb 14 16:07:44 EST 2021" docOffset="1862" starttimestamp="1613336864282" timestamp="80" />
+  <Command __id="2" _type="ShellCommand" date="Sun Feb 14 16:07:51 EST 2021" starttimestamp="1613336864282" timestamp="6945" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="3" _type="ShellCommand" date="Sun Feb 14 16:08:06 EST 2021" starttimestamp="1613336864282" timestamp="21892" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="4" _type="PasteCommand" date="Sun Feb 14 16:08:09 EST 2021" starttimestamp="1613336864282" timestamp="25469" />
+  <Command __id="0" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:07:44 EST 2021" docASTNodeCount="730" docActiveCodeLength="4511" docExpressionCount="518" docLength="4511" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="68">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/mainpanel/MainPanel.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package components.mainpanel;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JButton;
+import javax.swing.JSlider;
+
+import org.junit.jupiter.api.DisplayName;
+
+import components.pendulum.imageprotractor.ImageProtractor;
+import components.pendulum.imageprotractor.ImageProtractorInterface;
+import components.pendulum.pendulum.ObserverPendulum;
+import components.pendulum.pendulum.ObserverPendulumInterface;
+import components.ruler.Ruler;
+import components.ruler.RulerInterface;
+import models.pendulum.PendulumModelFactory;
+import models.pendulum.PendulumModelInterface;
+import util.annotations.Column;
+import util.annotations.DisplayToString;
+import util.annotations.EditablePropertyNames;
+import util.annotations.Label;
+import util.annotations.MaxValue;
+import util.annotations.MinValue;
+import util.annotations.PreferredWidgetClass;
+import util.annotations.PropertyNames;
+import util.annotations.Row;
+import util.annotations.StringAttributes;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Visible;
+
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"numberOfPendulum", "gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})
+@EditablePropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})
+public class MainPanel implements MainPanelInterface{
+	
+	public static int gravity, 
+			friction = PendulumModelFactory.DEFAULT_FRICTION;
+	private Planet planet;
+	private int numberOfPendulum = 0;
+	private List<ObserverPendulumInterface> pendulum = new ArrayList<ObserverPendulumInterface> ();
+	private RulerInterface ruler = new Ruler(20, 20, 675, 60);
+	private ImageProtractorInterface protractor = new ImageProtractor(100, -80, 200, 200);
+	private boolean enable = true;
+	
+
+	public MainPanel() {
+		increaseNumberOfPendulum();
+		setPlanet(Planet.Earth);
+	}
+
+	@Override
+	public void setGravity(int g) {
+		gravity = g;
+		planet = Planet.Other;
+		setModel();
+	}
+
+	@Override
+	public void setFriction(int f) {
+		friction = f;
+		setModel();
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	@MaxValue(25)
+	@MinValue(1)
+	@Row(1)
+	@Column(0)
+	public int getGravity() {
+		return gravity;
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	@MaxValue(9)
+	@MinValue(0)
+	@Row(2)
+	@Column(0)
+	public int getFriction() {
+		return friction;
+	}
+
+
+	@Override
+	@Row(2)
+	@Column(0)
+	public List<ObserverPendulumInterface> getPendulum() {
+		return pendulum;
+	}
+
+
+	@Override
+	public RulerInterface getRuler() {
+		return ruler;
+	}
+
+	@Override
+	public void setRuler(RulerInterface newRuler) {
+		ruler = newRuler;
+	}
+
+
+	@Override
+	public int getNumberOfPendulum() {
+		return numberOfPendulum;
+	}
+
+	
+	@Override
+	public ImageProtractorInterface getProtractor() {
+		return protractor;
+	}
+
+	@Override
+	public void setProtractor(ImageProtractorInterface newProtractor) {
+		protractor = newProtractor;
+	}
+
+	@Override
+	@Visible(false)
+	public void setModel() {
+		for (int i = 0; i < numberOfPendulum; i ++) {
+			pendulum.get(i).setModel();
+		}
+	}
+
+	@Override
+	@Row(5)
+	@Column(0)
+	@Label("\u25B6")
+	public void pause() {
+		if (enable) {
+			for (int i = 0; i < numberOfPendulum; i ++) {
+				pendulum.get(i).stop();
+			}
+			enable = false;
+		}
+		else {
+			for (int i = 0; i < numberOfPendulum; i ++) {
+				pendulum.get(i).resume();
+			}
+			enable = true;
+		}
+	}
+
+	@Override
+	@Row(5)
+	@Column(1)
+	@Label("\u23F9")
+	public void reset() {
+		for (int i = 0; i < numberOfPendulum; i ++) {
+			pendulum.get(i).setAngle(0);
+		}
+	}
+
+	@Override
+	@PreferredWidgetClass(JButton.class)
+	@Row(4)
+	@Column(0)
+	@Label("+")
+	public void increaseNumberOfPendulum() {
+		if (numberOfPendulum < PendulumModelFactory.MAX_CAPACITY) {
+			PendulumModelInterface newModel = PendulumModelFactory.getDefaultModel();
+			pendulum.add(new ObserverPendulum(newModel, enable));
+			numberOfPendulum ++;
+		}
+	}
+
+	@Override
+	@PreferredWidgetClass(JButton.class)
+	@Row(4)
+	@Column(1)
+	@Label("-")
+	public void decreaseNumberOfPendulum() {
+		if (numberOfPendulum > 0) {
+			numberOfPendulum --;
+			pendulum.get(numberOfPendulum).getAnimator().interrupt();
+			pendulum.get(numberOfPendulum).getModel().removePropertyChangeListener(pendulum.get(numberOfPendulum));
+			pendulum.remove(numberOfPendulum);
+		}
+	}
+
+	@Override
+	@Row(0)
+	@Column(0)
+	public Planet getPlanet() {
+		return planet;
+	}
+
+	@Override
+	public void setPlanet(Planet newPlanet) {
+		setGravity(newPlanet.getValue());
+		planet = newPlanet;
+	}
+
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="9" _type="MoveCaretCommand" caretOffset="809" date="Sun Feb 14 16:08:11 EST 2021" docOffset="1839" starttimestamp="1613336864282" timestamp="26993" />
+  <Command __id="10" _type="MoveCaretCommand" caretOffset="530" date="Sun Feb 14 16:08:11 EST 2021" docOffset="1560" starttimestamp="1613336864282" timestamp="27348" />
+  <Command __id="11" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:08:13 EST 2021" docASTNodeCount="537" docActiveCodeLength="2801" docExpressionCount="376" docLength="2801" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="29115">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/protractor/Protractor.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package components.pendulum.protractor;
+
+import java.awt.BasicStroke;
+import java.util.ArrayList;
+import java.util.List;
+
+import components.observershapes.ObserverObservableArc;
+import components.observershapes.ObserverObservableLine;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Visible;
+
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"x", "y", "line", "firstArc", "secondArc"})
+@EditablePropertyNames({})
+public class Protractor implements ProtractorInterface{
+	private List<ObserverObservableLine> line;
+	private ObserverObservableArc firstArc = new ProtractorArc(), 
+			secondArc = new ProtractorArc();
+	private int x = 200, y = 20;
+	private static final int RADIUS = 40;
+	private static final double ARC_SCALE = 0.6;
+	
+	public Protractor() {
+		line = new ArrayList<ObserverObservableLine> ();
+		for (int i = -90; i <= 90; i = i + 15) {
+			double r = RADIUS;
+			double angle = i * Math.PI / 180;
+			int height = (int) (Math.cos(angle) * r);
+			int width = (int) (Math.sin(angle) * r);
+			ObserverObservableLine newLine = new ProtractorLine();
+			newLine.setHeight(height);
+			newLine.setWidth(width);
+			newLine.setX(x);
+			newLine.setY(y);
+			if (i % 30 == 0) {
+				newLine.setStroke(new BasicStroke(1.5f));
+			}
+			else {
+				newLine.setStroke(new BasicStroke(0.5f));
+			}
+			line.add(newLine);
+		}
+		
+		firstArc.setX((int) (x - RADIUS * ARC_SCALE));
+		firstArc.setY((int) (y - RADIUS * ARC_SCALE));
+		firstArc.setHeight((int) (2 * RADIUS * ARC_SCALE));
+		firstArc.setWidth((int) (2 * RADIUS * ARC_SCALE));
+		firstArc.setStartAngle(180);
+		firstArc.setEndAngle(180);
+		
+		secondArc.setX(x - RADIUS);
+		secondArc.setY(y - RADIUS);
+		secondArc.setHeight(RADIUS * 2);
+		secondArc.setWidth(RADIUS * 2);
+		secondArc.setStartAngle(180);
+		secondArc.setEndAngle(180);
+		
+
+	}
+	
+	@Override
+	public List<ObserverObservableLine> getLine() {
+		return line;
+	}
+	
+	@Override
+	@Visible(false)
+	public int getX() {
+		return x;
+	}
+	
+	@Override
+	@Visible(false)
+	public int getY() {
+		return y;
+	}
+	
+	@Override
+	@Visible(false)
+	public void setX(int newX) {
+		x = newX;
+		for (int i = 0; i < line.size(); i ++) {
+			line.get(i).setX(x);
+		}
+		firstArc.setX((int) (x - ARC_SCALE * RADIUS));
+		secondArc.setX((int) (x - RADIUS));
+		
+	}
+	
+	@Override
+	@Visible(false)
+	public void setY(int newY) {
+		y = newY;
+		for (int i = 0; i < line.size(); i ++) {
+			line.get(i).setY(y);
+		}
+		firstArc.setY((int) (y - ARC_SCALE * RADIUS));
+		secondArc.setY((int) (y - RADIUS));
+
+	}
+
+	@Override
+	public ObserverObservableArc getFirstArc() {
+		return firstArc;
+	}
+
+	@Override
+	public ObserverObservableArc getSecondArc() {
+		return secondArc;
+	}
+
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="12" _type="MoveCaretCommand" caretOffset="0" date="Sun Feb 14 16:08:13 EST 2021" docOffset="0" starttimestamp="1613336864282" timestamp="29200" />
+  <Command __id="13" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:08:21 EST 2021" docASTNodeCount="385" docActiveCodeLength="2550" docExpressionCount="234" docLength="2550" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="37011">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/protractor/ProtractorArc.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package components.pendulum.protractor;
+
+import java.awt.BasicStroke;
+import java.awt.Stroke;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+
+import components.listenersupport.PropertyListenerSupport;
+import components.observershapes.ObserverObservableArc;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+
+@StructurePattern(StructurePatternNames.ARC_PATTERN)
+@PropertyNames({"x", "y", "width", "height", "startAngle", "endAngle", "stroke"})
+@EditablePropertyNames({})
+public class ProtractorArc implements ObserverObservableArc{
+	private int x = 160, y = -20, height = 80, width = 80, startAngle = 180, endAngle = 180;
+	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();
+	private Stroke stroke = new BasicStroke(1f);
+
+	@Override
+    public void addPropertyChangeListener(PropertyChangeListener aListener) {
+		propertyListenerSupport.addElement(aListener);
+    }
+
+	@Override
+	public int getX() {
+		return x;
+	}
+
+	@Override
+	public void setX(int newX) {
+		int oldX = x;
+		x = newX;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "x", oldX, x));
+	}
+
+	@Override
+	public int getY() {
+		return y;
+	}
+
+	@Override
+	public void setY(int newY) {
+		int oldY = y;
+		y = newY;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "y", oldY, y));
+	}
+
+	@Override
+	public int getWidth() {
+		return width;
+	}
+
+	@Override
+	public void setWidth(int newWidth) {
+		int oldWidth = width;
+		width = newWidth;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "width", oldWidth, width));
+	}
+
+	@Override
+	public int getHeight() {
+		return height;
+	}
+
+	@Override
+	public void setHeight(int newHeight) {
+		int oldHeight = height;
+		height = newHeight;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "height", oldHeight, height));
+	}
+
+	@Override
+	public void propertyChange(PropertyChangeEvent evt) {
+		
+	}
+
+	@Override
+	public Stroke getStroke() {
+		return stroke;
+	}
+
+	@Override
+	public void setStroke(Stroke newStroke) {
+		stroke = newStroke;
+	}
+
+	@Override
+	public int getStartAngle() {
+		return startAngle;
+	}
+
+	@Override
+	public void setStartAngle(int newStartAngle) {
+		startAngle = newStartAngle;
+	}
+
+	@Override
+	public int getEndAngle() {
+		return endAngle;
+	}
+
+	@Override
+	public void setEndAngle(int newEndAngle) {
+		endAngle = newEndAngle;
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="14" _type="MoveCaretCommand" caretOffset="0" date="Sun Feb 14 16:08:21 EST 2021" docOffset="0" starttimestamp="1613336864282" timestamp="37160" />
+  <Command __id="16" _type="MoveCaretCommand" caretOffset="0" date="Sun Feb 14 16:08:27 EST 2021" docOffset="0" starttimestamp="1613336864282" timestamp="43409" />
+  <Command __id="33" _type="ShellCommand" date="Sun Feb 14 16:08:40 EST 2021" starttimestamp="1613336864282" timestamp="55726" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="34" _type="ShellCommand" date="Sun Feb 14 16:08:40 EST 2021" starttimestamp="1613336864282" timestamp="56126" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="15" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:08:27 EST 2021" docASTNodeCount="317" docActiveCodeLength="2110" docExpressionCount="193" docLength="2110" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="43216">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/imageprotractor/ImageProtractor.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package components.pendulum.imageprotractor;
+
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+
+import components.listenersupport.PropertyListenerSupport;
+import models.pendulum.PendulumModelFactory;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+
+@StructurePattern(StructurePatternNames.IMAGE_PATTERN)
+@PropertyNames({"x", "y", "width", "height", "imageFileName"})
+@EditablePropertyNames({})
+public class ImageProtractor implements ImageProtractorInterface{
+	
+	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();
+	private int x, y, height, width;
+	private String imageFileName = "image/protractor.png";
+
+	public ImageProtractor(int newX, int newY, int h, int w) {
+		x = newX;
+		y = newY;
+		height = h;
+		width = w;
+	}
+	
+	@Override
+    public void addPropertyChangeListener(PropertyChangeListener aListener) {
+		propertyListenerSupport.addElement(aListener);    
+    }
+
+	@Override
+	public int getX() {
+		return x;
+	}
+
+	@Override
+	public void setX(int newX) {
+		int oldX = x;
+		x = newX;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "x", oldX, x));
+	}
+
+	@Override
+	public int getY() {
+		return y;
+	}
+
+	@Override
+	public void setY(int newY) {
+		int oldY = y;
+		y = newY;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "y", oldY, y));
+	}
+
+	@Override
+	public int getWidth() {
+		return width;
+	}
+
+	@Override
+	public void setWidth(int newWidth) {
+		int oldWidth = width;
+		width = newWidth;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "width", oldWidth, width));
+	}
+
+	@Override
+	public int getHeight() {
+		return height;
+	}
+
+	@Override
+	public void setHeight(int newHeight) {
+		int oldHeight = height;
+		height = newHeight;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "height", oldHeight, height));
+	}
+
+	@Override
+	public String getImageFileName() {
+		return imageFileName;
+	}
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="18" _type="Insert" date="Sun Feb 14 16:08:31 EST 2021" docASTNodeCount="317" docActiveCodeLength="2111" docExpressionCount="193" docLength="2111" length="1" offset="794" starttimestamp="1613336864282" timestamp="47145">
+    <text><![CDATA[2]]></text>
+  </DocumentChange>
+  <Command __id="56" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:09:05 EST 2021" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="80780">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/image/protractor2.png]]></filePath>
+    <diff><![CDATA[null]]></diff>
+  </Command>
+  <Command __id="59" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:09:22 EST 2021" docASTNodeCount="317" docActiveCodeLength="2111" docExpressionCount="193" docLength="2111" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="98705">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/imageprotractor/ImageProtractor.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.imageprotractor;¶¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import components.listenersupport.PropertyListenerSupport;¶import models.pendulum.PendulumModelFactory;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.IMAGE_PATTERN)¶@PropertyNames({"x", "y", "width", "height", "imageFileName"})¶@EditablePropertyNames({})¶public class ImageProtractor implements ImageProtractorInterface{¶	¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	private int x, y, height, width;¶	private String imageFileName = "image/protractor"), Diff(INSERT,"2"), Diff(EQUAL,".png";¶¶	public ImageProtractor(int newX, int newY, int h, int w) {¶		x = newX;¶		y = newY;¶		height = h;¶		width = w;¶	}¶	¶	@Override¶    public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);    ¶    }¶¶	@Override¶	public int getX() {¶		return x;¶	}¶¶	@Override¶	public void setX(int newX) {¶		int oldX = x;¶		x = newX;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "x", oldX, x));¶	}¶¶	@Override¶	public int getY() {¶		return y;¶	}¶¶	@Override¶	public void setY(int newY) {¶		int oldY = y;¶		y = newY;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "y", oldY, y));¶	}¶¶	@Override¶	public int getWidth() {¶		return width;¶	}¶¶	@Override¶	public void setWidth(int newWidth) {¶		int oldWidth = width;¶		width = newWidth;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "width", oldWidth, width));¶	}¶¶	@Override¶	public int getHeight() {¶		return height;¶	}¶¶	@Override¶	public void setHeight(int newHeight) {¶		int oldHeight = height;¶		height = newHeight;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "height", oldHeight, height));¶	}¶¶	@Override¶	public String getImageFileName() {¶		return imageFileName;¶	}¶}¶")]]]></diff>
+    <snapshot><![CDATA[package components.pendulum.imageprotractor;
+
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+
+import components.listenersupport.PropertyListenerSupport;
+import models.pendulum.PendulumModelFactory;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+
+@StructurePattern(StructurePatternNames.IMAGE_PATTERN)
+@PropertyNames({"x", "y", "width", "height", "imageFileName"})
+@EditablePropertyNames({})
+public class ImageProtractor implements ImageProtractorInterface{
+	
+	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();
+	private int x, y, height, width;
+	private String imageFileName = "image/protractor2.png";
+
+	public ImageProtractor(int newX, int newY, int h, int w) {
+		x = newX;
+		y = newY;
+		height = h;
+		width = w;
+	}
+	
+	@Override
+    public void addPropertyChangeListener(PropertyChangeListener aListener) {
+		propertyListenerSupport.addElement(aListener);    
+    }
+
+	@Override
+	public int getX() {
+		return x;
+	}
+
+	@Override
+	public void setX(int newX) {
+		int oldX = x;
+		x = newX;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "x", oldX, x));
+	}
+
+	@Override
+	public int getY() {
+		return y;
+	}
+
+	@Override
+	public void setY(int newY) {
+		int oldY = y;
+		y = newY;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "y", oldY, y));
+	}
+
+	@Override
+	public int getWidth() {
+		return width;
+	}
+
+	@Override
+	public void setWidth(int newWidth) {
+		int oldWidth = width;
+		width = newWidth;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "width", oldWidth, width));
+	}
+
+	@Override
+	public int getHeight() {
+		return height;
+	}
+
+	@Override
+	public void setHeight(int newHeight) {
+		int oldHeight = height;
+		height = newHeight;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "height", oldHeight, height));
+	}
+
+	@Override
+	public String getImageFileName() {
+		return imageFileName;
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="61" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:09:23 EST 2021" docASTNodeCount="385" docActiveCodeLength="2550" docExpressionCount="234" docLength="2550" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="99294">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/protractor/ProtractorArc.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.protractor;¶¶import java.awt.BasicStroke;¶import java.awt.Stroke;¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import components.listenersupport.PropertyListenerSupport;¶import components.observershapes.ObserverObservableArc;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.ARC_PATTERN)¶@PropertyNames({"x", "y", "width", "height", "startAngle", "endAngle", "stroke"})¶@EditablePropertyNames({})¶public class ProtractorArc implements ObserverObservableArc{¶	private int x = 160, y = -20, height = 80, width = 80, startAngle = 180, endAngle = 180;¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	private Stroke stroke = new BasicStroke(1f);¶¶	@Override¶    public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);¶    }¶¶	@Override¶	public int getX() {¶		return x;¶	}¶¶	@Override¶	public void setX(int newX) {¶		int oldX = x;¶		x = newX;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "x", oldX, x));¶	}¶¶	@Override¶	public int getY() {¶		return y;¶	}¶¶	@Override¶	public void setY(int newY) {¶		int oldY = y;¶		y = newY;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "y", oldY, y));¶	}¶¶	@Override¶	public int getWidth() {¶		return width;¶	}¶¶	@Override¶	public void setWidth(int newWidth) {¶		int oldWidth = width;¶		width = newWidth;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "width", oldWidth, width));¶	}¶¶	@Override¶	public int getHeight() {¶		return height;¶	}¶¶	@Override¶	public void setHeight(int newHeight) {¶		int oldHeight = height;¶		height = newHeight;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "height", oldHeight, height));¶	}¶¶	@Override¶	public void propertyChange(PropertyChangeEvent evt) {¶		¶	}¶¶	@Override¶	public Stroke getStroke() {¶		return stroke;¶	}¶¶	@Override¶	public void setStroke(Stroke newStroke) {¶		stroke = newStroke;¶	}¶¶	@Override¶	public int getStartAngle() {¶		return startAngle;¶	}¶¶	@Override¶	public void setStartAngle(int newStartAngle) {¶		startAngle = newStartAngle;¶	}¶¶	@Override¶	public int getEndAngle() {¶		return endAngle;¶	}¶¶	@Override¶	public void setEndAngle(int newEndAngle) {¶		endAngle = newEndAngle;¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="63" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:09:24 EST 2021" docASTNodeCount="537" docActiveCodeLength="2801" docExpressionCount="376" docLength="2801" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="99821">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/protractor/Protractor.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.protractor;¶¶import java.awt.BasicStroke;¶import java.util.ArrayList;¶import java.util.List;¶¶import components.observershapes.ObserverObservableArc;¶import components.observershapes.ObserverObservableLine;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶import util.annotations.Visible;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"x", "y", "line", "firstArc", "secondArc"})¶@EditablePropertyNames({})¶public class Protractor implements ProtractorInterface{¶	private List<ObserverObservableLine> line;¶	private ObserverObservableArc firstArc = new ProtractorArc(), ¶			secondArc = new ProtractorArc();¶	private int x = 200, y = 20;¶	private static final int RADIUS = 40;¶	private static final double ARC_SCALE = 0.6;¶	¶	public Protractor() {¶		line = new ArrayList<ObserverObservableLine> ();¶		for (int i = -90; i <= 90; i = i + 15) {¶			double r = RADIUS;¶			double angle = i * Math.PI / 180;¶			int height = (int) (Math.cos(angle) * r);¶			int width = (int) (Math.sin(angle) * r);¶			ObserverObservableLine newLine = new ProtractorLine();¶			newLine.setHeight(height);¶			newLine.setWidth(width);¶			newLine.setX(x);¶			newLine.setY(y);¶			if (i % 30 == 0) {¶				newLine.setStroke(new BasicStroke(1.5f));¶			}¶			else {¶				newLine.setStroke(new BasicStroke(0.5f));¶			}¶			line.add(newLine);¶		}¶		¶		firstArc.setX((int) (x - RADIUS * ARC_SCALE));¶		firstArc.setY((int) (y - RADIUS * ARC_SCALE));¶		firstArc.setHeight((int) (2 * RADIUS * ARC_SCALE));¶		firstArc.setWidth((int) (2 * RADIUS * ARC_SCALE));¶		firstArc.setStartAngle(180);¶		firstArc.setEndAngle(180);¶		¶		secondArc.setX(x - RADIUS);¶		secondArc.setY(y - RADIUS);¶		secondArc.setHeight(RADIUS * 2);¶		secondArc.setWidth(RADIUS * 2);¶		secondArc.setStartAngle(180);¶		secondArc.setEndAngle(180);¶		¶¶	}¶	¶	@Override¶	public List<ObserverObservableLine> getLine() {¶		return line;¶	}¶	¶	@Override¶	@Visible(false)¶	public int getX() {¶		return x;¶	}¶	¶	@Override¶	@Visible(false)¶	public int getY() {¶		return y;¶	}¶	¶	@Override¶	@Visible(false)¶	public void setX(int newX) {¶		x = newX;¶		for (int i = 0; i < line.size(); i ++) {¶			line.get(i).setX(x);¶		}¶		firstArc.setX((int) (x - ARC_SCALE * RADIUS));¶		secondArc.setX((int) (x - RADIUS));¶		¶	}¶	¶	@Override¶	@Visible(false)¶	public void setY(int newY) {¶		y = newY;¶		for (int i = 0; i < line.size(); i ++) {¶			line.get(i).setY(y);¶		}¶		firstArc.setY((int) (y - ARC_SCALE * RADIUS));¶		secondArc.setY((int) (y - RADIUS));¶¶	}¶¶	@Override¶	public ObserverObservableArc getFirstArc() {¶		return firstArc;¶	}¶¶	@Override¶	public ObserverObservableArc getSecondArc() {¶		return secondArc;¶	}¶¶¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="65" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:09:25 EST 2021" docASTNodeCount="385" docActiveCodeLength="2550" docExpressionCount="234" docLength="2550" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="101149">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/protractor/ProtractorArc.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.protractor;¶¶import java.awt.BasicStroke;¶import java.awt.Stroke;¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import components.listenersupport.PropertyListenerSupport;¶import components.observershapes.ObserverObservableArc;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.ARC_PATTERN)¶@PropertyNames({"x", "y", "width", "height", "startAngle", "endAngle", "stroke"})¶@EditablePropertyNames({})¶public class ProtractorArc implements ObserverObservableArc{¶	private int x = 160, y = -20, height = 80, width = 80, startAngle = 180, endAngle = 180;¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	private Stroke stroke = new BasicStroke(1f);¶¶	@Override¶    public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);¶    }¶¶	@Override¶	public int getX() {¶		return x;¶	}¶¶	@Override¶	public void setX(int newX) {¶		int oldX = x;¶		x = newX;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "x", oldX, x));¶	}¶¶	@Override¶	public int getY() {¶		return y;¶	}¶¶	@Override¶	public void setY(int newY) {¶		int oldY = y;¶		y = newY;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "y", oldY, y));¶	}¶¶	@Override¶	public int getWidth() {¶		return width;¶	}¶¶	@Override¶	public void setWidth(int newWidth) {¶		int oldWidth = width;¶		width = newWidth;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "width", oldWidth, width));¶	}¶¶	@Override¶	public int getHeight() {¶		return height;¶	}¶¶	@Override¶	public void setHeight(int newHeight) {¶		int oldHeight = height;¶		height = newHeight;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "height", oldHeight, height));¶	}¶¶	@Override¶	public void propertyChange(PropertyChangeEvent evt) {¶		¶	}¶¶	@Override¶	public Stroke getStroke() {¶		return stroke;¶	}¶¶	@Override¶	public void setStroke(Stroke newStroke) {¶		stroke = newStroke;¶	}¶¶	@Override¶	public int getStartAngle() {¶		return startAngle;¶	}¶¶	@Override¶	public void setStartAngle(int newStartAngle) {¶		startAngle = newStartAngle;¶	}¶¶	@Override¶	public int getEndAngle() {¶		return endAngle;¶	}¶¶	@Override¶	public void setEndAngle(int newEndAngle) {¶		endAngle = newEndAngle;¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="67" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:09:27 EST 2021" docASTNodeCount="537" docActiveCodeLength="2801" docExpressionCount="376" docLength="2801" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="102746">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/protractor/Protractor.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.protractor;¶¶import java.awt.BasicStroke;¶import java.util.ArrayList;¶import java.util.List;¶¶import components.observershapes.ObserverObservableArc;¶import components.observershapes.ObserverObservableLine;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶import util.annotations.Visible;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"x", "y", "line", "firstArc", "secondArc"})¶@EditablePropertyNames({})¶public class Protractor implements ProtractorInterface{¶	private List<ObserverObservableLine> line;¶	private ObserverObservableArc firstArc = new ProtractorArc(), ¶			secondArc = new ProtractorArc();¶	private int x = 200, y = 20;¶	private static final int RADIUS = 40;¶	private static final double ARC_SCALE = 0.6;¶	¶	public Protractor() {¶		line = new ArrayList<ObserverObservableLine> ();¶		for (int i = -90; i <= 90; i = i + 15) {¶			double r = RADIUS;¶			double angle = i * Math.PI / 180;¶			int height = (int) (Math.cos(angle) * r);¶			int width = (int) (Math.sin(angle) * r);¶			ObserverObservableLine newLine = new ProtractorLine();¶			newLine.setHeight(height);¶			newLine.setWidth(width);¶			newLine.setX(x);¶			newLine.setY(y);¶			if (i % 30 == 0) {¶				newLine.setStroke(new BasicStroke(1.5f));¶			}¶			else {¶				newLine.setStroke(new BasicStroke(0.5f));¶			}¶			line.add(newLine);¶		}¶		¶		firstArc.setX((int) (x - RADIUS * ARC_SCALE));¶		firstArc.setY((int) (y - RADIUS * ARC_SCALE));¶		firstArc.setHeight((int) (2 * RADIUS * ARC_SCALE));¶		firstArc.setWidth((int) (2 * RADIUS * ARC_SCALE));¶		firstArc.setStartAngle(180);¶		firstArc.setEndAngle(180);¶		¶		secondArc.setX(x - RADIUS);¶		secondArc.setY(y - RADIUS);¶		secondArc.setHeight(RADIUS * 2);¶		secondArc.setWidth(RADIUS * 2);¶		secondArc.setStartAngle(180);¶		secondArc.setEndAngle(180);¶		¶¶	}¶	¶	@Override¶	public List<ObserverObservableLine> getLine() {¶		return line;¶	}¶	¶	@Override¶	@Visible(false)¶	public int getX() {¶		return x;¶	}¶	¶	@Override¶	@Visible(false)¶	public int getY() {¶		return y;¶	}¶	¶	@Override¶	@Visible(false)¶	public void setX(int newX) {¶		x = newX;¶		for (int i = 0; i < line.size(); i ++) {¶			line.get(i).setX(x);¶		}¶		firstArc.setX((int) (x - ARC_SCALE * RADIUS));¶		secondArc.setX((int) (x - RADIUS));¶		¶	}¶	¶	@Override¶	@Visible(false)¶	public void setY(int newY) {¶		y = newY;¶		for (int i = 0; i < line.size(); i ++) {¶			line.get(i).setY(y);¶		}¶		firstArc.setY((int) (y - ARC_SCALE * RADIUS));¶		secondArc.setY((int) (y - RADIUS));¶¶	}¶¶	@Override¶	public ObserverObservableArc getFirstArc() {¶		return firstArc;¶	}¶¶	@Override¶	public ObserverObservableArc getSecondArc() {¶		return secondArc;¶	}¶¶¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="69" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:09:28 EST 2021" docASTNodeCount="317" docActiveCodeLength="2111" docExpressionCount="193" docLength="2111" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="103881">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/imageprotractor/ImageProtractor.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.imageprotractor;¶¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import components.listenersupport.PropertyListenerSupport;¶import models.pendulum.PendulumModelFactory;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.IMAGE_PATTERN)¶@PropertyNames({"x", "y", "width", "height", "imageFileName"})¶@EditablePropertyNames({})¶public class ImageProtractor implements ImageProtractorInterface{¶	¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	private int x, y, height, width;¶	private String imageFileName = "image/protractor2.png";¶¶	public ImageProtractor(int newX, int newY, int h, int w) {¶		x = newX;¶		y = newY;¶		height = h;¶		width = w;¶	}¶	¶	@Override¶    public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);    ¶    }¶¶	@Override¶	public int getX() {¶		return x;¶	}¶¶	@Override¶	public void setX(int newX) {¶		int oldX = x;¶		x = newX;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "x", oldX, x));¶	}¶¶	@Override¶	public int getY() {¶		return y;¶	}¶¶	@Override¶	public void setY(int newY) {¶		int oldY = y;¶		y = newY;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "y", oldY, y));¶	}¶¶	@Override¶	public int getWidth() {¶		return width;¶	}¶¶	@Override¶	public void setWidth(int newWidth) {¶		int oldWidth = width;¶		width = newWidth;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "width", oldWidth, width));¶	}¶¶	@Override¶	public int getHeight() {¶		return height;¶	}¶¶	@Override¶	public void setHeight(int newHeight) {¶		int oldHeight = height;¶		height = newHeight;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "height", oldHeight, height));¶	}¶¶	@Override¶	public String getImageFileName() {¶		return imageFileName;¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="58" _type="ShellCommand" date="Sun Feb 14 16:09:22 EST 2021" starttimestamp="1613336864282" timestamp="98626" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="60" _type="MoveCaretCommand" caretOffset="552" date="Sun Feb 14 16:09:23 EST 2021" docOffset="874" starttimestamp="1613336864282" timestamp="98747" />
+  <Command __id="62" _type="MoveCaretCommand" caretOffset="0" date="Sun Feb 14 16:09:23 EST 2021" docOffset="0" starttimestamp="1613336864282" timestamp="99311" />
+  <Command __id="64" _type="MoveCaretCommand" caretOffset="0" date="Sun Feb 14 16:09:24 EST 2021" docOffset="0" starttimestamp="1613336864282" timestamp="99851" />
+  <Command __id="66" _type="MoveCaretCommand" caretOffset="0" date="Sun Feb 14 16:09:25 EST 2021" docOffset="0" starttimestamp="1613336864282" timestamp="101188" />
+  <Command __id="68" _type="MoveCaretCommand" caretOffset="0" date="Sun Feb 14 16:09:27 EST 2021" docOffset="0" starttimestamp="1613336864282" timestamp="102802" />
+  <Command __id="70" _type="MoveCaretCommand" caretOffset="552" date="Sun Feb 14 16:09:28 EST 2021" docOffset="874" starttimestamp="1613336864282" timestamp="103938" />
+  <Command __id="71" _type="MoveCaretCommand" caretOffset="745" date="Sun Feb 14 16:09:28 EST 2021" docOffset="1067" starttimestamp="1613336864282" timestamp="104491" />
+  <Command __id="73" _type="MoveCaretCommand" caretOffset="530" date="Sun Feb 14 16:09:42 EST 2021" docOffset="1560" starttimestamp="1613336864282" timestamp="117747" />
+  <Command __id="74" _type="MoveCaretCommand" caretOffset="862" date="Sun Feb 14 16:09:42 EST 2021" docOffset="1892" starttimestamp="1613336864282" timestamp="118291" />
+  <Command __id="75" _type="MoveCaretCommand" caretOffset="807" date="Sun Feb 14 16:09:42 EST 2021" docOffset="1837" starttimestamp="1613336864282" timestamp="118707" />
+  <Command __id="76" _type="MoveCaretCommand" caretOffset="762" date="Sun Feb 14 16:09:43 EST 2021" docOffset="1792" starttimestamp="1613336864282" timestamp="119095" />
+  <Command __id="77" _type="MoveCaretCommand" caretOffset="807" date="Sun Feb 14 16:09:43 EST 2021" docOffset="1837" starttimestamp="1613336864282" timestamp="119497" />
+  <Command __id="78" _type="MoveCaretCommand" caretOffset="760" date="Sun Feb 14 16:09:44 EST 2021" docOffset="1790" starttimestamp="1613336864282" timestamp="119845" />
+  <Command __id="79" _type="MoveCaretCommand" caretOffset="757" date="Sun Feb 14 16:09:46 EST 2021" docOffset="1787" starttimestamp="1613336864282" timestamp="121889" />
+  <Command __id="80" _type="MoveCaretCommand" caretOffset="758" date="Sun Feb 14 16:09:47 EST 2021" docOffset="1788" starttimestamp="1613336864282" timestamp="123107" />
+  <Command __id="81" _type="MoveCaretCommand" caretOffset="758" date="Sun Feb 14 16:09:47 EST 2021" docOffset="1788" starttimestamp="1613336864282" timestamp="123391" />
+  <Command __id="82" _type="SelectTextCommand" caretOffset="755" date="Sun Feb 14 16:09:49 EST 2021" end="758" start="755" starttimestamp="1613336864282" timestamp="125317" />
+  <Command __id="72" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:09:41 EST 2021" docASTNodeCount="730" docActiveCodeLength="4511" docExpressionCount="518" docLength="4511" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="117669">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/mainpanel/MainPanel.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.mainpanel;¶¶import java.util.ArrayList;¶import java.util.List;¶¶import javax.swing.JButton;¶import javax.swing.JSlider;¶¶import org.junit.jupiter.api.DisplayName;¶¶import components.pendulum.imageprotractor.ImageProtractor;¶import components.pendulum.imageprotractor.ImageProtractorInterface;¶import components.pendulum.pendulum.ObserverPendulum;¶import components.pendulum.pendulum.ObserverPendulumInterface;¶import components.ruler.Ruler;¶import components.ruler.RulerInterface;¶import models.pendulum.PendulumModelFactory;¶import models.pendulum.PendulumModelInterface;¶import util.annotations.Column;¶import util.annotations.DisplayToString;¶import util.annotations.EditablePropertyNames;¶import util.annotations.Label;¶import util.annotations.MaxValue;¶import util.annotations.MinValue;¶import util.annotations.PreferredWidgetClass;¶import util.annotations.PropertyNames;¶import util.annotations.Row;¶import util.annotations.StringAttributes;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶import util.annotations.Visible;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"numberOfPendulum", "gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})¶@EditablePropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})¶public class MainPanel implements MainPanelInterface{¶	¶	public static int gravity, ¶			friction = PendulumModelFactory.DEFAULT_FRICTION;¶	private Planet planet;¶	private int numberOfPendulum = 0;¶	private List<ObserverPendulumInterface> pendulum = new ArrayList<ObserverPendulumInterface> ();¶	private RulerInterface ruler = new Ruler(20, 20, 675, 60);¶	private ImageProtractorInterface protractor = new ImageProtractor(100, -80, 200, 200);¶	private boolean enable = true;¶	¶¶	public MainPanel() {¶		increaseNumberOfPendulum();¶		setPlanet(Planet.Earth);¶	}¶¶	@Override¶	public void setGravity(int g) {¶		gravity = g;¶		planet = Planet.Other;¶		setModel();¶	}¶¶	@Override¶	public void setFriction(int f) {¶		friction = f;¶		setModel();¶	}¶¶	@Override¶	@PreferredWidgetClass(JSlider.class)¶	@MaxValue(25)¶	@MinValue(1)¶	@Row(1)¶	@Column(0)¶	public int getGravity() {¶		return gravity;¶	}¶¶	@Override¶	@PreferredWidgetClass(JSlider.class)¶	@MaxValue(9)¶	@MinValue(0)¶	@Row(2)¶	@Column(0)¶	public int getFriction() {¶		return friction;¶	}¶¶¶	@Override¶	@Row(2)¶	@Column(0)¶	public List<ObserverPendulumInterface> getPendulum() {¶		return pendulum;¶	}¶¶¶	@Override¶	public RulerInterface getRuler() {¶		return ruler;¶	}¶¶	@Override¶	public void setRuler(RulerInterface newRuler) {¶		ruler = newRuler;¶	}¶¶¶	@Override¶	public int getNumberOfPendulum() {¶		return numberOfPendulum;¶	}¶¶	¶	@Override¶	public ImageProtractorInterface getProtractor() {¶		return protractor;¶	}¶¶	@Override¶	public void setProtractor(ImageProtractorInterface newProtractor) {¶		protractor = newProtractor;¶	}¶¶	@Override¶	@Visible(false)¶	public void setModel() {¶		for (int i = 0; i < numberOfPendulum; i ++) {¶			pendulum.get(i).setModel();¶		}¶	}¶¶	@Override¶	@Row(5)¶	@Column(0)¶	@Label("\u25B6")¶	public void pause() {¶		if (enable) {¶			for (int i = 0; i < numberOfPendulum; i ++) {¶				pendulum.get(i).stop();¶			}¶			enable = false;¶		}¶		else {¶			for (int i = 0; i < numberOfPendulum; i ++) {¶				pendulum.get(i).resume();¶			}¶			enable = true;¶		}¶	}¶¶	@Override¶	@Row(5)¶	@Column(1)¶	@Label("\u23F9")¶	public void reset() {¶		for (int i = 0; i < numberOfPendulum; i ++) {¶			pendulum.get(i).setAngle(0);¶		}¶	}¶¶	@Override¶	@PreferredWidgetClass(JButton.class)¶	@Row(4)¶	@Column(0)¶	@Label("+")¶	public void increaseNumberOfPendulum() {¶		if (numberOfPendulum < PendulumModelFactory.MAX_CAPACITY) {¶			PendulumModelInterface newModel = PendulumModelFactory.getDefaultModel();¶			pendulum.add(new ObserverPendulum(newModel, enable));¶			numberOfPendulum ++;¶		}¶	}¶¶	@Override¶	@PreferredWidgetClass(JButton.class)¶	@Row(4)¶	@Column(1)¶	@Label("-")¶	public void decreaseNumberOfPendulum() {¶		if (numberOfPendulum > 0) {¶			numberOfPendulum --;¶			pendulum.get(numberOfPendulum).getAnimator().interrupt();¶			pendulum.get(numberOfPendulum).getModel().removePropertyChangeListener(pendulum.get(numberOfPendulum));¶			pendulum.remove(numberOfPendulum);¶		}¶	}¶¶	@Override¶	@Row(0)¶	@Column(0)¶	public Planet getPlanet() {¶		return planet;¶	}¶¶	@Override¶	public void setPlanet(Planet newPlanet) {¶		setGravity(newPlanet.getValue());¶		planet = newPlanet;¶	}¶¶¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="83" _type="MoveCaretCommand" caretOffset="809" date="Sun Feb 14 16:09:53 EST 2021" docOffset="1839" starttimestamp="1613336864282" timestamp="128874" />
+  <Command __id="84" _type="MoveCaretCommand" caretOffset="687" date="Sun Feb 14 16:09:53 EST 2021" docOffset="1717" starttimestamp="1613336864282" timestamp="129258" />
+  <Command __id="85" _type="MoveCaretCommand" caretOffset="768" date="Sun Feb 14 16:09:53 EST 2021" docOffset="1798" starttimestamp="1613336864282" timestamp="129498" />
+  <DocumentChange __id="86" _type="Delete" date="Sun Feb 14 16:09:56 EST 2021" docASTNodeCount="722" docActiveCodeLength="4508" docExpressionCount="511" docLength="4508" endLine="43" length="3" offset="1795" repeat="3" startLine="43" starttimestamp="1613336864282" timestamp="132331" timestamp2="132662">
+    <text><![CDATA[200]]></text>
+  </DocumentChange>
+  <Command __id="87" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Sun Feb 14 16:09:56 EST 2021" starttimestamp="1613336864282" timestamp="132338" />
+  <Command __id="89" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Sun Feb 14 16:09:56 EST 2021" starttimestamp="1613336864282" timestamp="132500" />
+  <Command __id="91" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Sun Feb 14 16:09:56 EST 2021" starttimestamp="1613336864282" timestamp="132664" />
+  <DocumentChange __id="92" _type="Insert" date="Sun Feb 14 16:10:03 EST 2021" docASTNodeCount="730" docActiveCodeLength="4511" docExpressionCount="518" docLength="4511" length="3" offset="1795" repeat="3" starttimestamp="1613336864282" timestamp="139102" timestamp2="139395">
+    <text><![CDATA[500]]></text>
+  </DocumentChange>
+  <Command __id="93" _type="InsertStringCommand" date="Sun Feb 14 16:10:03 EST 2021" starttimestamp="1613336864282" timestamp="139104" timestamp2="139104">
+    <data><![CDATA[5]]></data>
+  </Command>
+  <Command __id="95" _type="InsertStringCommand" date="Sun Feb 14 16:10:03 EST 2021" starttimestamp="1613336864282" timestamp="139236" timestamp2="139236">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <Command __id="97" _type="InsertStringCommand" date="Sun Feb 14 16:10:03 EST 2021" starttimestamp="1613336864282" timestamp="139397" timestamp2="139397">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <DocumentChange __id="98" _type="Delete" date="Sun Feb 14 16:10:04 EST 2021" docASTNodeCount="722" docActiveCodeLength="4508" docExpressionCount="511" docLength="4508" endLine="43" length="3" offset="1795" repeat="3" startLine="43" starttimestamp="1613336864282" timestamp="139947" timestamp2="140253">
+    <text><![CDATA[500]]></text>
+  </DocumentChange>
+  <Command __id="99" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Sun Feb 14 16:10:04 EST 2021" starttimestamp="1613336864282" timestamp="139949" />
+  <Command __id="101" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Sun Feb 14 16:10:04 EST 2021" starttimestamp="1613336864282" timestamp="140119" />
+  <Command __id="103" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Sun Feb 14 16:10:04 EST 2021" starttimestamp="1613336864282" timestamp="140254" />
+  <Command __id="105" _type="InsertStringCommand" date="Sun Feb 14 16:10:05 EST 2021" starttimestamp="1613336864282" timestamp="141548" timestamp2="141548">
+    <data><![CDATA[3]]></data>
+  </Command>
+  <Command __id="107" _type="InsertStringCommand" date="Sun Feb 14 16:10:05 EST 2021" starttimestamp="1613336864282" timestamp="141681" timestamp2="141681">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <Command __id="109" _type="InsertStringCommand" date="Sun Feb 14 16:10:06 EST 2021" starttimestamp="1613336864282" timestamp="141839" timestamp2="141839">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <Command __id="110" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.LINE_UP" date="Sun Feb 14 16:10:06 EST 2021" starttimestamp="1613336864282" timestamp="142310" />
+  <Command __id="111" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:06 EST 2021" starttimestamp="1613336864282" timestamp="142453" />
+  <Command __id="112" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:07 EST 2021" starttimestamp="1613336864282" timestamp="142969" />
+  <Command __id="113" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:07 EST 2021" starttimestamp="1613336864282" timestamp="143219" />
+  <Command __id="114" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:07 EST 2021" starttimestamp="1613336864282" timestamp="143269" />
+  <Command __id="115" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:07 EST 2021" starttimestamp="1613336864282" timestamp="143319" />
+  <Command __id="116" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:07 EST 2021" starttimestamp="1613336864282" timestamp="143370" />
+  <Command __id="117" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:07 EST 2021" starttimestamp="1613336864282" timestamp="143419" />
+  <Command __id="118" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:07 EST 2021" starttimestamp="1613336864282" timestamp="143470" />
+  <Command __id="119" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:07 EST 2021" starttimestamp="1613336864282" timestamp="143520" />
+  <Command __id="120" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:07 EST 2021" starttimestamp="1613336864282" timestamp="143570" />
+  <Command __id="121" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:07 EST 2021" starttimestamp="1613336864282" timestamp="143620" />
+  <Command __id="122" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:07 EST 2021" starttimestamp="1613336864282" timestamp="143670" />
+  <Command __id="123" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:08 EST 2021" starttimestamp="1613336864282" timestamp="143721" />
+  <Command __id="124" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:08 EST 2021" starttimestamp="1613336864282" timestamp="143771" />
+  <Command __id="125" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:08 EST 2021" starttimestamp="1613336864282" timestamp="143821" />
+  <Command __id="126" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:08 EST 2021" starttimestamp="1613336864282" timestamp="143870" />
+  <Command __id="127" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:08 EST 2021" starttimestamp="1613336864282" timestamp="143921" />
+  <Command __id="128" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:08 EST 2021" starttimestamp="1613336864282" timestamp="143970" />
+  <Command __id="129" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:08 EST 2021" starttimestamp="1613336864282" timestamp="144021" />
+  <Command __id="130" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:08 EST 2021" starttimestamp="1613336864282" timestamp="144071" />
+  <Command __id="131" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:08 EST 2021" starttimestamp="1613336864282" timestamp="144120" />
+  <Command __id="132" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:08 EST 2021" starttimestamp="1613336864282" timestamp="144170" />
+  <Command __id="133" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Sun Feb 14 16:10:08 EST 2021" starttimestamp="1613336864282" timestamp="144221" />
+  <DocumentChange __id="104" _type="Insert" date="Sun Feb 14 16:10:05 EST 2021" docASTNodeCount="730" docActiveCodeLength="4511" docExpressionCount="518" docLength="4511" length="3" offset="1795" repeat="3" starttimestamp="1613336864282" timestamp="141546" timestamp2="141836">
+    <text><![CDATA[300]]></text>
+  </DocumentChange>
+  <DocumentChange __id="135" _type="Replace" date="Sun Feb 14 16:10:11 EST 2021" docASTNodeCount="730" docActiveCodeLength="4509" docExpressionCount="518" docLength="4509" endLine="43" insertionLength="1" int_docASTNodeCount="722" int_docActiveCodeLength="4508" int_docExpressionCount="511" int_docLength="4508" length="3" offset="1800" startLine="43" starttimestamp="1613336864282" timestamp="147470">
+    <deletedText><![CDATA[200]]></deletedText>
+    <insertedText><![CDATA[1]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="137" _type="Insert" date="Sun Feb 14 16:10:11 EST 2021" docASTNodeCount="730" docActiveCodeLength="4511" docExpressionCount="518" docLength="4511" length="2" offset="1801" repeat="2" starttimestamp="1613336864282" timestamp="147700" timestamp2="147951">
+    <text><![CDATA[50]]></text>
+  </DocumentChange>
+  <Command __id="152" _type="RunCommand" date="Sun Feb 14 16:10:20 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="156485" type="Run" />
+  <Command __id="153" _type="RunCommand" date="Sun Feb 14 16:10:20 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="156485" type="Run" />
+  <Command __id="154" _type="ShellCommand" date="Sun Feb 14 16:10:20 EST 2021" starttimestamp="1613336864282" timestamp="156531" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="155" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:10:21 EST 2021" docASTNodeCount="317" docActiveCodeLength="2111" docExpressionCount="193" docLength="2111" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="157572">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/imageprotractor/ImageProtractor.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.imageprotractor;¶¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import components.listenersupport.PropertyListenerSupport;¶import models.pendulum.PendulumModelFactory;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.IMAGE_PATTERN)¶@PropertyNames({"x", "y", "width", "height", "imageFileName"})¶@EditablePropertyNames({})¶public class ImageProtractor implements ImageProtractorInterface{¶	¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	private int x, y, height, width;¶	private String imageFileName = "image/protractor2.png";¶¶	public ImageProtractor(int newX, int newY, int h, int w) {¶		x = newX;¶		y = newY;¶		height = h;¶		width = w;¶	}¶	¶	@Override¶    public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);    ¶    }¶¶	@Override¶	public int getX() {¶		return x;¶	}¶¶	@Override¶	public void setX(int newX) {¶		int oldX = x;¶		x = newX;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "x", oldX, x));¶	}¶¶	@Override¶	public int getY() {¶		return y;¶	}¶¶	@Override¶	public void setY(int newY) {¶		int oldY = y;¶		y = newY;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "y", oldY, y));¶	}¶¶	@Override¶	public int getWidth() {¶		return width;¶	}¶¶	@Override¶	public void setWidth(int newWidth) {¶		int oldWidth = width;¶		width = newWidth;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "width", oldWidth, width));¶	}¶¶	@Override¶	public int getHeight() {¶		return height;¶	}¶¶	@Override¶	public void setHeight(int newHeight) {¶		int oldHeight = height;¶		height = newHeight;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "height", oldHeight, height));¶	}¶¶	@Override¶	public String getImageFileName() {¶		return imageFileName;¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="156" _type="MoveCaretCommand" caretOffset="745" date="Sun Feb 14 16:10:21 EST 2021" docOffset="1067" starttimestamp="1613336864282" timestamp="157594" />
+  <Command __id="157" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:10:22 EST 2021" docASTNodeCount="385" docActiveCodeLength="2550" docExpressionCount="234" docLength="2550" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="158521">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/protractor/ProtractorArc.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.protractor;¶¶import java.awt.BasicStroke;¶import java.awt.Stroke;¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import components.listenersupport.PropertyListenerSupport;¶import components.observershapes.ObserverObservableArc;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.ARC_PATTERN)¶@PropertyNames({"x", "y", "width", "height", "startAngle", "endAngle", "stroke"})¶@EditablePropertyNames({})¶public class ProtractorArc implements ObserverObservableArc{¶	private int x = 160, y = -20, height = 80, width = 80, startAngle = 180, endAngle = 180;¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	private Stroke stroke = new BasicStroke(1f);¶¶	@Override¶    public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);¶    }¶¶	@Override¶	public int getX() {¶		return x;¶	}¶¶	@Override¶	public void setX(int newX) {¶		int oldX = x;¶		x = newX;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "x", oldX, x));¶	}¶¶	@Override¶	public int getY() {¶		return y;¶	}¶¶	@Override¶	public void setY(int newY) {¶		int oldY = y;¶		y = newY;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "y", oldY, y));¶	}¶¶	@Override¶	public int getWidth() {¶		return width;¶	}¶¶	@Override¶	public void setWidth(int newWidth) {¶		int oldWidth = width;¶		width = newWidth;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "width", oldWidth, width));¶	}¶¶	@Override¶	public int getHeight() {¶		return height;¶	}¶¶	@Override¶	public void setHeight(int newHeight) {¶		int oldHeight = height;¶		height = newHeight;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "height", oldHeight, height));¶	}¶¶	@Override¶	public void propertyChange(PropertyChangeEvent evt) {¶		¶	}¶¶	@Override¶	public Stroke getStroke() {¶		return stroke;¶	}¶¶	@Override¶	public void setStroke(Stroke newStroke) {¶		stroke = newStroke;¶	}¶¶	@Override¶	public int getStartAngle() {¶		return startAngle;¶	}¶¶	@Override¶	public void setStartAngle(int newStartAngle) {¶		startAngle = newStartAngle;¶	}¶¶	@Override¶	public int getEndAngle() {¶		return endAngle;¶	}¶¶	@Override¶	public void setEndAngle(int newEndAngle) {¶		endAngle = newEndAngle;¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="158" _type="MoveCaretCommand" caretOffset="0" date="Sun Feb 14 16:10:22 EST 2021" docOffset="0" starttimestamp="1613336864282" timestamp="158540" />
+  <Command __id="159" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:10:23 EST 2021" docASTNodeCount="537" docActiveCodeLength="2801" docExpressionCount="376" docLength="2801" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="158967">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/protractor/Protractor.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.protractor;¶¶import java.awt.BasicStroke;¶import java.util.ArrayList;¶import java.util.List;¶¶import components.observershapes.ObserverObservableArc;¶import components.observershapes.ObserverObservableLine;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶import util.annotations.Visible;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"x", "y", "line", "firstArc", "secondArc"})¶@EditablePropertyNames({})¶public class Protractor implements ProtractorInterface{¶	private List<ObserverObservableLine> line;¶	private ObserverObservableArc firstArc = new ProtractorArc(), ¶			secondArc = new ProtractorArc();¶	private int x = 200, y = 20;¶	private static final int RADIUS = 40;¶	private static final double ARC_SCALE = 0.6;¶	¶	public Protractor() {¶		line = new ArrayList<ObserverObservableLine> ();¶		for (int i = -90; i <= 90; i = i + 15) {¶			double r = RADIUS;¶			double angle = i * Math.PI / 180;¶			int height = (int) (Math.cos(angle) * r);¶			int width = (int) (Math.sin(angle) * r);¶			ObserverObservableLine newLine = new ProtractorLine();¶			newLine.setHeight(height);¶			newLine.setWidth(width);¶			newLine.setX(x);¶			newLine.setY(y);¶			if (i % 30 == 0) {¶				newLine.setStroke(new BasicStroke(1.5f));¶			}¶			else {¶				newLine.setStroke(new BasicStroke(0.5f));¶			}¶			line.add(newLine);¶		}¶		¶		firstArc.setX((int) (x - RADIUS * ARC_SCALE));¶		firstArc.setY((int) (y - RADIUS * ARC_SCALE));¶		firstArc.setHeight((int) (2 * RADIUS * ARC_SCALE));¶		firstArc.setWidth((int) (2 * RADIUS * ARC_SCALE));¶		firstArc.setStartAngle(180);¶		firstArc.setEndAngle(180);¶		¶		secondArc.setX(x - RADIUS);¶		secondArc.setY(y - RADIUS);¶		secondArc.setHeight(RADIUS * 2);¶		secondArc.setWidth(RADIUS * 2);¶		secondArc.setStartAngle(180);¶		secondArc.setEndAngle(180);¶		¶¶	}¶	¶	@Override¶	public List<ObserverObservableLine> getLine() {¶		return line;¶	}¶	¶	@Override¶	@Visible(false)¶	public int getX() {¶		return x;¶	}¶	¶	@Override¶	@Visible(false)¶	public int getY() {¶		return y;¶	}¶	¶	@Override¶	@Visible(false)¶	public void setX(int newX) {¶		x = newX;¶		for (int i = 0; i < line.size(); i ++) {¶			line.get(i).setX(x);¶		}¶		firstArc.setX((int) (x - ARC_SCALE * RADIUS));¶		secondArc.setX((int) (x - RADIUS));¶		¶	}¶	¶	@Override¶	@Visible(false)¶	public void setY(int newY) {¶		y = newY;¶		for (int i = 0; i < line.size(); i ++) {¶			line.get(i).setY(y);¶		}¶		firstArc.setY((int) (y - ARC_SCALE * RADIUS));¶		secondArc.setY((int) (y - RADIUS));¶¶	}¶¶	@Override¶	public ObserverObservableArc getFirstArc() {¶		return firstArc;¶	}¶¶	@Override¶	public ObserverObservableArc getSecondArc() {¶		return secondArc;¶	}¶¶¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="160" _type="MoveCaretCommand" caretOffset="0" date="Sun Feb 14 16:10:23 EST 2021" docOffset="0" starttimestamp="1613336864282" timestamp="158990" />
+  <Command __id="161" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:10:23 EST 2021" docASTNodeCount="126" docActiveCodeLength="718" docExpressionCount="94" docLength="718" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="159709">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/main/TestFrame.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package main;
+
+import javax.swing.JButton;
+import javax.swing.JSlider;
+
+import bus.uigen.OEFrame;
+import bus.uigen.ObjectEditor;
+import components.mainpanel.MainPanel;
+import components.mainpanel.MainPanelInterface;
+import components.pendulum.load.Load;
+import components.pendulum.load.LoadInterface;
+import components.pendulum.protractor.Protractor;
+import components.pendulum.protractor.ProtractorInterface;
+import components.pendulum.string.PendulumString;
+import components.pendulum.string.PendulumStringInterface;
+import javafx.scene.control.Slider;
+
+public class TestFrame {
+	public static void main(String[] args) {
+		MainPanelInterface panel = new MainPanel();
+		OEFrame frame = ObjectEditor.edit(panel);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="162" _type="MoveCaretCommand" caretOffset="200" date="Sun Feb 14 16:10:24 EST 2021" docOffset="712" starttimestamp="1613336864282" timestamp="159762" />
+  <Command __id="164" _type="MoveCaretCommand" caretOffset="810" date="Sun Feb 14 16:10:24 EST 2021" docOffset="1840" starttimestamp="1613336864282" timestamp="160385" />
+  <Command __id="165" _type="MoveCaretCommand" caretOffset="769" date="Sun Feb 14 16:10:26 EST 2021" docOffset="1799" starttimestamp="1613336864282" timestamp="161724" />
+  <Command __id="163" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:10:24 EST 2021" docASTNodeCount="730" docActiveCodeLength="4511" docExpressionCount="518" docLength="4511" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="160355">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/mainpanel/MainPanel.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.mainpanel;¶¶import java.util.ArrayList;¶import java.util.List;¶¶import javax.swing.JButton;¶import javax.swing.JSlider;¶¶import org.junit.jupiter.api.DisplayName;¶¶import components.pendulum.imageprotractor.ImageProtractor;¶import components.pendulum.imageprotractor.ImageProtractorInterface;¶import components.pendulum.pendulum.ObserverPendulum;¶import components.pendulum.pendulum.ObserverPendulumInterface;¶import components.ruler.Ruler;¶import components.ruler.RulerInterface;¶import models.pendulum.PendulumModelFactory;¶import models.pendulum.PendulumModelInterface;¶import util.annotations.Column;¶import util.annotations.DisplayToString;¶import util.annotations.EditablePropertyNames;¶import util.annotations.Label;¶import util.annotations.MaxValue;¶import util.annotations.MinValue;¶import util.annotations.PreferredWidgetClass;¶import util.annotations.PropertyNames;¶import util.annotations.Row;¶import util.annotations.StringAttributes;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶import util.annotations.Visible;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"numberOfPendulum", "gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})¶@EditablePropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})¶public class MainPanel implements MainPanelInterface{¶	¶	public static int gravity, ¶			friction = PendulumModelFactory.DEFAULT_FRICTION;¶	private Planet planet;¶	private int numberOfPendulum = 0;¶	private List<ObserverPendulumInterface> pendulum = new ArrayList<ObserverPendulumInterface> ();¶	private RulerInterface ruler = new Ruler(20, 20, 675, 60);¶	private ImageProtractorInterface protractor = new ImageProtractor(100, -80, "), Diff(DELETE,"2"), Diff(INSERT,"3"), Diff(EQUAL,"00, "), Diff(DELETE,"20"), Diff(INSERT,"15"), Diff(EQUAL,"0);¶	private boolean enable = true;¶	¶¶	public MainPanel() {¶		increaseNumberOfPendulum();¶		setPlanet(Planet.Earth);¶	}¶¶	@Override¶	public void setGravity(int g) {¶		gravity = g;¶		planet = Planet.Other;¶		setModel();¶	}¶¶	@Override¶	public void setFriction(int f) {¶		friction = f;¶		setModel();¶	}¶¶	@Override¶	@PreferredWidgetClass(JSlider.class)¶	@MaxValue(25)¶	@MinValue(1)¶	@Row(1)¶	@Column(0)¶	public int getGravity() {¶		return gravity;¶	}¶¶	@Override¶	@PreferredWidgetClass(JSlider.class)¶	@MaxValue(9)¶	@MinValue(0)¶	@Row(2)¶	@Column(0)¶	public int getFriction() {¶		return friction;¶	}¶¶¶	@Override¶	@Row(2)¶	@Column(0)¶	public List<ObserverPendulumInterface> getPendulum() {¶		return pendulum;¶	}¶¶¶	@Override¶	public RulerInterface getRuler() {¶		return ruler;¶	}¶¶	@Override¶	public void setRuler(RulerInterface newRuler) {¶		ruler = newRuler;¶	}¶¶¶	@Override¶	public int getNumberOfPendulum() {¶		return numberOfPendulum;¶	}¶¶	¶	@Override¶	public ImageProtractorInterface getProtractor() {¶		return protractor;¶	}¶¶	@Override¶	public void setProtractor(ImageProtractorInterface newProtractor) {¶		protractor = newProtractor;¶	}¶¶	@Override¶	@Visible(false)¶	public void setModel() {¶		for (int i = 0; i < numberOfPendulum; i ++) {¶			pendulum.get(i).setModel();¶		}¶	}¶¶	@Override¶	@Row(5)¶	@Column(0)¶	@Label("\u25B6")¶	public void pause() {¶		if (enable) {¶			for (int i = 0; i < numberOfPendulum; i ++) {¶				pendulum.get(i).stop();¶			}¶			enable = false;¶		}¶		else {¶			for (int i = 0; i < numberOfPendulum; i ++) {¶				pendulum.get(i).resume();¶			}¶			enable = true;¶		}¶	}¶¶	@Override¶	@Row(5)¶	@Column(1)¶	@Label("\u23F9")¶	public void reset() {¶		for (int i = 0; i < numberOfPendulum; i ++) {¶			pendulum.get(i).setAngle(0);¶		}¶	}¶¶	@Override¶	@PreferredWidgetClass(JButton.class)¶	@Row(4)¶	@Column(0)¶	@Label("+")¶	public void increaseNumberOfPendulum() {¶		if (numberOfPendulum < PendulumModelFactory.MAX_CAPACITY) {¶			PendulumModelInterface newModel = PendulumModelFactory.getDefaultModel();¶			pendulum.add(new ObserverPendulum(newModel, enable));¶			numberOfPendulum ++;¶		}¶	}¶¶	@Override¶	@PreferredWidgetClass(JButton.class)¶	@Row(4)¶	@Column(1)¶	@Label("-")¶	public void decreaseNumberOfPendulum() {¶		if (numberOfPendulum > 0) {¶			numberOfPendulum --;¶			pendulum.get(numberOfPendulum).getAnimator().interrupt();¶			pendulum.get(numberOfPendulum).getModel().removePropertyChangeListener(pendulum.get(numberOfPendulum));¶			pendulum.remove(numberOfPendulum);¶		}¶	}¶¶	@Override¶	@Row(0)¶	@Column(0)¶	public Planet getPlanet() {¶		return planet;¶	}¶¶	@Override¶	public void setPlanet(Planet newPlanet) {¶		setGravity(newPlanet.getValue());¶		planet = newPlanet;¶	}¶¶¶¶}¶")]]]></diff>
+    <snapshot><![CDATA[package components.mainpanel;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JButton;
+import javax.swing.JSlider;
+
+import org.junit.jupiter.api.DisplayName;
+
+import components.pendulum.imageprotractor.ImageProtractor;
+import components.pendulum.imageprotractor.ImageProtractorInterface;
+import components.pendulum.pendulum.ObserverPendulum;
+import components.pendulum.pendulum.ObserverPendulumInterface;
+import components.ruler.Ruler;
+import components.ruler.RulerInterface;
+import models.pendulum.PendulumModelFactory;
+import models.pendulum.PendulumModelInterface;
+import util.annotations.Column;
+import util.annotations.DisplayToString;
+import util.annotations.EditablePropertyNames;
+import util.annotations.Label;
+import util.annotations.MaxValue;
+import util.annotations.MinValue;
+import util.annotations.PreferredWidgetClass;
+import util.annotations.PropertyNames;
+import util.annotations.Row;
+import util.annotations.StringAttributes;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Visible;
+
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"numberOfPendulum", "gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})
+@EditablePropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})
+public class MainPanel implements MainPanelInterface{
+	
+	public static int gravity, 
+			friction = PendulumModelFactory.DEFAULT_FRICTION;
+	private Planet planet;
+	private int numberOfPendulum = 0;
+	private List<ObserverPendulumInterface> pendulum = new ArrayList<ObserverPendulumInterface> ();
+	private RulerInterface ruler = new Ruler(20, 20, 675, 60);
+	private ImageProtractorInterface protractor = new ImageProtractor(100, -80, 300, 150);
+	private boolean enable = true;
+	
+
+	public MainPanel() {
+		increaseNumberOfPendulum();
+		setPlanet(Planet.Earth);
+	}
+
+	@Override
+	public void setGravity(int g) {
+		gravity = g;
+		planet = Planet.Other;
+		setModel();
+	}
+
+	@Override
+	public void setFriction(int f) {
+		friction = f;
+		setModel();
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	@MaxValue(25)
+	@MinValue(1)
+	@Row(1)
+	@Column(0)
+	public int getGravity() {
+		return gravity;
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	@MaxValue(9)
+	@MinValue(0)
+	@Row(2)
+	@Column(0)
+	public int getFriction() {
+		return friction;
+	}
+
+
+	@Override
+	@Row(2)
+	@Column(0)
+	public List<ObserverPendulumInterface> getPendulum() {
+		return pendulum;
+	}
+
+
+	@Override
+	public RulerInterface getRuler() {
+		return ruler;
+	}
+
+	@Override
+	public void setRuler(RulerInterface newRuler) {
+		ruler = newRuler;
+	}
+
+
+	@Override
+	public int getNumberOfPendulum() {
+		return numberOfPendulum;
+	}
+
+	
+	@Override
+	public ImageProtractorInterface getProtractor() {
+		return protractor;
+	}
+
+	@Override
+	public void setProtractor(ImageProtractorInterface newProtractor) {
+		protractor = newProtractor;
+	}
+
+	@Override
+	@Visible(false)
+	public void setModel() {
+		for (int i = 0; i < numberOfPendulum; i ++) {
+			pendulum.get(i).setModel();
+		}
+	}
+
+	@Override
+	@Row(5)
+	@Column(0)
+	@Label("\u25B6")
+	public void pause() {
+		if (enable) {
+			for (int i = 0; i < numberOfPendulum; i ++) {
+				pendulum.get(i).stop();
+			}
+			enable = false;
+		}
+		else {
+			for (int i = 0; i < numberOfPendulum; i ++) {
+				pendulum.get(i).resume();
+			}
+			enable = true;
+		}
+	}
+
+	@Override
+	@Row(5)
+	@Column(1)
+	@Label("\u23F9")
+	public void reset() {
+		for (int i = 0; i < numberOfPendulum; i ++) {
+			pendulum.get(i).setAngle(0);
+		}
+	}
+
+	@Override
+	@PreferredWidgetClass(JButton.class)
+	@Row(4)
+	@Column(0)
+	@Label("+")
+	public void increaseNumberOfPendulum() {
+		if (numberOfPendulum < PendulumModelFactory.MAX_CAPACITY) {
+			PendulumModelInterface newModel = PendulumModelFactory.getDefaultModel();
+			pendulum.add(new ObserverPendulum(newModel, enable));
+			numberOfPendulum ++;
+		}
+	}
+
+	@Override
+	@PreferredWidgetClass(JButton.class)
+	@Row(4)
+	@Column(1)
+	@Label("-")
+	public void decreaseNumberOfPendulum() {
+		if (numberOfPendulum > 0) {
+			numberOfPendulum --;
+			pendulum.get(numberOfPendulum).getAnimator().interrupt();
+			pendulum.get(numberOfPendulum).getModel().removePropertyChangeListener(pendulum.get(numberOfPendulum));
+			pendulum.remove(numberOfPendulum);
+		}
+	}
+
+	@Override
+	@Row(0)
+	@Column(0)
+	public Planet getPlanet() {
+		return planet;
+	}
+
+	@Override
+	public void setPlanet(Planet newPlanet) {
+		setGravity(newPlanet.getValue());
+		planet = newPlanet;
+	}
+
+
+
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="167" _type="Delete" date="Sun Feb 14 16:10:27 EST 2021" docASTNodeCount="729" docActiveCodeLength="4506" docExpressionCount="517" docLength="4506" endLine="43" length="5" offset="1794" repeat="2" startLine="43" starttimestamp="1613336864282" timestamp="163458" timestamp2="163652">
+    <text><![CDATA[ 300,]]></text>
+  </DocumentChange>
+  <DocumentChange __id="175" _type="Insert" date="Sun Feb 14 16:10:29 EST 2021" docASTNodeCount="730" docActiveCodeLength="4511" docExpressionCount="518" docLength="4511" length="5" offset="1798" repeat="5" starttimestamp="1613336864282" timestamp="165282" timestamp2="165801">
+    <text><![CDATA[, 300]]></text>
+  </DocumentChange>
+  <Command __id="202" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:11:02 EST 2021" docASTNodeCount="317" docActiveCodeLength="2111" docExpressionCount="193" docLength="2111" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="197863">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/imageprotractor/ImageProtractor.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.imageprotractor;¶¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import components.listenersupport.PropertyListenerSupport;¶import models.pendulum.PendulumModelFactory;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.IMAGE_PATTERN)¶@PropertyNames({"x", "y", "width", "height", "imageFileName"})¶@EditablePropertyNames({})¶public class ImageProtractor implements ImageProtractorInterface{¶	¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	private int x, y, height, width;¶	private String imageFileName = "image/protractor2.png";¶¶	public ImageProtractor(int newX, int newY, int h, int w) {¶		x = newX;¶		y = newY;¶		height = h;¶		width = w;¶	}¶	¶	@Override¶    public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);    ¶    }¶¶	@Override¶	public int getX() {¶		return x;¶	}¶¶	@Override¶	public void setX(int newX) {¶		int oldX = x;¶		x = newX;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "x", oldX, x));¶	}¶¶	@Override¶	public int getY() {¶		return y;¶	}¶¶	@Override¶	public void setY(int newY) {¶		int oldY = y;¶		y = newY;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "y", oldY, y));¶	}¶¶	@Override¶	public int getWidth() {¶		return width;¶	}¶¶	@Override¶	public void setWidth(int newWidth) {¶		int oldWidth = width;¶		width = newWidth;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "width", oldWidth, width));¶	}¶¶	@Override¶	public int getHeight() {¶		return height;¶	}¶¶	@Override¶	public void setHeight(int newHeight) {¶		int oldHeight = height;¶		height = newHeight;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "height", oldHeight, height));¶	}¶¶	@Override¶	public String getImageFileName() {¶		return imageFileName;¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="204" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:11:03 EST 2021" docASTNodeCount="385" docActiveCodeLength="2550" docExpressionCount="234" docLength="2550" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="199647">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/protractor/ProtractorArc.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.protractor;¶¶import java.awt.BasicStroke;¶import java.awt.Stroke;¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import components.listenersupport.PropertyListenerSupport;¶import components.observershapes.ObserverObservableArc;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.ARC_PATTERN)¶@PropertyNames({"x", "y", "width", "height", "startAngle", "endAngle", "stroke"})¶@EditablePropertyNames({})¶public class ProtractorArc implements ObserverObservableArc{¶	private int x = 160, y = -20, height = 80, width = 80, startAngle = 180, endAngle = 180;¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	private Stroke stroke = new BasicStroke(1f);¶¶	@Override¶    public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);¶    }¶¶	@Override¶	public int getX() {¶		return x;¶	}¶¶	@Override¶	public void setX(int newX) {¶		int oldX = x;¶		x = newX;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "x", oldX, x));¶	}¶¶	@Override¶	public int getY() {¶		return y;¶	}¶¶	@Override¶	public void setY(int newY) {¶		int oldY = y;¶		y = newY;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "y", oldY, y));¶	}¶¶	@Override¶	public int getWidth() {¶		return width;¶	}¶¶	@Override¶	public void setWidth(int newWidth) {¶		int oldWidth = width;¶		width = newWidth;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "width", oldWidth, width));¶	}¶¶	@Override¶	public int getHeight() {¶		return height;¶	}¶¶	@Override¶	public void setHeight(int newHeight) {¶		int oldHeight = height;¶		height = newHeight;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "height", oldHeight, height));¶	}¶¶	@Override¶	public void propertyChange(PropertyChangeEvent evt) {¶		¶	}¶¶	@Override¶	public Stroke getStroke() {¶		return stroke;¶	}¶¶	@Override¶	public void setStroke(Stroke newStroke) {¶		stroke = newStroke;¶	}¶¶	@Override¶	public int getStartAngle() {¶		return startAngle;¶	}¶¶	@Override¶	public void setStartAngle(int newStartAngle) {¶		startAngle = newStartAngle;¶	}¶¶	@Override¶	public int getEndAngle() {¶		return endAngle;¶	}¶¶	@Override¶	public void setEndAngle(int newEndAngle) {¶		endAngle = newEndAngle;¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="206" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:11:04 EST 2021" docASTNodeCount="537" docActiveCodeLength="2801" docExpressionCount="376" docLength="2801" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="200284">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/protractor/Protractor.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.protractor;¶¶import java.awt.BasicStroke;¶import java.util.ArrayList;¶import java.util.List;¶¶import components.observershapes.ObserverObservableArc;¶import components.observershapes.ObserverObservableLine;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶import util.annotations.Visible;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"x", "y", "line", "firstArc", "secondArc"})¶@EditablePropertyNames({})¶public class Protractor implements ProtractorInterface{¶	private List<ObserverObservableLine> line;¶	private ObserverObservableArc firstArc = new ProtractorArc(), ¶			secondArc = new ProtractorArc();¶	private int x = 200, y = 20;¶	private static final int RADIUS = 40;¶	private static final double ARC_SCALE = 0.6;¶	¶	public Protractor() {¶		line = new ArrayList<ObserverObservableLine> ();¶		for (int i = -90; i <= 90; i = i + 15) {¶			double r = RADIUS;¶			double angle = i * Math.PI / 180;¶			int height = (int) (Math.cos(angle) * r);¶			int width = (int) (Math.sin(angle) * r);¶			ObserverObservableLine newLine = new ProtractorLine();¶			newLine.setHeight(height);¶			newLine.setWidth(width);¶			newLine.setX(x);¶			newLine.setY(y);¶			if (i % 30 == 0) {¶				newLine.setStroke(new BasicStroke(1.5f));¶			}¶			else {¶				newLine.setStroke(new BasicStroke(0.5f));¶			}¶			line.add(newLine);¶		}¶		¶		firstArc.setX((int) (x - RADIUS * ARC_SCALE));¶		firstArc.setY((int) (y - RADIUS * ARC_SCALE));¶		firstArc.setHeight((int) (2 * RADIUS * ARC_SCALE));¶		firstArc.setWidth((int) (2 * RADIUS * ARC_SCALE));¶		firstArc.setStartAngle(180);¶		firstArc.setEndAngle(180);¶		¶		secondArc.setX(x - RADIUS);¶		secondArc.setY(y - RADIUS);¶		secondArc.setHeight(RADIUS * 2);¶		secondArc.setWidth(RADIUS * 2);¶		secondArc.setStartAngle(180);¶		secondArc.setEndAngle(180);¶		¶¶	}¶	¶	@Override¶	public List<ObserverObservableLine> getLine() {¶		return line;¶	}¶	¶	@Override¶	@Visible(false)¶	public int getX() {¶		return x;¶	}¶	¶	@Override¶	@Visible(false)¶	public int getY() {¶		return y;¶	}¶	¶	@Override¶	@Visible(false)¶	public void setX(int newX) {¶		x = newX;¶		for (int i = 0; i < line.size(); i ++) {¶			line.get(i).setX(x);¶		}¶		firstArc.setX((int) (x - ARC_SCALE * RADIUS));¶		secondArc.setX((int) (x - RADIUS));¶		¶	}¶	¶	@Override¶	@Visible(false)¶	public void setY(int newY) {¶		y = newY;¶		for (int i = 0; i < line.size(); i ++) {¶			line.get(i).setY(y);¶		}¶		firstArc.setY((int) (y - ARC_SCALE * RADIUS));¶		secondArc.setY((int) (y - RADIUS));¶¶	}¶¶	@Override¶	public ObserverObservableArc getFirstArc() {¶		return firstArc;¶	}¶¶	@Override¶	public ObserverObservableArc getSecondArc() {¶		return secondArc;¶	}¶¶¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="208" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:11:05 EST 2021" docASTNodeCount="126" docActiveCodeLength="718" docExpressionCount="94" docLength="718" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="201040">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/main/TestFrame.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package main;¶¶import javax.swing.JButton;¶import javax.swing.JSlider;¶¶import bus.uigen.OEFrame;¶import bus.uigen.ObjectEditor;¶import components.mainpanel.MainPanel;¶import components.mainpanel.MainPanelInterface;¶import components.pendulum.load.Load;¶import components.pendulum.load.LoadInterface;¶import components.pendulum.protractor.Protractor;¶import components.pendulum.protractor.ProtractorInterface;¶import components.pendulum.string.PendulumString;¶import components.pendulum.string.PendulumStringInterface;¶import javafx.scene.control.Slider;¶¶public class TestFrame {¶	public static void main(String[] args) {¶		MainPanelInterface panel = new MainPanel();¶		OEFrame frame = ObjectEditor.edit(panel);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="210" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:11:06 EST 2021" docASTNodeCount="730" docActiveCodeLength="4511" docExpressionCount="518" docLength="4511" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="201777">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/mainpanel/MainPanel.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.mainpanel;¶¶import java.util.ArrayList;¶import java.util.List;¶¶import javax.swing.JButton;¶import javax.swing.JSlider;¶¶import org.junit.jupiter.api.DisplayName;¶¶import components.pendulum.imageprotractor.ImageProtractor;¶import components.pendulum.imageprotractor.ImageProtractorInterface;¶import components.pendulum.pendulum.ObserverPendulum;¶import components.pendulum.pendulum.ObserverPendulumInterface;¶import components.ruler.Ruler;¶import components.ruler.RulerInterface;¶import models.pendulum.PendulumModelFactory;¶import models.pendulum.PendulumModelInterface;¶import util.annotations.Column;¶import util.annotations.DisplayToString;¶import util.annotations.EditablePropertyNames;¶import util.annotations.Label;¶import util.annotations.MaxValue;¶import util.annotations.MinValue;¶import util.annotations.PreferredWidgetClass;¶import util.annotations.PropertyNames;¶import util.annotations.Row;¶import util.annotations.StringAttributes;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶import util.annotations.Visible;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"numberOfPendulum", "gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})¶@EditablePropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})¶public class MainPanel implements MainPanelInterface{¶	¶	public static int gravity, ¶			friction = PendulumModelFactory.DEFAULT_FRICTION;¶	private Planet planet;¶	private int numberOfPendulum = 0;¶	private List<ObserverPendulumInterface> pendulum = new ArrayList<ObserverPendulumInterface> ();¶	private RulerInterface ruler = new Ruler(20, 20, 675, 60);¶	private ImageProtractorInterface protractor = new ImageProtractor(100, -80, "), Diff(DELETE,"30"), Diff(INSERT,"15"), Diff(EQUAL,"0, "), Diff(DELETE,"15"), Diff(INSERT,"30"), Diff(EQUAL,"0);¶	private boolean enable = true;¶	¶¶	public MainPanel() {¶		increaseNumberOfPendulum();¶		setPlanet(Planet.Earth);¶	}¶¶	@Override¶	public void setGravity(int g) {¶		gravity = g;¶		planet = Planet.Other;¶		setModel();¶	}¶¶	@Override¶	public void setFriction(int f) {¶		friction = f;¶		setModel();¶	}¶¶	@Override¶	@PreferredWidgetClass(JSlider.class)¶	@MaxValue(25)¶	@MinValue(1)¶	@Row(1)¶	@Column(0)¶	public int getGravity() {¶		return gravity;¶	}¶¶	@Override¶	@PreferredWidgetClass(JSlider.class)¶	@MaxValue(9)¶	@MinValue(0)¶	@Row(2)¶	@Column(0)¶	public int getFriction() {¶		return friction;¶	}¶¶¶	@Override¶	@Row(2)¶	@Column(0)¶	public List<ObserverPendulumInterface> getPendulum() {¶		return pendulum;¶	}¶¶¶	@Override¶	public RulerInterface getRuler() {¶		return ruler;¶	}¶¶	@Override¶	public void setRuler(RulerInterface newRuler) {¶		ruler = newRuler;¶	}¶¶¶	@Override¶	public int getNumberOfPendulum() {¶		return numberOfPendulum;¶	}¶¶	¶	@Override¶	public ImageProtractorInterface getProtractor() {¶		return protractor;¶	}¶¶	@Override¶	public void setProtractor(ImageProtractorInterface newProtractor) {¶		protractor = newProtractor;¶	}¶¶	@Override¶	@Visible(false)¶	public void setModel() {¶		for (int i = 0; i < numberOfPendulum; i ++) {¶			pendulum.get(i).setModel();¶		}¶	}¶¶	@Override¶	@Row(5)¶	@Column(0)¶	@Label("\u25B6")¶	public void pause() {¶		if (enable) {¶			for (int i = 0; i < numberOfPendulum; i ++) {¶				pendulum.get(i).stop();¶			}¶			enable = false;¶		}¶		else {¶			for (int i = 0; i < numberOfPendulum; i ++) {¶				pendulum.get(i).resume();¶			}¶			enable = true;¶		}¶	}¶¶	@Override¶	@Row(5)¶	@Column(1)¶	@Label("\u23F9")¶	public void reset() {¶		for (int i = 0; i < numberOfPendulum; i ++) {¶			pendulum.get(i).setAngle(0);¶		}¶	}¶¶	@Override¶	@PreferredWidgetClass(JButton.class)¶	@Row(4)¶	@Column(0)¶	@Label("+")¶	public void increaseNumberOfPendulum() {¶		if (numberOfPendulum < PendulumModelFactory.MAX_CAPACITY) {¶			PendulumModelInterface newModel = PendulumModelFactory.getDefaultModel();¶			pendulum.add(new ObserverPendulum(newModel, enable));¶			numberOfPendulum ++;¶		}¶	}¶¶	@Override¶	@PreferredWidgetClass(JButton.class)¶	@Row(4)¶	@Column(1)¶	@Label("-")¶	public void decreaseNumberOfPendulum() {¶		if (numberOfPendulum > 0) {¶			numberOfPendulum --;¶			pendulum.get(numberOfPendulum).getAnimator().interrupt();¶			pendulum.get(numberOfPendulum).getModel().removePropertyChangeListener(pendulum.get(numberOfPendulum));¶			pendulum.remove(numberOfPendulum);¶		}¶	}¶¶	@Override¶	@Row(0)¶	@Column(0)¶	public Planet getPlanet() {¶		return planet;¶	}¶¶	@Override¶	public void setPlanet(Planet newPlanet) {¶		setGravity(newPlanet.getValue());¶		planet = newPlanet;¶	}¶¶¶¶}¶")]]]></diff>
+    <snapshot><![CDATA[package components.mainpanel;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JButton;
+import javax.swing.JSlider;
+
+import org.junit.jupiter.api.DisplayName;
+
+import components.pendulum.imageprotractor.ImageProtractor;
+import components.pendulum.imageprotractor.ImageProtractorInterface;
+import components.pendulum.pendulum.ObserverPendulum;
+import components.pendulum.pendulum.ObserverPendulumInterface;
+import components.ruler.Ruler;
+import components.ruler.RulerInterface;
+import models.pendulum.PendulumModelFactory;
+import models.pendulum.PendulumModelInterface;
+import util.annotations.Column;
+import util.annotations.DisplayToString;
+import util.annotations.EditablePropertyNames;
+import util.annotations.Label;
+import util.annotations.MaxValue;
+import util.annotations.MinValue;
+import util.annotations.PreferredWidgetClass;
+import util.annotations.PropertyNames;
+import util.annotations.Row;
+import util.annotations.StringAttributes;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Visible;
+
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"numberOfPendulum", "gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})
+@EditablePropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})
+public class MainPanel implements MainPanelInterface{
+	
+	public static int gravity, 
+			friction = PendulumModelFactory.DEFAULT_FRICTION;
+	private Planet planet;
+	private int numberOfPendulum = 0;
+	private List<ObserverPendulumInterface> pendulum = new ArrayList<ObserverPendulumInterface> ();
+	private RulerInterface ruler = new Ruler(20, 20, 675, 60);
+	private ImageProtractorInterface protractor = new ImageProtractor(100, -80, 150, 300);
+	private boolean enable = true;
+	
+
+	public MainPanel() {
+		increaseNumberOfPendulum();
+		setPlanet(Planet.Earth);
+	}
+
+	@Override
+	public void setGravity(int g) {
+		gravity = g;
+		planet = Planet.Other;
+		setModel();
+	}
+
+	@Override
+	public void setFriction(int f) {
+		friction = f;
+		setModel();
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	@MaxValue(25)
+	@MinValue(1)
+	@Row(1)
+	@Column(0)
+	public int getGravity() {
+		return gravity;
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	@MaxValue(9)
+	@MinValue(0)
+	@Row(2)
+	@Column(0)
+	public int getFriction() {
+		return friction;
+	}
+
+
+	@Override
+	@Row(2)
+	@Column(0)
+	public List<ObserverPendulumInterface> getPendulum() {
+		return pendulum;
+	}
+
+
+	@Override
+	public RulerInterface getRuler() {
+		return ruler;
+	}
+
+	@Override
+	public void setRuler(RulerInterface newRuler) {
+		ruler = newRuler;
+	}
+
+
+	@Override
+	public int getNumberOfPendulum() {
+		return numberOfPendulum;
+	}
+
+	
+	@Override
+	public ImageProtractorInterface getProtractor() {
+		return protractor;
+	}
+
+	@Override
+	public void setProtractor(ImageProtractorInterface newProtractor) {
+		protractor = newProtractor;
+	}
+
+	@Override
+	@Visible(false)
+	public void setModel() {
+		for (int i = 0; i < numberOfPendulum; i ++) {
+			pendulum.get(i).setModel();
+		}
+	}
+
+	@Override
+	@Row(5)
+	@Column(0)
+	@Label("\u25B6")
+	public void pause() {
+		if (enable) {
+			for (int i = 0; i < numberOfPendulum; i ++) {
+				pendulum.get(i).stop();
+			}
+			enable = false;
+		}
+		else {
+			for (int i = 0; i < numberOfPendulum; i ++) {
+				pendulum.get(i).resume();
+			}
+			enable = true;
+		}
+	}
+
+	@Override
+	@Row(5)
+	@Column(1)
+	@Label("\u23F9")
+	public void reset() {
+		for (int i = 0; i < numberOfPendulum; i ++) {
+			pendulum.get(i).setAngle(0);
+		}
+	}
+
+	@Override
+	@PreferredWidgetClass(JButton.class)
+	@Row(4)
+	@Column(0)
+	@Label("+")
+	public void increaseNumberOfPendulum() {
+		if (numberOfPendulum < PendulumModelFactory.MAX_CAPACITY) {
+			PendulumModelInterface newModel = PendulumModelFactory.getDefaultModel();
+			pendulum.add(new ObserverPendulum(newModel, enable));
+			numberOfPendulum ++;
+		}
+	}
+
+	@Override
+	@PreferredWidgetClass(JButton.class)
+	@Row(4)
+	@Column(1)
+	@Label("-")
+	public void decreaseNumberOfPendulum() {
+		if (numberOfPendulum > 0) {
+			numberOfPendulum --;
+			pendulum.get(numberOfPendulum).getAnimator().interrupt();
+			pendulum.get(numberOfPendulum).getModel().removePropertyChangeListener(pendulum.get(numberOfPendulum));
+			pendulum.remove(numberOfPendulum);
+		}
+	}
+
+	@Override
+	@Row(0)
+	@Column(0)
+	public Planet getPlanet() {
+		return planet;
+	}
+
+	@Override
+	public void setPlanet(Planet newPlanet) {
+		setGravity(newPlanet.getValue());
+		planet = newPlanet;
+	}
+
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="212" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:11:07 EST 2021" docASTNodeCount="537" docActiveCodeLength="2801" docExpressionCount="376" docLength="2801" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="203709">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/protractor/Protractor.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.protractor;¶¶import java.awt.BasicStroke;¶import java.util.ArrayList;¶import java.util.List;¶¶import components.observershapes.ObserverObservableArc;¶import components.observershapes.ObserverObservableLine;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶import util.annotations.Visible;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"x", "y", "line", "firstArc", "secondArc"})¶@EditablePropertyNames({})¶public class Protractor implements ProtractorInterface{¶	private List<ObserverObservableLine> line;¶	private ObserverObservableArc firstArc = new ProtractorArc(), ¶			secondArc = new ProtractorArc();¶	private int x = 200, y = 20;¶	private static final int RADIUS = 40;¶	private static final double ARC_SCALE = 0.6;¶	¶	public Protractor() {¶		line = new ArrayList<ObserverObservableLine> ();¶		for (int i = -90; i <= 90; i = i + 15) {¶			double r = RADIUS;¶			double angle = i * Math.PI / 180;¶			int height = (int) (Math.cos(angle) * r);¶			int width = (int) (Math.sin(angle) * r);¶			ObserverObservableLine newLine = new ProtractorLine();¶			newLine.setHeight(height);¶			newLine.setWidth(width);¶			newLine.setX(x);¶			newLine.setY(y);¶			if (i % 30 == 0) {¶				newLine.setStroke(new BasicStroke(1.5f));¶			}¶			else {¶				newLine.setStroke(new BasicStroke(0.5f));¶			}¶			line.add(newLine);¶		}¶		¶		firstArc.setX((int) (x - RADIUS * ARC_SCALE));¶		firstArc.setY((int) (y - RADIUS * ARC_SCALE));¶		firstArc.setHeight((int) (2 * RADIUS * ARC_SCALE));¶		firstArc.setWidth((int) (2 * RADIUS * ARC_SCALE));¶		firstArc.setStartAngle(180);¶		firstArc.setEndAngle(180);¶		¶		secondArc.setX(x - RADIUS);¶		secondArc.setY(y - RADIUS);¶		secondArc.setHeight(RADIUS * 2);¶		secondArc.setWidth(RADIUS * 2);¶		secondArc.setStartAngle(180);¶		secondArc.setEndAngle(180);¶		¶¶	}¶	¶	@Override¶	public List<ObserverObservableLine> getLine() {¶		return line;¶	}¶	¶	@Override¶	@Visible(false)¶	public int getX() {¶		return x;¶	}¶	¶	@Override¶	@Visible(false)¶	public int getY() {¶		return y;¶	}¶	¶	@Override¶	@Visible(false)¶	public void setX(int newX) {¶		x = newX;¶		for (int i = 0; i < line.size(); i ++) {¶			line.get(i).setX(x);¶		}¶		firstArc.setX((int) (x - ARC_SCALE * RADIUS));¶		secondArc.setX((int) (x - RADIUS));¶		¶	}¶	¶	@Override¶	@Visible(false)¶	public void setY(int newY) {¶		y = newY;¶		for (int i = 0; i < line.size(); i ++) {¶			line.get(i).setY(y);¶		}¶		firstArc.setY((int) (y - ARC_SCALE * RADIUS));¶		secondArc.setY((int) (y - RADIUS));¶¶	}¶¶	@Override¶	public ObserverObservableArc getFirstArc() {¶		return firstArc;¶	}¶¶	@Override¶	public ObserverObservableArc getSecondArc() {¶		return secondArc;¶	}¶¶¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="214" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:11:08 EST 2021" docASTNodeCount="126" docActiveCodeLength="718" docExpressionCount="94" docLength="718" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="204624">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/main/TestFrame.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package main;¶¶import javax.swing.JButton;¶import javax.swing.JSlider;¶¶import bus.uigen.OEFrame;¶import bus.uigen.ObjectEditor;¶import components.mainpanel.MainPanel;¶import components.mainpanel.MainPanelInterface;¶import components.pendulum.load.Load;¶import components.pendulum.load.LoadInterface;¶import components.pendulum.protractor.Protractor;¶import components.pendulum.protractor.ProtractorInterface;¶import components.pendulum.string.PendulumString;¶import components.pendulum.string.PendulumStringInterface;¶import javafx.scene.control.Slider;¶¶public class TestFrame {¶	public static void main(String[] args) {¶		MainPanelInterface panel = new MainPanel();¶		OEFrame frame = ObjectEditor.edit(panel);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="216" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:11:09 EST 2021" docASTNodeCount="317" docActiveCodeLength="2111" docExpressionCount="193" docLength="2111" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="205523">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/imageprotractor/ImageProtractor.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.imageprotractor;¶¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import components.listenersupport.PropertyListenerSupport;¶import models.pendulum.PendulumModelFactory;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.IMAGE_PATTERN)¶@PropertyNames({"x", "y", "width", "height", "imageFileName"})¶@EditablePropertyNames({})¶public class ImageProtractor implements ImageProtractorInterface{¶	¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	private int x, y, height, width;¶	private String imageFileName = "image/protractor2.png";¶¶	public ImageProtractor(int newX, int newY, int h, int w) {¶		x = newX;¶		y = newY;¶		height = h;¶		width = w;¶	}¶	¶	@Override¶    public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);    ¶    }¶¶	@Override¶	public int getX() {¶		return x;¶	}¶¶	@Override¶	public void setX(int newX) {¶		int oldX = x;¶		x = newX;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "x", oldX, x));¶	}¶¶	@Override¶	public int getY() {¶		return y;¶	}¶¶	@Override¶	public void setY(int newY) {¶		int oldY = y;¶		y = newY;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "y", oldY, y));¶	}¶¶	@Override¶	public int getWidth() {¶		return width;¶	}¶¶	@Override¶	public void setWidth(int newWidth) {¶		int oldWidth = width;¶		width = newWidth;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "width", oldWidth, width));¶	}¶¶	@Override¶	public int getHeight() {¶		return height;¶	}¶¶	@Override¶	public void setHeight(int newHeight) {¶		int oldHeight = height;¶		height = newHeight;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "height", oldHeight, height));¶	}¶¶	@Override¶	public String getImageFileName() {¶		return imageFileName;¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="218" _type="DiffBasedFileOpenCommand" date="Sun Feb 14 16:11:10 EST 2021" docASTNodeCount="385" docActiveCodeLength="2550" docExpressionCount="234" docLength="2550" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="206133">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/protractor/ProtractorArc.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.protractor;¶¶import java.awt.BasicStroke;¶import java.awt.Stroke;¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import components.listenersupport.PropertyListenerSupport;¶import components.observershapes.ObserverObservableArc;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.ARC_PATTERN)¶@PropertyNames({"x", "y", "width", "height", "startAngle", "endAngle", "stroke"})¶@EditablePropertyNames({})¶public class ProtractorArc implements ObserverObservableArc{¶	private int x = 160, y = -20, height = 80, width = 80, startAngle = 180, endAngle = 180;¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	private Stroke stroke = new BasicStroke(1f);¶¶	@Override¶    public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);¶    }¶¶	@Override¶	public int getX() {¶		return x;¶	}¶¶	@Override¶	public void setX(int newX) {¶		int oldX = x;¶		x = newX;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "x", oldX, x));¶	}¶¶	@Override¶	public int getY() {¶		return y;¶	}¶¶	@Override¶	public void setY(int newY) {¶		int oldY = y;¶		y = newY;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "y", oldY, y));¶	}¶¶	@Override¶	public int getWidth() {¶		return width;¶	}¶¶	@Override¶	public void setWidth(int newWidth) {¶		int oldWidth = width;¶		width = newWidth;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "width", oldWidth, width));¶	}¶¶	@Override¶	public int getHeight() {¶		return height;¶	}¶¶	@Override¶	public void setHeight(int newHeight) {¶		int oldHeight = height;¶		height = newHeight;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "height", oldHeight, height));¶	}¶¶	@Override¶	public void propertyChange(PropertyChangeEvent evt) {¶		¶	}¶¶	@Override¶	public Stroke getStroke() {¶		return stroke;¶	}¶¶	@Override¶	public void setStroke(Stroke newStroke) {¶		stroke = newStroke;¶	}¶¶	@Override¶	public int getStartAngle() {¶		return startAngle;¶	}¶¶	@Override¶	public void setStartAngle(int newStartAngle) {¶		startAngle = newStartAngle;¶	}¶¶	@Override¶	public int getEndAngle() {¶		return endAngle;¶	}¶¶	@Override¶	public void setEndAngle(int newEndAngle) {¶		endAngle = newEndAngle;¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="199" _type="ShellCommand" date="Sun Feb 14 16:11:00 EST 2021" starttimestamp="1613336864282" timestamp="195917" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="200" _type="ShellCommand" date="Sun Feb 14 16:11:00 EST 2021" starttimestamp="1613336864282" timestamp="195930" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="201" _type="ShellCommand" date="Sun Feb 14 16:11:01 EST 2021" starttimestamp="1613336864282" timestamp="196894" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="203" _type="MoveCaretCommand" caretOffset="745" date="Sun Feb 14 16:11:02 EST 2021" docOffset="1067" starttimestamp="1613336864282" timestamp="197872" />
+  <Command __id="205" _type="MoveCaretCommand" caretOffset="0" date="Sun Feb 14 16:11:03 EST 2021" docOffset="0" starttimestamp="1613336864282" timestamp="199669" />
+  <Command __id="207" _type="MoveCaretCommand" caretOffset="0" date="Sun Feb 14 16:11:04 EST 2021" docOffset="0" starttimestamp="1613336864282" timestamp="200311" />
+  <Command __id="209" _type="MoveCaretCommand" caretOffset="200" date="Sun Feb 14 16:11:05 EST 2021" docOffset="712" starttimestamp="1613336864282" timestamp="201097" />
+  <Command __id="211" _type="MoveCaretCommand" caretOffset="594" date="Sun Feb 14 16:11:06 EST 2021" docOffset="1624" starttimestamp="1613336864282" timestamp="201829" />
+  <Command __id="213" _type="MoveCaretCommand" caretOffset="0" date="Sun Feb 14 16:11:08 EST 2021" docOffset="0" starttimestamp="1613336864282" timestamp="203729" />
+  <Command __id="215" _type="MoveCaretCommand" caretOffset="200" date="Sun Feb 14 16:11:08 EST 2021" docOffset="712" starttimestamp="1613336864282" timestamp="204680" />
+  <Command __id="217" _type="MoveCaretCommand" caretOffset="745" date="Sun Feb 14 16:11:09 EST 2021" docOffset="1067" starttimestamp="1613336864282" timestamp="205559" />
+  <Command __id="219" _type="MoveCaretCommand" caretOffset="0" date="Sun Feb 14 16:11:10 EST 2021" docOffset="0" starttimestamp="1613336864282" timestamp="206152" />
+  <Command __id="221" _type="MoveCaretCommand" caretOffset="594" date="Sun Feb 14 16:11:11 EST 2021" docOffset="1624" starttimestamp="1613336864282" timestamp="207606" />
+  <Command __id="222" _type="MoveCaretCommand" caretOffset="671" date="Sun Feb 14 16:11:13 EST 2021" docOffset="1701" starttimestamp="1613336864282" timestamp="208962" />
+  <Command __id="262" _type="RunCommand" date="Sun Feb 14 16:11:37 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="233154" type="Run" />
+  <Command __id="263" _type="RunCommand" date="Sun Feb 14 16:11:37 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1613336864282" timestamp="233154" type="Run" />
+</Events>

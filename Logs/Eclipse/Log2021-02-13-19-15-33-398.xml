@@ -1,0 +1,180 @@
+<Events startTimestamp="1613261733398" logVersion="1.0.0.202101171653">
+  <Command __id="133" _type="DiffBasedFileOpenCommand" date="Sat Feb 13 19:18:52 EST 2021" docASTNodeCount="37" docActiveCodeLength="227" docExpressionCount="18" docLength="227" projectName="Comp533" starttimestamp="1613261733398" timestamp="198636">
+    <filePath><![CDATA[/home/leonard/Source/Comp533/src/comp533/slave/SlaveInterface.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package comp533.slave;
+
+import java.util.Map;
+
+public interface SlaveInterface extends Runnable{
+	void childrenNotify();
+	void childrenWait();
+	void quit();
+	void computePartition(Map<String, Integer> partialReduceResult);
+	
+}
+]]></snapshot>
+  </Command>
+  <Command __id="134" _type="MoveCaretCommand" caretOffset="222" date="Sat Feb 13 19:18:52 EST 2021" docOffset="222" starttimestamp="1613261733398" timestamp="198665" />
+  <Command __id="136" _type="MoveCaretCommand" caretOffset="951" date="Sat Feb 13 19:18:52 EST 2021" docOffset="1735" starttimestamp="1613261733398" timestamp="199551" />
+  <Command __id="135" _type="DiffBasedFileOpenCommand" date="Sat Feb 13 19:18:52 EST 2021" docASTNodeCount="562" docActiveCodeLength="3722" docExpressionCount="376" docLength="3722" projectName="PhysicsSimulation" starttimestamp="1613261733398" timestamp="199508">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/mainpanel/MainPanel.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package components.mainpanel;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JSlider;
+
+import components.pendulum.imageprotractor.ImageProtractor;
+import components.pendulum.imageprotractor.ImageProtractorInterface;
+import components.pendulum.pendulum.ObserverPendulum;
+import components.pendulum.pendulum.ObserverPendulumInterface;
+import components.ruler.Ruler;
+import components.ruler.RulerInterface;
+import models.pendulum.PendulumModelFactory;
+import models.pendulum.PendulumModelInterface;
+import util.annotations.EditablePropertyNames;
+import util.annotations.MaxValue;
+import util.annotations.MinValue;
+import util.annotations.PreferredWidgetClass;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+import util.annotations.Visible;
+
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"numberOfPendulum", "gravity", "friction", "pendulum", "ruler", "protractor", })
+@EditablePropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor"})
+public class MainPanel implements MainPanelInterface{
+	
+	public static int gravity = PendulumModelFactory.DEFAULT_GRAVITY, 
+			friction = PendulumModelFactory.DEFAULT_FRICTION;
+	private int numberOfPendulum = 0;
+	private List<ObserverPendulumInterface> pendulum = new ArrayList<ObserverPendulumInterface> ();
+	private RulerInterface ruler = new Ruler(20, 20, 675, 60);
+	private ImageProtractorInterface protractor = new ImageProtractor(100, -80, 200, 200);
+	private boolean enable = true;
+
+
+	public MainPanel() {
+		increaseNumberOfPendulum();
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	public void setGravity(int g) {
+		gravity = g;
+		setModel();
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	public void setFriction(int f) {
+		friction = f;
+		setModel();
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	public int getGravity() {
+		return gravity;
+	}
+
+	@Override
+	@PreferredWidgetClass(JSlider.class)
+	public int getFriction() {
+		return friction;
+	}
+
+
+	@Override
+	public List<ObserverPendulumInterface> getPendulum() {
+		return pendulum;
+	}
+
+
+	@Override
+	public RulerInterface getRuler() {
+		return ruler;
+	}
+
+	@Override
+	public void setRuler(RulerInterface newRuler) {
+		ruler = newRuler;
+	}
+
+
+	@Override
+	public int getNumberOfPendulum() {
+		return numberOfPendulum;
+	}
+
+	
+	@Override
+	public ImageProtractorInterface getProtractor() {
+		return protractor;
+	}
+
+	@Override
+	public void setProtractor(ImageProtractorInterface newProtractor) {
+		protractor = newProtractor;
+	}
+
+	@Override
+	@Visible(false)
+	public void setModel() {
+		for (int i = 0; i < numberOfPendulum; i ++) {
+			pendulum.get(i).setModel();
+		}
+	}
+
+	@Override
+	public void pause() {
+		if (enable) {
+			for (int i = 0; i < numberOfPendulum; i ++) {
+				pendulum.get(i).stop();
+			}
+			enable = false;
+		}
+		else {
+			for (int i = 0; i < numberOfPendulum; i ++) {
+				pendulum.get(i).resume();
+			}
+			enable = true;
+		}
+	}
+
+	@Override
+	public void reset() {
+		for (int i = 0; i < numberOfPendulum; i ++) {
+			pendulum.get(i).setAngle(0);
+		}
+	}
+
+	@Override
+	public void increaseNumberOfPendulum() {
+		if (numberOfPendulum < PendulumModelFactory.MAX_CAPACITY) {
+			PendulumModelInterface newModel = PendulumModelFactory.getDefaultModel();
+			pendulum.add(new ObserverPendulum(newModel, enable));
+			numberOfPendulum ++;
+		}
+	}
+
+	@Override
+	public void decreaseNumberOfPendulum() {
+		if (numberOfPendulum > 0) {
+			numberOfPendulum --;
+			pendulum.get(numberOfPendulum).getAnimator().interrupt();
+			pendulum.get(numberOfPendulum).getModel().removePropertyChangeListener(pendulum.get(numberOfPendulum));
+			pendulum.remove(numberOfPendulum);
+		}
+	}
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="137" _type="SelectTextCommand" caretOffset="568" date="Sat Feb 13 19:18:57 EST 2021" end="635" start="568" starttimestamp="1613261733398" timestamp="204110" />
+</Events>

@@ -1,0 +1,539 @@
+<Events startTimestamp="1613676779341" logVersion="1.0.0.202101171653">
+  <Command __id="1317" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 14:41:30 EST 2021" docASTNodeCount="36" docActiveCodeLength="198" docExpressionCount="16" docLength="198" projectName="ChatBox" starttimestamp="1613676779341" timestamp="510847">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/textbox/EditableTextBox.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.textbox;¶¶public class EditableTextBox {¶"), Diff(INSERT,"	private String text = "";¶	¶	public String getText() {¶		return text;¶	}¶	¶	public void setText(String newText) {¶		text = newText;¶	}"), Diff(EQUAL,"¶}¶")]]]></diff>
+    <snapshot><![CDATA[package components.textbox;
+
+public class EditableTextBox {
+	private String text = "";
+	
+	public String getText() {
+		return text;
+	}
+	
+	public void setText(String newText) {
+		text = newText;
+	}
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="1320" _type="Insert" date="Thu Feb 18 14:41:33 EST 2021" docASTNodeCount="36" docActiveCodeLength="200" docExpressionCount="16" docLength="200" length="2" offset="28" repeat="2" starttimestamp="1613676779341" timestamp="513928" timestamp2="514027">
+    <text><![CDATA[
+
+]]></text>
+  </DocumentChange>
+  <Command __id="1319" _type="MoveCaretCommand" caretOffset="28" date="Thu Feb 18 14:41:32 EST 2021" docOffset="28" starttimestamp="1613676779341" timestamp="512968" />
+  <Command __id="1321" _type="InsertStringCommand" date="Thu Feb 18 14:41:33 EST 2021" starttimestamp="1613676779341" timestamp="513930" timestamp2="513930">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="1323" _type="InsertStringCommand" date="Thu Feb 18 14:41:33 EST 2021" starttimestamp="1613676779341" timestamp="514028" timestamp2="514028">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="1325" _type="SelectTextCommand" caretOffset="113" date="Thu Feb 18 14:41:37 EST 2021" end="113" start="60" starttimestamp="1613676779341" timestamp="517800" />
+  <Command __id="1327" _type="MoveCaretCommand" caretOffset="928" date="Thu Feb 18 14:41:37 EST 2021" docOffset="1871" starttimestamp="1613676779341" timestamp="518340" />
+  <Command __id="1328" _type="MoveCaretCommand" caretOffset="640" date="Thu Feb 18 14:41:39 EST 2021" docOffset="1583" starttimestamp="1613676779341" timestamp="520102" />
+  <Command __id="1330" _type="UndoCommand" date="Thu Feb 18 14:41:40 EST 2021" starttimestamp="1613676779341" timestamp="520973" />
+  <Command __id="1331" _type="MoveCaretCommand" caretOffset="640" date="Thu Feb 18 14:41:40 EST 2021" docOffset="1583" starttimestamp="1613676779341" timestamp="521407" />
+  <Command __id="1332" _type="SelectTextCommand" caretOffset="119" date="Thu Feb 18 14:41:42 EST 2021" end="119" start="113" starttimestamp="1613676779341" timestamp="522700" />
+  <DocumentChange __id="1341" _type="Insert" date="Thu Feb 18 14:41:54 EST 2021" docASTNodeCount="62" docActiveCodeLength="473" docExpressionCount="42" docLength="473" length="273" offset="30" starttimestamp="1613676779341" timestamp="535265">
+    <text><![CDATA[@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"numberOfPendulum", "gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})
+@EditablePropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1342" _type="Delete" date="Thu Feb 18 14:41:54 EST 2021" docASTNodeCount="62" docActiveCodeLength="470" docExpressionCount="42" docLength="470" endLine="3" length="3" offset="27" startLine="0" starttimestamp="1613676779341" timestamp="535339">
+    <text><![CDATA[
+
+
+]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1343" _type="Insert" date="Thu Feb 18 14:41:54 EST 2021" docASTNodeCount="86" docActiveCodeLength="648" docExpressionCount="62" docLength="648" length="178" offset="27" repeat="9" starttimestamp="1613676779341" timestamp="535339" timestamp2="535343">
+    <text><![CDATA[
+
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+
+]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1354" _type="Replace" date="Thu Feb 18 14:41:58 EST 2021" docASTNodeCount="77" docActiveCodeLength="573" docExpressionCount="54" docLength="573" endLine="9" insertionLength="1" int_docASTNodeCount="77" int_docActiveCodeLength="572" int_docExpressionCount="54" int_docLength="572" length="76" offset="400" startLine="9" starttimestamp="1613676779341" timestamp="539078">
+    <deletedText><![CDATA[gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"]]></deletedText>
+    <insertedText><![CDATA[t]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="1356" _type="Insert" date="Thu Feb 18 14:41:58 EST 2021" docASTNodeCount="80" docActiveCodeLength="577" docExpressionCount="56" docLength="577" length="4" offset="401" repeat="4" starttimestamp="1613676779341" timestamp="539144" timestamp2="540007">
+    <text><![CDATA[ext"]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1371" _type="Replace" date="Thu Feb 18 14:42:04 EST 2021" docASTNodeCount="80" docActiveCodeLength="565" docExpressionCount="56" docLength="565" endLine="8" insertionLength="6" int_docASTNodeCount="71" int_docActiveCodeLength="559" int_docExpressionCount="47" int_docLength="559" length="18" offset="275" startLine="8" starttimestamp="1613676779341" timestamp="545240">
+    <deletedText><![CDATA["numberOfPendulum"]]></deletedText>
+    <insertedText><![CDATA["text"]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="1374" _type="Delete" date="Thu Feb 18 14:42:07 EST 2021" docASTNodeCount="73" docActiveCodeLength="486" docExpressionCount="49" docLength="486" endLine="8" length="79" offset="281" startLine="8" starttimestamp="1613676779341" timestamp="548438">
+    <text><![CDATA[, "gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1380" _type="Insert" date="Thu Feb 18 14:42:10 EST 2021" docASTNodeCount="73" docActiveCodeLength="487" docExpressionCount="49" docLength="487" length="1" offset="316" starttimestamp="1613676779341" timestamp="551010">
+    <text><![CDATA[
+]]></text>
+  </DocumentChange>
+  <Command __id="1391" _type="RunCommand" date="Thu Feb 18 14:42:20 EST 2021" kind="HitBreakPoint" projectName="ChatBox" starttimestamp="1613676779341" timestamp="561204" type="Run" />
+  <Command __id="1392" _type="RunCommand" date="Thu Feb 18 14:42:20 EST 2021" kind="HitBreakPoint" projectName="ChatBox" starttimestamp="1613676779341" timestamp="561204" type="Run" />
+  <Command __id="1393" _type="ShellCommand" date="Thu Feb 18 14:42:20 EST 2021" starttimestamp="1613676779341" timestamp="561218" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="1394" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 14:42:25 EST 2021" docASTNodeCount="757" docActiveCodeLength="4708" docExpressionCount="533" docLength="4708" projectName="PhysicsSimulation" starttimestamp="1613676779341" timestamp="566294">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/mainpanel/MainPanel.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.mainpanel;¶¶import java.util.ArrayList;¶import java.util.List;¶import javax.swing.JButton;¶import javax.swing.JSlider;¶¶import components.barchart.bar.BarPair;¶import components.pendulum.imageprotractor.ImageProtractor;¶import components.pendulum.imageprotractor.ImageProtractorInterface;¶import components.pendulum.pendulum.ObserverPendulum;¶import components.pendulum.pendulum.ObserverPendulumInterface;¶import components.ruler.Ruler;¶import components.ruler.RulerInterface;¶import models.pendulum.PendulumModelFactory;¶import models.pendulum.PendulumModelInterface;¶import util.annotations.Column;¶import util.annotations.EditablePropertyNames;¶import util.annotations.Label;¶import util.annotations.MaxValue;¶import util.annotations.MinValue;¶import util.annotations.PreferredWidgetClass;¶import util.annotations.PropertyNames;¶import util.annotations.Row;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶import util.annotations.Visible;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"numberOfPendulum", "gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})¶@EditablePropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor", "gravity", "planet"})¶public class MainPanel implements MainPanelInterface{¶	¶	public static int gravity, ¶			friction = PendulumModelFactory.DEFAULT_FRICTION;¶	public static final int MARGIN_BTW_PAIR = 10, MARGIN = 5, BAR_WIDTH = 10, BARCHART_X = 1000, BARCHART_Y = 0;¶	private Planet planet;¶	private int numberOfPendulum = 0;¶	private List<ObserverPendulumInterface> pendulum = new ArrayList<ObserverPendulumInterface> ();¶	private RulerInterface ruler = new Ruler(20, 20, 675, 60);¶	private ImageProtractorInterface protractor = new ImageProtractor(350, 20, 150, 300);¶	private boolean enable = true;¶	¶¶	public MainPanel() {¶		increaseNumberOfPendulum();¶		setPlanet(Planet.Earth);¶	}¶¶	@Override¶	public void setGravity(int g) {¶		gravity = g;¶		planet = Planet.Other;¶		setModel();¶	}¶¶	@Override¶	public void setFriction(int f) {¶		friction = f;¶		setModel();¶	}¶¶	@Override¶	@PreferredWidgetClass(JSlider.class)¶	@MaxValue(25)¶	@MinValue(1)¶	@Row(1)¶	@Column(0)¶	public int getGravity() {¶		return gravity;¶	}¶¶	@Override¶	@PreferredWidgetClass(JSlider.class)¶	@MaxValue(9)¶	@MinValue(0)¶	@Row(2)¶	@Column(0)¶	public int getFriction() {¶		return friction;¶	}¶¶¶	@Override¶	@Row(2)¶	@Column(0)¶	public List<ObserverPendulumInterface> getPendulum() {¶		return pendulum;¶	}¶¶¶	@Override¶	public RulerInterface getRuler() {¶		return ruler;¶	}¶¶	@Override¶	public void setRuler(RulerInterface newRuler) {¶		ruler = newRuler;¶	}¶¶¶	@Override¶	public int getNumberOfPendulum() {¶		return numberOfPendulum;¶	}¶¶	¶	@Override¶	public ImageProtractorInterface getProtractor() {¶		return protractor;¶	}¶¶	@Override¶	public void setProtractor(ImageProtractorInterface newProtractor) {¶		protractor = newProtractor;¶	}¶¶	@Override¶	@Visible(false)¶	public void setModel() {¶		for (int i = 0; i < numberOfPendulum; i ++) {¶			pendulum.get(i).setModel();¶		}¶	}¶¶	@Override¶	@Row(5)¶	@Column(0)¶	@Label("\u25B6")¶	public void pause() {¶		if (enable) {¶			for (int i = 0; i < numberOfPendulum; i ++) {¶				pendulum.get(i).stop();¶			}¶			enable = false;¶		}¶		else {¶			for (int i = 0; i < numberOfPendulum; i ++) {¶				pendulum.get(i).resume();¶			}¶			enable = true;¶		}¶	}¶¶	@Override¶	@Row(5)¶	@Column(1)¶	@Label("\u25A0")¶	public void reset() {¶		for (int i = 0; i < numberOfPendulum; i ++) {¶			pendulum.get(i).setAngle(0);¶		}¶	}¶¶	@Override¶	@PreferredWidgetClass(JButton.class)¶	@Row(4)¶	@Column(0)¶	@Label("+")¶	public void increaseNumberOfPendulum() {¶		if (numberOfPendulum < PendulumModelFactory.MAX_CAPACITY) {¶			PendulumModelInterface newModel = PendulumModelFactory.getDefaultModel();¶			ObserverPendulumInterface newPendulum = new ObserverPendulum(newModel, enable, ¶					new BarPair(BARCHART_X + pendulum.size() * (BAR_WIDTH + MARGIN + BAR_WIDTH + MARGIN_BTW_PAIR), BARCHART_Y));¶	¶			¶			pendulum.add(newPendulum);¶			numberOfPendulum ++;¶		}¶	}¶¶	@Override¶	@PreferredWidgetClass(JButton.class)¶	@Row(4)¶	@Column(1)¶	@Label("-")¶	public void decreaseNumberOfPendulum() {¶		if (numberOfPendulum > 0) {¶			numberOfPendulum --;¶			pendulum.get(numberOfPendulum).getAnimator().interrupt();¶			pendulum.get(numberOfPendulum).getModel().removePropertyChangeListener(pendulum.get(numberOfPendulum));¶			pendulum.remove(numberOfPendulum);¶		}¶	}¶¶	@Override¶	@Row(0)¶	@Column(0)¶	public Planet getPlanet() {¶		return planet;¶	}¶¶	@Override¶	public void setPlanet(Planet newPlanet) {¶		setGravity(newPlanet.getValue());¶		planet = newPlanet;¶	}¶¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="1395" _type="SelectTextCommand" caretOffset="60" date="Thu Feb 18 14:42:25 EST 2021" end="333" start="60" starttimestamp="1613676779341" timestamp="566385" />
+  <Command __id="1396" _type="MoveCaretCommand" caretOffset="1002" date="Thu Feb 18 14:42:26 EST 2021" docOffset="1945" starttimestamp="1613676779341" timestamp="567240" />
+  <Command __id="1398" _type="SelectTextCommand" caretOffset="212" date="Thu Feb 18 14:42:32 EST 2021" end="212" start="59" starttimestamp="1613676779341" timestamp="573615" />
+  <Command __id="1399" _type="SelectTextCommand" caretOffset="261" date="Thu Feb 18 14:42:37 EST 2021" end="349" start="261" starttimestamp="1613676779341" timestamp="577997" />
+  <Command __id="1397" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 14:42:32 EST 2021" docASTNodeCount="368" docActiveCodeLength="2443" docExpressionCount="230" docLength="2443" projectName="PhysicsSimulation" starttimestamp="1613676779341" timestamp="573475">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/load/Load.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package components.pendulum.load;
+
+import java.awt.Color;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+
+import components.listenersupport.PropertyListenerSupport;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+
+@StructurePattern(StructurePatternNames.OVAL_PATTERN)
+@PropertyNames({"x", "y", "width", "height", "filled", "color"})
+@EditablePropertyNames({"x", "y"})
+public class Load implements LoadInterface {
+	
+	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();
+	private int x = 190, y = 110, width = 20, height = 20;
+	private boolean filled = true;
+	private Color color = Color.RED;
+	
+	@Override
+	public void addPropertyChangeListener(PropertyChangeListener aListener) {
+		propertyListenerSupport.addElement(aListener);    
+    }
+	
+	@Override
+	public int getX() {
+		return x;
+	}
+
+	@Override
+	public void setX(int newX) {
+		int oldX = x;
+		x = newX;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "x", oldX, x));
+	}
+
+	@Override
+	public int getY() {
+		return y;
+	}
+
+	@Override
+	public void setY(int newY) {
+		int oldY = y;
+		y = newY;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "y", oldY, y));
+	}
+
+	@Override
+	public int getWidth() {
+		return width;
+	}
+
+	@Override
+	public void setWidth(int newWidth) {
+		int oldWidth = width;
+		width = newWidth;
+		height = newWidth;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "width", oldWidth, width));
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "height", oldWidth, height));
+	}
+
+	@Override
+	public int getHeight() {
+		return height;
+	}
+
+	@Override
+	public void setHeight(int newHeight) {
+		int oldHeight = height;
+		height = newHeight;
+		width = newHeight;
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "width", oldHeight, width));
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "height", oldHeight, height));
+	}
+
+	@Override
+	public boolean getFilled() {
+		return filled;
+	}
+
+	@Override
+	public Color getColor() {
+		return color;
+	}
+
+
+	@Override
+	public void setFilled(boolean isFilled) {
+		filled = isFilled;
+	}
+
+
+	@Override
+	public void setColor(Color newColor) {
+		color = newColor;
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="1400" _type="CopyCommand" date="Thu Feb 18 14:42:38 EST 2021" starttimestamp="1613676779341" timestamp="579576" />
+  <DocumentChange __id="1411" _type="Insert" date="Thu Feb 18 14:42:53 EST 2021" docASTNodeCount="88" docActiveCodeLength="636" docExpressionCount="58" docLength="636" length="2" offset="524" starttimestamp="1613676779341" timestamp="593945">
+    <text><![CDATA[
+	]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1419" _type="Delete" date="Thu Feb 18 14:43:02 EST 2021" docASTNodeCount="82" docActiveCodeLength="577" docExpressionCount="53" docLength="577" endLine="2" length="59" offset="28" repeat="2" startLine="1" starttimestamp="1613676779341" timestamp="602672" timestamp2="602860">
+    <text><![CDATA[
+import components.listenersupport.PropertyListenerSupport;]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1428" _type="Insert" date="Thu Feb 18 14:43:06 EST 2021" docASTNodeCount="86" docActiveCodeLength="625" docExpressionCount="56" docLength="625" length="48" offset="29" repeat="2" starttimestamp="1613676779341" timestamp="606675" timestamp2="606675">
+    <text><![CDATA[import listenersupport.PropertyListenerSupport;
+]]></text>
+  </DocumentChange>
+  <Command __id="1438" _type="SelectTextCommand" caretOffset="457" date="Thu Feb 18 14:43:10 EST 2021" end="480" start="457" starttimestamp="1613676779341" timestamp="611243" />
+  <Command __id="1439" _type="MoveCaretCommand" caretOffset="619" date="Thu Feb 18 14:43:10 EST 2021" docOffset="619" starttimestamp="1613676779341" timestamp="611565" />
+  <Command __id="1441" _type="SelectTextCommand" caretOffset="261" date="Thu Feb 18 14:43:12 EST 2021" end="349" start="261" starttimestamp="1613676779341" timestamp="613213" />
+  <DocumentChange __id="1448" _type="Replace" date="Thu Feb 18 14:43:21 EST 2021" docASTNodeCount="97" docActiveCodeLength="721" docExpressionCount="65" docLength="721" endLine="22" insertionLength="95" int_docASTNodeCount="86" int_docActiveCodeLength="626" int_docExpressionCount="56" int_docLength="626" length="2" offset="620" startLine="22" starttimestamp="1613676779341" timestamp="622126">
+    <deletedText><![CDATA[		]]></deletedText>
+    <insertedText><![CDATA[		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "x", oldX, x));]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="1449" _type="Insert" date="Thu Feb 18 14:43:21 EST 2021" docASTNodeCount="103" docActiveCodeLength="761" docExpressionCount="70" docLength="761" length="40" offset="29" repeat="2" starttimestamp="1613676779341" timestamp="622179" timestamp2="622179">
+    <text><![CDATA[import java.beans.PropertyChangeEvent;
+
+]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1453" _type="Insert" date="Thu Feb 18 14:43:23 EST 2021" docASTNodeCount="109" docActiveCodeLength="786" docExpressionCount="73" docLength="786" length="25" offset="641" repeat="23" starttimestamp="1613676779341" timestamp="624103" timestamp2="629039">
+    <text><![CDATA[
+		String oldText = text;]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1504" _type="Delete" date="Thu Feb 18 14:43:31 EST 2021" docASTNodeCount="109" docActiveCodeLength="785" docExpressionCount="73" docLength="785" endLine="26" length="1" offset="766" startLine="26" starttimestamp="1613676779341" timestamp="632065">
+    <text><![CDATA[x]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1506" _type="Insert" date="Thu Feb 18 14:43:31 EST 2021" docASTNodeCount="109" docActiveCodeLength="789" docExpressionCount="73" docLength="789" length="4" offset="766" repeat="4" starttimestamp="1613676779341" timestamp="632587" timestamp2="632941">
+    <text><![CDATA[text]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1520" _type="Replace" date="Thu Feb 18 14:43:37 EST 2021" docASTNodeCount="109" docActiveCodeLength="792" docExpressionCount="73" docLength="792" endLine="26" insertionLength="7" int_docASTNodeCount="108" int_docActiveCodeLength="785" int_docExpressionCount="72" int_docLength="785" length="4" offset="773" startLine="26" starttimestamp="1613676779341" timestamp="638185">
+    <deletedText><![CDATA[oldX]]></deletedText>
+    <insertedText><![CDATA[oldText]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="1523" _type="Delete" date="Thu Feb 18 14:43:38 EST 2021" docASTNodeCount="109" docActiveCodeLength="791" docExpressionCount="73" docLength="791" endLine="26" length="1" offset="782" startLine="26" starttimestamp="1613676779341" timestamp="639244">
+    <text><![CDATA[x]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1525" _type="Insert" date="Thu Feb 18 14:43:38 EST 2021" docASTNodeCount="109" docActiveCodeLength="795" docExpressionCount="73" docLength="795" length="4" offset="782" repeat="4" starttimestamp="1613676779341" timestamp="639602" timestamp2="640011">
+    <text><![CDATA[text]]></text>
+  </DocumentChange>
+  <Command __id="1542" _type="RunCommand" date="Thu Feb 18 14:44:02 EST 2021" kind="HitBreakPoint" projectName="ChatBox" starttimestamp="1613676779341" timestamp="662920" type="Run" />
+  <Command __id="1543" _type="RunCommand" date="Thu Feb 18 14:44:02 EST 2021" kind="HitBreakPoint" projectName="ChatBox" starttimestamp="1613676779341" timestamp="662920" type="Run" />
+  <Command __id="1544" _type="ShellCommand" date="Thu Feb 18 14:44:02 EST 2021" starttimestamp="1613676779341" timestamp="662930" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="1561" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 14:44:40 EST 2021" docASTNodeCount="48" docActiveCodeLength="261" docExpressionCount="28" docLength="261" projectName="ChatBox" starttimestamp="1613676779341" timestamp="701650">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/main/Main.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package main;¶¶import bus.uigen.ObjectEditor;¶import components.mainpanel.MainPanel;¶import components.textbox.EditableTextBox;¶¶public class Main {¶	public static void main(String[] args) {¶		MainPanel panel = new MainPanel();¶		ObjectEditor.edit(panel);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="1562" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 14:44:41 EST 2021" docASTNodeCount="31" docActiveCodeLength="244" docExpressionCount="16" docLength="244" projectName="ChatBox" starttimestamp="1613676779341" timestamp="701667">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/mainpanel/MainPanel.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.mainpanel;¶¶import components.textbox.EditableTextBox;¶¶public class MainPanel {¶	private EditableTextBox editableTextBox = new EditableTextBox();¶	¶	public EditableTextBox getEditableBox() {¶		return editableTextBox;¶	}¶	¶}¶")]]]></diff>
+  </Command>
+  <Command __id="1567" _type="MoveCaretCommand" caretOffset="99" date="Thu Feb 18 14:44:44 EST 2021" docOffset="99" starttimestamp="1613676779341" timestamp="705143" />
+  <Command __id="1691" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 14:46:25 EST 2021" docASTNodeCount="109" docActiveCodeLength="795" docExpressionCount="73" docLength="795" projectName="ChatBox" starttimestamp="1613676779341" timestamp="805862">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/textbox/EditableTextBox.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.textbox;¶¶import java.beans.PropertyChangeEvent;¶¶import listenersupport.PropertyListenerSupport;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"text"})¶@EditablePropertyNames({"text"})¶¶public class EditableTextBox {¶	private String text = "";¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	¶	public String getText() {¶		return text;¶	}¶	¶	public void setText(String newText) {¶		String oldText = text;¶		text = newText;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "text", oldText, text));¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="1692" _type="SelectTextCommand" caretOffset="616" date="Thu Feb 18 14:46:25 EST 2021" end="639" start="616" starttimestamp="1613676779341" timestamp="805926" />
+  <Command __id="1694" _type="SelectTextCommand" caretOffset="740" date="Thu Feb 18 14:46:38 EST 2021" end="833" start="740" starttimestamp="1613676779341" timestamp="819458" />
+  <Command __id="1695" _type="SelectTextCommand" caretOffset="564" date="Thu Feb 18 14:46:40 EST 2021" end="618" start="564" starttimestamp="1613676779341" timestamp="821003" />
+  <Command __id="1696" _type="MoveCaretCommand" caretOffset="574" date="Thu Feb 18 14:46:40 EST 2021" docOffset="890" starttimestamp="1613676779341" timestamp="821394" />
+  <Command __id="1697" _type="SelectTextCommand" caretOffset="557" date="Thu Feb 18 14:46:43 EST 2021" end="557" start="486" starttimestamp="1613676779341" timestamp="824103" />
+  <Command __id="1698" _type="MoveCaretCommand" caretOffset="510" date="Thu Feb 18 14:46:43 EST 2021" docOffset="826" starttimestamp="1613676779341" timestamp="824381" />
+  <Command __id="1693" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 14:46:38 EST 2021" docASTNodeCount="368" docActiveCodeLength="2443" docExpressionCount="230" docLength="2443" projectName="PhysicsSimulation" starttimestamp="1613676779341" timestamp="819348">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/pendulum/load/Load.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.pendulum.load;¶¶import java.awt.Color;¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import components.listenersupport.PropertyListenerSupport;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.OVAL_PATTERN)¶@PropertyNames({"x", "y", "width", "height", "filled", "color"})¶@EditablePropertyNames({"x", "y"})¶public class Load implements LoadInterface {¶	¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	private int x = 190, y = 110, width = 20, height = 20;¶	private boolean filled = true;¶	private Color color = Color.RED;¶	¶	@Override¶	public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);    ¶    }¶	¶	@Override¶	public int getX() {¶		return x;¶	}¶¶	@Override¶	public void setX(int newX) {¶		int oldX = x;¶		x = newX;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "x", oldX, x));¶	}¶¶	@Override¶	public int getY() {¶		return y;¶	}¶¶	@Override¶	public void setY(int newY) {¶		int oldY = y;¶		y = newY;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "y", oldY, y));¶	}¶¶	@Override¶	public int getWidth() {¶		return width;¶	}¶¶	@Override¶	public void setWidth(int newWidth) {¶		int oldWidth = width;¶		width = newWidth;¶		height = newWidth;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "width", oldWidth, width));¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "height", oldWidth, height));¶	}¶¶	@Override¶	public int getHeight() {¶		return height;¶	}¶¶	@Override¶	public void setHeight(int newHeight) {¶		int oldHeight = height;¶		height = newHeight;¶		width = newHeight;¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "width", oldHeight, width));¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "height", oldHeight, height));¶	}¶¶	@Override¶	public boolean getFilled() {¶		return filled;¶	}¶¶	@Override¶	public Color getColor() {¶		return color;¶	}¶¶¶	@Override¶	public void setFilled(boolean isFilled) {¶		filled = isFilled;¶	}¶¶¶	@Override¶	public void setColor(Color newColor) {¶		color = newColor;¶	}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="1701" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 14:46:46 EST 2021" docASTNodeCount="19" docActiveCodeLength="124" docExpressionCount="9" docLength="124" projectName="ChatBox" starttimestamp="1613676779341" timestamp="827236">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/textbox/EditableTexBoxInterface.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.textbox;¶¶public interface EditableTexBoxInterface {¶	String getText();¶	"), Diff(INSERT,"void setText(String newText);"), Diff(EQUAL,"¶}¶")]]]></diff>
+    <snapshot><![CDATA[package components.textbox;
+
+public interface EditableTexBoxInterface {
+	String getText();
+	void setText(String newText);
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="1704" _type="Insert" date="Thu Feb 18 14:46:48 EST 2021" docASTNodeCount="19" docActiveCodeLength="126" docExpressionCount="9" docLength="126" length="2" offset="121" starttimestamp="1613676779341" timestamp="829006">
+    <text><![CDATA[
+	]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1706" _type="Replace" date="Thu Feb 18 14:46:48 EST 2021" docASTNodeCount="27" docActiveCodeLength="190" docExpressionCount="12" docLength="190" endLine="5" insertionLength="65" int_docASTNodeCount="19" int_docActiveCodeLength="125" int_docExpressionCount="9" int_docLength="125" length="1" offset="122" startLine="5" starttimestamp="1613676779341" timestamp="829195">
+    <deletedText><![CDATA[	]]></deletedText>
+    <insertedText><![CDATA[	void addPropertyChangeListener(PropertyChangeListener aListener)]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="1707" _type="Delete" date="Thu Feb 18 14:46:48 EST 2021" docASTNodeCount="27" docActiveCodeLength="188" docExpressionCount="12" docLength="188" endLine="2" length="2" offset="27" startLine="0" starttimestamp="1613676779341" timestamp="829266">
+    <text><![CDATA[
+
+]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1708" _type="Insert" date="Thu Feb 18 14:46:48 EST 2021" docASTNodeCount="33" docActiveCodeLength="233" docExpressionCount="17" docLength="233" length="45" offset="27" repeat="3" starttimestamp="1613676779341" timestamp="829266" timestamp2="829268">
+    <text><![CDATA[
+
+import java.beans.PropertyChangeListener;
+
+]]></text>
+  </DocumentChange>
+  <Command __id="1703" _type="MoveCaretCommand" caretOffset="121" date="Thu Feb 18 14:46:47 EST 2021" docOffset="121" starttimestamp="1613676779341" timestamp="828460" />
+  <Command __id="1705" _type="InsertStringCommand" date="Thu Feb 18 14:46:48 EST 2021" starttimestamp="1613676779341" timestamp="829007" timestamp2="829007">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="1711" _type="PasteCommand" date="Thu Feb 18 14:46:48 EST 2021" starttimestamp="1613676779341" timestamp="829298" />
+  <Command __id="1712" _type="MoveCaretCommand" caretOffset="233" date="Thu Feb 18 14:46:49 EST 2021" docOffset="233" starttimestamp="1613676779341" timestamp="829937" />
+  <Command __id="1713" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Thu Feb 18 14:46:49 EST 2021" starttimestamp="1613676779341" timestamp="830133" />
+  <Command __id="1717" _type="SelectTextCommand" caretOffset="557" date="Thu Feb 18 14:46:51 EST 2021" end="557" start="493" starttimestamp="1613676779341" timestamp="832261" />
+  <Command __id="2624" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 14:56:22 EST 2021" docASTNodeCount="30" docActiveCodeLength="222" docExpressionCount="15" docLength="222" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1403458">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/mainpanel/MainPanelInterface.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.mainpanel;¶¶import components.textbox.EditableTextBoxInterface;¶¶public interface MainPanelInterface {¶	EditableTextBoxInterface getEditableBox();¶	void send();¶"), Diff(INSERT,"	long getId();¶	void setId(long newId);¶"), Diff(EQUAL,"}¶")]]]></diff>
+    <snapshot><![CDATA[package components.mainpanel;
+
+import components.textbox.EditableTextBoxInterface;
+
+public interface MainPanelInterface {
+	EditableTextBoxInterface getEditableBox();
+	void send();
+	long getId();
+	void setId(long newId);
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="2627" _type="Delete" date="Thu Feb 18 14:56:25 EST 2021" docASTNodeCount="21" docActiveCodeLength="182" docExpressionCount="12" docLength="182" endLine="8" length="40" offset="179" repeat="2" startLine="6" starttimestamp="1613676779341" timestamp="1406091" timestamp2="1406492">
+    <text><![CDATA[
+	long getId();
+	void setId(long newId);]]></text>
+  </DocumentChange>
+  <Command __id="2636" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 14:56:29 EST 2021" docASTNodeCount="86" docActiveCodeLength="700" docExpressionCount="61" docLength="700" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1410223">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/mainpanel/MainPanel.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.mainpanel;¶¶import components.textbox.EditableTextBoxInterface;¶import components.textbox.EditableTextBox;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"editableTextBox", "id"})¶@EditablePropertyNames({"id"})¶public class MainPanel implements MainPanelInterface{¶	¶	"), Diff(DELETE,"private long id = 0;¶	"), Diff(EQUAL,"private EditableTextBoxInterface editableTextBox = new EditableTextBox();¶	¶	@Override¶	public EditableTextBoxInterface getEditableBox() {¶		return editableTextBox;¶	}¶¶	@Override¶	public void send() {¶		¶	}¶¶"), Diff(DELETE,"	@Override¶	public long getId() {¶		return id;¶	}¶¶	@Override¶	public void setId(long newId) {¶		id = newId;¶	}¶"), Diff(EQUAL,"¶	¶}¶")]]]></diff>
+    <snapshot><![CDATA[package components.mainpanel;
+
+import components.textbox.EditableTextBoxInterface;
+import components.textbox.EditableTextBox;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"editableTextBox", "id"})
+@EditablePropertyNames({"id"})
+public class MainPanel implements MainPanelInterface{
+	
+	private EditableTextBoxInterface editableTextBox = new EditableTextBox();
+	
+	@Override
+	public EditableTextBoxInterface getEditableBox() {
+		return editableTextBox;
+	}
+
+	@Override
+	public void send() {
+		
+	}
+
+
+	
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="2639" _type="Replace" date="Thu Feb 18 14:56:31 EST 2021" docASTNodeCount="86" docActiveCodeLength="696" docExpressionCount="61" docLength="696" endLine="14" insertionLength="11" int_docASTNodeCount="78" int_docActiveCodeLength="685" int_docExpressionCount="57" int_docLength="685" length="15" offset="519" startLine="14" starttimestamp="1613676779341" timestamp="1412647">
+    <deletedText><![CDATA[editableTextBox]]></deletedText>
+    <insertedText><![CDATA[EditableBox]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="2642" _type="Delete" date="Thu Feb 18 14:56:33 EST 2021" docASTNodeCount="86" docActiveCodeLength="695" docExpressionCount="61" docLength="695" endLine="14" length="1" offset="519" startLine="14" starttimestamp="1613676779341" timestamp="1414289">
+    <text><![CDATA[E]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2644" _type="Insert" date="Thu Feb 18 14:56:33 EST 2021" docASTNodeCount="86" docActiveCodeLength="696" docExpressionCount="61" docLength="696" length="1" offset="519" starttimestamp="1613676779341" timestamp="1414572">
+    <text><![CDATA[e]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2651" _type="Replace" date="Thu Feb 18 14:56:40 EST 2021" docASTNodeCount="86" docActiveCodeLength="692" docExpressionCount="61" docLength="692" endLine="18" insertionLength="11" int_docASTNodeCount="85" int_docActiveCodeLength="681" int_docExpressionCount="60" int_docLength="681" length="15" offset="630" startLine="18" starttimestamp="1613676779341" timestamp="1421168">
+    <deletedText><![CDATA[editableTextBox]]></deletedText>
+    <insertedText><![CDATA[editableBox]]></insertedText>
+  </DocumentChange>
+  <Command __id="2661" _type="RunCommand" date="Thu Feb 18 14:56:45 EST 2021" kind="HitBreakPoint" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1426281" type="Run" />
+  <Command __id="2662" _type="RunCommand" date="Thu Feb 18 14:56:45 EST 2021" kind="HitBreakPoint" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1426282" type="Run" />
+  <Command __id="2663" _type="ShellCommand" date="Thu Feb 18 14:56:45 EST 2021" starttimestamp="1613676779341" timestamp="1426290" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2664" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 14:56:49 EST 2021" docASTNodeCount="126" docActiveCodeLength="718" docExpressionCount="94" docLength="718" projectName="PhysicsSimulation" starttimestamp="1613676779341" timestamp="1430077">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/main/TestFrame.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package main;¶¶import javax.swing.JButton;¶import javax.swing.JSlider;¶¶import bus.uigen.OEFrame;¶import bus.uigen.ObjectEditor;¶import components.mainpanel.MainPanel;¶import components.mainpanel.MainPanelInterface;¶import components.pendulum.load.Load;¶import components.pendulum.load.LoadInterface;¶import components.pendulum.protractor.Protractor;¶import components.pendulum.protractor.ProtractorInterface;¶import components.pendulum.string.PendulumString;¶import components.pendulum.string.PendulumStringInterface;¶import javafx.scene.control.Slider;¶¶public class TestFrame {¶	public static void main(String[] args) {¶		MainPanelInterface panel = new MainPanel();¶		OEFrame frame = ObjectEditor.edit(panel);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="2665" _type="MoveCaretCommand" caretOffset="206" date="Thu Feb 18 14:56:49 EST 2021" docOffset="718" starttimestamp="1613676779341" timestamp="1430135" />
+  <Command __id="2668" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 14:56:50 EST 2021" docASTNodeCount="48" docActiveCodeLength="261" docExpressionCount="28" docLength="261" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1431564">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/main/Main.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package main;¶¶import bus.uigen.ObjectEditor;¶import components.mainpanel.MainPanel;¶import components.textbox.EditableTextBox;¶¶public class Main {¶	public static void main(String[] args) {¶		MainPanel panel = new MainPanel();¶		ObjectEditor.edit(panel);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="2669" _type="MoveCaretCommand" caretOffset="174" date="Thu Feb 18 14:56:50 EST 2021" docOffset="174" starttimestamp="1613676779341" timestamp="1431633" />
+  <Command __id="3113" _type="ShellCommand" date="Thu Feb 18 15:00:16 EST 2021" starttimestamp="1613676779341" timestamp="1636921" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="3115" _type="MoveCaretCommand" caretOffset="206" date="Thu Feb 18 15:00:16 EST 2021" docOffset="718" starttimestamp="1613676779341" timestamp="1637098" />
+  <Command __id="3117" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 15:00:19 EST 2021" docASTNodeCount="144" docActiveCodeLength="1084" docExpressionCount="98" docLength="1084" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1640117">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/textbox/EditableTextBox.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.textbox;¶¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import listenersupport.PropertyListenerSupport;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"input"})¶@EditablePropertyNames({"input"})¶¶public class EditableTextBox implements EditableTextBoxInterface{¶	private String input = "";¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	¶	@Override¶	public String getInput() {¶		return input;¶	}¶	¶	@Override¶	public void setInput(String newInput) {¶		String oldInput = input;¶		input = newInput;¶		"), Diff(INSERT,"System.out.println(input);¶		"), Diff(EQUAL,"propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "input", oldInput, input));¶	}¶	¶	@Override¶	public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);    ¶    }¶}¶")]]]></diff>
+    <snapshot><![CDATA[package components.textbox;
+
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+
+import listenersupport.PropertyListenerSupport;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"input"})
+@EditablePropertyNames({"input"})
+
+public class EditableTextBox implements EditableTextBoxInterface{
+	private String input = "";
+	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();
+	
+	@Override
+	public String getInput() {
+		return input;
+	}
+	
+	@Override
+	public void setInput(String newInput) {
+		String oldInput = input;
+		input = newInput;
+		System.out.println(input);
+		propertyListenerSupport.notifyAllListeners(
+				new PropertyChangeEvent(this, "input", oldInput, input));
+	}
+	
+	@Override
+	public void addPropertyChangeListener(PropertyChangeListener aListener) {
+		propertyListenerSupport.addElement(aListener);    
+    }
+}
+]]></snapshot>
+  </Command>
+  <Command __id="3118" _type="MoveCaretCommand" caretOffset="695" date="Thu Feb 18 15:00:19 EST 2021" docOffset="695" starttimestamp="1613676779341" timestamp="1640167" />
+  <Command __id="3227" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 15:01:05 EST 2021" docASTNodeCount="48" docActiveCodeLength="261" docExpressionCount="28" docLength="261" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1686509">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/main/Main.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package main;¶¶import bus.uigen.ObjectEditor;¶import components.mainpanel.MainPanel;¶import components.textbox.EditableTextBox;¶¶public class Main {¶	public static void main(String[] args) {¶		MainPanel panel = new MainPanel();¶		ObjectEditor.edit(panel);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="3239" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 15:01:12 EST 2021" docASTNodeCount="101" docActiveCodeLength="756" docExpressionCount="73" docLength="756" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1693558">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/mainpanel/MainPanel.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.mainpanel;¶¶import components.textbox.EditableTextBoxInterface;¶¶import javax.swing.JButton;¶¶import components.textbox.EditableTextBox;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PreferredWidgetClass;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"box"})¶@EditablePropertyNames({})¶public class MainPanel implements MainPanelInterface{¶	¶	private EditableTextBoxInterface box = new EditableTextBox();¶	¶	@Override¶	public EditableTextBoxInterface getBox() {¶		return box;¶	}¶¶	@Override¶	@PreferredWidgetClass(JButton.class)¶	public void send() {¶		¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="3241" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 15:01:13 EST 2021" docASTNodeCount="32" docActiveCodeLength="238" docExpressionCount="17" docLength="238" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1694141">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/textbox/EditableTextBoxInterface.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.textbox;¶¶import java.beans.PropertyChangeListener;¶¶public interface EditableTextBoxInterface {¶	String getInput();¶	void setInput(String newInput);¶	void addPropertyChangeListener(PropertyChangeListener aListener);¶}¶")]]]></diff>
+  </Command>
+  <Command __id="3243" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 15:01:14 EST 2021" docASTNodeCount="21" docActiveCodeLength="174" docExpressionCount="12" docLength="174" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1694967">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/mainpanel/MainPanelInterface.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.mainpanel;¶¶import components.textbox.EditableTextBoxInterface;¶¶public interface MainPanelInterface {¶	EditableTextBoxInterface getBox();¶	void send();¶}¶")]]]></diff>
+  </Command>
+  <Command __id="3245" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 15:01:15 EST 2021" docASTNodeCount="48" docActiveCodeLength="261" docExpressionCount="28" docLength="261" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1696049">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/main/Main.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package main;¶¶import bus.uigen.ObjectEditor;¶import components.mainpanel.MainPanel;¶import components.textbox.EditableTextBox;¶¶public class Main {¶	public static void main(String[] args) {¶		MainPanel panel = new MainPanel();¶		ObjectEditor.edit(panel);¶	}¶}¶")]]]></diff>
+  </Command>
+  <Command __id="3249" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 15:01:20 EST 2021" docASTNodeCount="144" docActiveCodeLength="1084" docExpressionCount="98" docLength="1084" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1701047">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/textbox/EditableTextBox.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.textbox;¶¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import listenersupport.PropertyListenerSupport;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"input"})¶@EditablePropertyNames({"input"})¶¶public class EditableTextBox implements EditableTextBoxInterface{¶	private String input = "";¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	¶	@Override¶	public String getInput() {¶		return input;¶	}¶	¶	@Override¶	public void setInput(String newInput) {¶		String oldInput = input;¶		input = newInput;¶		System.out.println(input);¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "input", oldInput, input));¶	}¶	¶	@Override¶	public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);    ¶    }¶}¶")]]]></diff>
+  </Command>
+  <Command __id="3237" _type="MoveCaretCommand" caretOffset="13" date="Thu Feb 18 15:01:12 EST 2021" docOffset="13" starttimestamp="1613676779341" timestamp="1692912" />
+  <Command __id="3238" _type="MoveCaretCommand" caretOffset="13" date="Thu Feb 18 15:01:12 EST 2021" docOffset="13" starttimestamp="1613676779341" timestamp="1692913" />
+  <Command __id="3240" _type="MoveCaretCommand" caretOffset="538" date="Thu Feb 18 15:01:12 EST 2021" docOffset="538" starttimestamp="1613676779341" timestamp="1693600" />
+  <Command __id="3242" _type="MoveCaretCommand" caretOffset="214" date="Thu Feb 18 15:01:13 EST 2021" docOffset="214" starttimestamp="1613676779341" timestamp="1694216" />
+  <Command __id="3244" _type="MoveCaretCommand" caretOffset="174" date="Thu Feb 18 15:01:14 EST 2021" docOffset="174" starttimestamp="1613676779341" timestamp="1695050" />
+  <Command __id="3246" _type="MoveCaretCommand" caretOffset="13" date="Thu Feb 18 15:01:15 EST 2021" docOffset="13" starttimestamp="1613676779341" timestamp="1696121" />
+  <Command __id="3248" _type="SelectTextCommand" caretOffset="475" date="Thu Feb 18 15:01:16 EST 2021" end="618" start="475" starttimestamp="1613676779341" timestamp="1697621" />
+  <Command __id="3250" _type="MoveCaretCommand" caretOffset="646" date="Thu Feb 18 15:01:20 EST 2021" docOffset="646" starttimestamp="1613676779341" timestamp="1701123" />
+  <Command __id="3252" _type="MoveCaretCommand" caretOffset="1002" date="Thu Feb 18 15:03:06 EST 2021" docOffset="1945" starttimestamp="1613676779341" timestamp="1806775" />
+  <Command __id="3253" _type="MoveCaretCommand" caretOffset="2530" date="Thu Feb 18 15:03:22 EST 2021" docOffset="3473" starttimestamp="1613676779341" timestamp="1823080" />
+  <Command __id="3254" _type="MoveCaretCommand" caretOffset="2512" date="Thu Feb 18 15:03:37 EST 2021" docOffset="3455" starttimestamp="1613676779341" timestamp="1837782" />
+  <Command __id="3255" _type="MoveCaretCommand" caretOffset="2530" date="Thu Feb 18 15:03:39 EST 2021" docOffset="3473" starttimestamp="1613676779341" timestamp="1840314" />
+  <Command __id="3256" _type="MoveCaretCommand" caretOffset="2479" date="Thu Feb 18 15:03:49 EST 2021" docOffset="3422" starttimestamp="1613676779341" timestamp="1850291" />
+  <Command __id="3280" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 15:04:25 EST 2021" docASTNodeCount="144" docActiveCodeLength="1084" docExpressionCount="98" docLength="1084" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1886045">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/textbox/EditableTextBox.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.textbox;¶¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import listenersupport.PropertyListenerSupport;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"input"})¶@EditablePropertyNames({"input"})¶¶public class EditableTextBox implements EditableTextBoxInterface{¶	private String input = "";¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	¶	@Override¶	public String getInput() {¶		return input;¶	}¶	¶	@Override¶	public void setInput(String newInput) {¶		String oldInput = input;¶		input = newInput;¶		System.out.println(input);¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "input", oldInput, input));¶	}¶	¶	@Override¶	public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);    ¶    }¶}¶")]]]></diff>
+  </Command>
+  <Command __id="3281" _type="MoveCaretCommand" caretOffset="646" date="Thu Feb 18 15:04:25 EST 2021" docOffset="646" starttimestamp="1613676779341" timestamp="1886130" />
+  <Command __id="3283" _type="SelectTextCommand" caretOffset="475" date="Thu Feb 18 15:04:30 EST 2021" end="618" start="475" starttimestamp="1613676779341" timestamp="1890668" />
+  <Command __id="3288" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 15:04:36 EST 2021" docASTNodeCount="144" docActiveCodeLength="1084" docExpressionCount="98" docLength="1084" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1896739">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/textbox/EditableTextBox.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.textbox;¶¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import listenersupport.PropertyListenerSupport;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"input"})¶@EditablePropertyNames({"input"})¶¶public class EditableTextBox implements EditableTextBoxInterface{¶	private String input = "";¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	¶	@Override¶	public String getInput() {¶		return input;¶	}¶	¶	@Override¶	public void setInput(String newInput) {¶		String oldInput = input;¶		input = newInput;¶		System.out.println(input);¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "input", oldInput, input));¶	}¶	¶	@Override¶	public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);    ¶    }¶}¶")]]]></diff>
+  </Command>
+  <Command __id="3289" _type="MoveCaretCommand" caretOffset="646" date="Thu Feb 18 15:04:36 EST 2021" docOffset="646" starttimestamp="1613676779341" timestamp="1896814" />
+  <Command __id="3292" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 15:04:39 EST 2021" docASTNodeCount="144" docActiveCodeLength="1084" docExpressionCount="98" docLength="1084" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1900261">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/textbox/EditableTextBox.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.textbox;¶¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import listenersupport.PropertyListenerSupport;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"input"})¶@EditablePropertyNames({"input"})¶¶public class EditableTextBox implements EditableTextBoxInterface{¶	private String input = "";¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	¶	@Override¶	public String getInput() {¶		return input;¶	}¶	¶	@Override¶	public void setInput(String newInput) {¶		String oldInput = input;¶		input = newInput;¶		System.out.println(input);¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "input", oldInput, input));¶	}¶	¶	@Override¶	public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);    ¶    }¶}¶")]]]></diff>
+  </Command>
+  <Command __id="3293" _type="MoveCaretCommand" caretOffset="646" date="Thu Feb 18 15:04:39 EST 2021" docOffset="646" starttimestamp="1613676779341" timestamp="1900312" />
+  <Command __id="3304" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 15:04:56 EST 2021" docASTNodeCount="144" docActiveCodeLength="1084" docExpressionCount="98" docLength="1084" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1916932">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/textbox/EditableTextBox.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.textbox;¶¶import java.beans.PropertyChangeEvent;¶import java.beans.PropertyChangeListener;¶¶import listenersupport.PropertyListenerSupport;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"input"})¶@EditablePropertyNames({"input"})¶¶public class EditableTextBox implements EditableTextBoxInterface{¶	private String input = "";¶	private PropertyListenerSupport propertyListenerSupport = new PropertyListenerSupport();¶	¶	@Override¶	public String getInput() {¶		return input;¶	}¶	¶	@Override¶	public void setInput(String newInput) {¶		String oldInput = input;¶		input = newInput;¶		System.out.println(input);¶		propertyListenerSupport.notifyAllListeners(¶				new PropertyChangeEvent(this, "input", oldInput, input));¶	}¶	¶	@Override¶	public void addPropertyChangeListener(PropertyChangeListener aListener) {¶		propertyListenerSupport.addElement(aListener);    ¶    }¶}¶")]]]></diff>
+  </Command>
+  <Command __id="3305" _type="MoveCaretCommand" caretOffset="646" date="Thu Feb 18 15:04:56 EST 2021" docOffset="646" starttimestamp="1613676779341" timestamp="1917012" />
+  <Command __id="3322" _type="DiffBasedFileOpenCommand" date="Thu Feb 18 15:05:11 EST 2021" docASTNodeCount="21" docActiveCodeLength="174" docExpressionCount="12" docLength="174" projectName="ChatBox" starttimestamp="1613676779341" timestamp="1932273">
+    <filePath><![CDATA[/home/leonard/Source/ChatBox/src/components/mainpanel/MainPanelInterface.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.mainpanel;¶¶import components.textbox.EditableTextBoxInterface;¶¶public interface MainPanelInterface {¶	EditableTextBoxInterface getBox();¶	void send();¶}¶")]]]></diff>
+  </Command>
+  <Command __id="3323" _type="MoveCaretCommand" caretOffset="174" date="Thu Feb 18 15:05:11 EST 2021" docOffset="174" starttimestamp="1613676779341" timestamp="1932346" />
+  <DocumentChange __id="3480" _type="Insert" date="Thu Feb 18 15:06:51 EST 2021" docASTNodeCount="153" docActiveCodeLength="1146" docExpressionCount="106" docLength="1146" length="5" offset="703" repeat="4" starttimestamp="1613676779341" timestamp="2032080" timestamp2="2033154">
+    <text><![CDATA[(100)]]></text>
+  </DocumentChange>
+  <DocumentChange __id="3496" _type="Insert" date="Thu Feb 18 15:06:56 EST 2021" docASTNodeCount="153" docActiveCodeLength="1148" docExpressionCount="106" docLength="1148" length="2" offset="708" starttimestamp="1613676779341" timestamp="2037163">
+    <text><![CDATA[
+	]]></text>
+  </DocumentChange>
+  <DocumentChange __id="3498" _type="Replace" date="Thu Feb 18 15:06:56 EST 2021" docASTNodeCount="156" docActiveCodeLength="1168" docExpressionCount="109" docLength="1168" endLine="22" insertionLength="21" int_docASTNodeCount="153" int_docActiveCodeLength="1147" int_docExpressionCount="106" int_docLength="1147" length="1" offset="709" startLine="22" starttimestamp="1613676779341" timestamp="2037318">
+    <deletedText><![CDATA[	]]></deletedText>
+    <insertedText><![CDATA[	@ComponentWidth(100)]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="3505" _type="Delete" date="Thu Feb 18 15:06:57 EST 2021" docASTNodeCount="156" docActiveCodeLength="1163" docExpressionCount="109" docLength="1163" endLine="22" length="5" offset="720" repeat="5" startLine="22" starttimestamp="1613676779341" timestamp="2038539" timestamp2="2039153">
+    <text><![CDATA[Width]]></text>
+  </DocumentChange>
+  <DocumentChange __id="3515" _type="Insert" date="Thu Feb 18 15:06:59 EST 2021" docASTNodeCount="156" docActiveCodeLength="1169" docExpressionCount="109" docLength="1169" length="6" offset="720" repeat="6" starttimestamp="1613676779341" timestamp="2039735" timestamp2="2040467">
+    <text><![CDATA[Height]]></text>
+  </DocumentChange>
+  <DocumentChange __id="3532" _type="Insert" date="Thu Feb 18 15:07:03 EST 2021" docASTNodeCount="162" docActiveCodeLength="1210" docExpressionCount="114" docLength="1210" length="41" offset="158" repeat="2" starttimestamp="1613676779341" timestamp="2044327" timestamp2="2044328">
+    <text><![CDATA[
+import util.annotations.ComponentHeight;]]></text>
+  </DocumentChange>
+  <Command __id="3544" _type="RunCommand" date="Thu Feb 18 15:07:13 EST 2021" kind="HitBreakPoint" projectName="ChatBox" starttimestamp="1613676779341" timestamp="2053989" type="Run" />
+  <Command __id="3545" _type="RunCommand" date="Thu Feb 18 15:07:13 EST 2021" kind="HitBreakPoint" projectName="ChatBox" starttimestamp="1613676779341" timestamp="2053990" type="Run" />
+  <Command __id="3546" _type="ShellCommand" date="Thu Feb 18 15:07:13 EST 2021" starttimestamp="1613676779341" timestamp="2054015" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="3548" _type="MoveCaretCommand" caretOffset="0" date="Thu Feb 18 15:07:18 EST 2021" docOffset="0" starttimestamp="1613676779341" timestamp="2058766" />
+  <Command __id="3549" _type="MoveCaretCommand" caretOffset="2080" date="Thu Feb 18 15:07:21 EST 2021" docOffset="3023" starttimestamp="1613676779341" timestamp="2062525" />
+  <Command __id="3550" _type="MoveCaretCommand" caretOffset="2078" date="Thu Feb 18 15:07:22 EST 2021" docOffset="3021" starttimestamp="1613676779341" timestamp="2063212" />
+  <Command __id="3551" _type="MoveCaretCommand" caretOffset="2111" date="Thu Feb 18 15:07:23 EST 2021" docOffset="3054" starttimestamp="1613676779341" timestamp="2063795" />
+  <Command __id="3552" _type="MoveCaretCommand" caretOffset="2166" date="Thu Feb 18 15:07:23 EST 2021" docOffset="3109" starttimestamp="1613676779341" timestamp="2064044" />
+  <Command __id="3553" _type="SelectTextCommand" caretOffset="2654" date="Thu Feb 18 15:07:33 EST 2021" end="2690" start="2654" starttimestamp="1613676779341" timestamp="2074010" />
+  <Command __id="3554" _type="CopyCommand" date="Thu Feb 18 15:07:33 EST 2021" starttimestamp="1613676779341" timestamp="2074222" />
+  <Command __id="3555" _type="MoveCaretCommand" caretOffset="2491" date="Thu Feb 18 15:07:34 EST 2021" docOffset="3434" starttimestamp="1613676779341" timestamp="2075345" />
+  <Command __id="3557" _type="InsertStringCommand" date="Thu Feb 18 15:07:35 EST 2021" starttimestamp="1613676779341" timestamp="2076174" timestamp2="2076174">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="3559" _type="PasteCommand" date="Thu Feb 18 15:07:35 EST 2021" starttimestamp="1613676779341" timestamp="2076370" />
+  <Command __id="3560" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Thu Feb 18 15:07:36 EST 2021" starttimestamp="1613676779341" timestamp="2077039" />
+</Events>

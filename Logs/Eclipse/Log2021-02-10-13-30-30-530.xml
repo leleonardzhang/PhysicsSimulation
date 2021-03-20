@@ -1,0 +1,528 @@
+<Events startTimestamp="1612981830530" logVersion="1.0.0.202101171653">
+  <Command __id="675" _type="ShellCommand" date="Wed Feb 10 14:18:17 EST 2021" starttimestamp="1612981830530" timestamp="2867109" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="678" _type="CopyCommand" date="Wed Feb 10 14:18:20 EST 2021" starttimestamp="1612981830530" timestamp="2869848" />
+  <Command __id="679" _type="PasteCommand" date="Wed Feb 10 14:18:21 EST 2021" starttimestamp="1612981830530" timestamp="2870793" />
+  <DocumentChange __id="1255" _type="Delete" date="Wed Feb 10 14:22:36 EST 2021" docASTNodeCount="909" docActiveCodeLength="4951" docExpressionCount="517" docLength="5031" endLine="65" length="5" offset="2346" repeat="5" startLine="65" starttimestamp="1612981830530" timestamp="3126271" timestamp2="3127020">
+    <text><![CDATA[ new ]]></text>
+  </DocumentChange>
+  <DocumentChange __id="1270" _type="Insert" date="Wed Feb 10 14:22:38 EST 2021" docASTNodeCount="912" docActiveCodeLength="4976" docExpressionCount="519" docLength="5056" length="25" offset="2346" repeat="24" starttimestamp="1612981830530" timestamp="3127746" timestamp2="3133393">
+    <text><![CDATA[new PropertyChangeEvent()]]></text>
+  </DocumentChange>
+  <Command __id="1334" _type="InsertStringCommand" date="Wed Feb 10 14:22:43 EST 2021" starttimestamp="1612981830530" timestamp="3132733" timestamp2="3132733">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="1335" _type="InsertStringCommand" date="Wed Feb 10 14:22:43 EST 2021" starttimestamp="1612981830530" timestamp="3132739" timestamp2="3132739">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="1337" _type="InsertStringCommand" date="Wed Feb 10 14:22:43 EST 2021" starttimestamp="1612981830530" timestamp="3132863" timestamp2="3132863">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="1338" _type="InsertStringCommand" date="Wed Feb 10 14:22:43 EST 2021" starttimestamp="1612981830530" timestamp="3132863" timestamp2="3132863">
+    <data><![CDATA[t]]></data>
+  </Command>
+  <Command __id="1340" _type="InsertStringCommand" date="Wed Feb 10 14:22:43 EST 2021" starttimestamp="1612981830530" timestamp="3133395" timestamp2="3133395">
+    <data><![CDATA[(]]></data>
+  </Command>
+  <Command __id="1341" _type="InsertStringCommand" date="Wed Feb 10 14:22:43 EST 2021" starttimestamp="1612981830530" timestamp="3133395" timestamp2="3133395">
+    <data><![CDATA[(]]></data>
+  </Command>
+  <Command __id="1342" _type="InsertStringCommand" date="Wed Feb 10 14:22:43 EST 2021" starttimestamp="1612981830530" timestamp="3133440" timestamp2="3133440">
+    <data><![CDATA[)]]></data>
+  </Command>
+  <Command __id="1343" _type="InsertStringCommand" date="Wed Feb 10 14:22:43 EST 2021" starttimestamp="1612981830530" timestamp="3133440" timestamp2="3133440">
+    <data><![CDATA[)]]></data>
+  </Command>
+  <Command __id="1344" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:22:44 EST 2021" starttimestamp="1612981830530" timestamp="3133943" />
+  <Command __id="1345" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:22:44 EST 2021" starttimestamp="1612981830530" timestamp="3133943" />
+  <Command __id="2159" _type="MoveCaretCommand" caretOffset="1848" date="Wed Feb 10 14:32:43 EST 2021" docOffset="2649" starttimestamp="1612981830530" timestamp="3732684" />
+  <Command __id="2160" _type="MoveCaretCommand" caretOffset="1848" date="Wed Feb 10 14:32:43 EST 2021" docOffset="2649" starttimestamp="1612981830530" timestamp="3732684" />
+  <Command __id="2161" _type="ShellCommand" date="Wed Feb 10 14:33:00 EST 2021" starttimestamp="1612981830530" timestamp="3749555" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2162" _type="ShellCommand" date="Wed Feb 10 14:33:30 EST 2021" starttimestamp="1612981830530" timestamp="3779935" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2163" _type="ShellCommand" date="Wed Feb 10 14:33:33 EST 2021" starttimestamp="1612981830530" timestamp="3782898" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2166" _type="ShellCommand" date="Wed Feb 10 14:36:21 EST 2021" starttimestamp="1612981830530" timestamp="3951363" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2168" _type="SelectTextCommand" caretOffset="550" date="Wed Feb 10 14:36:22 EST 2021" end="568" start="550" starttimestamp="1612981830530" timestamp="3951529" />
+  <Command __id="2170" _type="MoveCaretCommand" caretOffset="888" date="Wed Feb 10 14:36:24 EST 2021" docOffset="972" starttimestamp="1612981830530" timestamp="3953504" />
+  <Command __id="2172" _type="SelectTextCommand" caretOffset="550" date="Wed Feb 10 14:36:24 EST 2021" end="568" start="550" starttimestamp="1612981830530" timestamp="3954035" />
+  <Command __id="2174" _type="MoveCaretCommand" caretOffset="0" date="Wed Feb 10 14:36:25 EST 2021" docOffset="0" starttimestamp="1612981830530" timestamp="3954979" />
+  <Command __id="2176" _type="MoveCaretCommand" caretOffset="1089" date="Wed Feb 10 14:36:26 EST 2021" docOffset="1157" starttimestamp="1612981830530" timestamp="3956179" />
+  <Command __id="2177" _type="ShellCommand" date="Wed Feb 10 14:36:31 EST 2021" starttimestamp="1612981830530" timestamp="3961431" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2175" _type="DiffBasedFileOpenCommand" date="Wed Feb 10 14:36:26 EST 2021" docASTNodeCount="262" docActiveCodeLength="1521" docExpressionCount="153" docLength="1548" projectName="Comp533" starttimestamp="1612981830530" timestamp="3956124">
+    <filePath><![CDATA[/home/leonard/Source/Comp533/src/comp533/mvc/Controller.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package comp533.mvc;¶¶import java.beans.PropertyChangeEvent;¶import java.util.Scanner;¶¶import comp533.tracer.TracerToString;¶¶¶public class Controller<K, V> extends TracerToString implements ControllerInterface<K, V>{¶	¶	private ModelInterface<K, V> model;¶	private ViewInterface view;¶	private static Scanner scanner;¶	¶	private static final String QUIT = "quit";¶	public static final String NAME = "Controller";¶	¶	¶	public Controller() {¶		super(Controller.NAME);¶		this.view = new View();¶		Controller.scanner = new Scanner(System.in);¶	}¶	¶	@Override¶	public void mapreduce() {¶		// Tracer¶		traceThreadPrompt();¶		while (Controller.scanner.hasNext()) {¶			final int aNumber = Integer.parseInt(scanner.nextLine());¶			¶			setModel(new Model<K, V>());¶			model.setNumThreads(aNumber);¶			¶			// Tracer¶			traceNumbersPrompt();¶			¶			final String aString = scanner.nextLine();¶			if (QUIT.equals(aString)) {¶				traceQuit();¶				break;¶			}¶			¶			model.addPropertyChangeListener(this);¶			model.setInputString(aString);¶			model.mapreduce();¶			model.removePropertyChangeListener(this);¶			¶			// Tracer¶			traceThreadPrompt();¶		}¶		Controller.scanner.close();¶	}¶	¶	@Override¶	public void setModel(final ModelInterface<K, V> aModel) {¶		this.model = aModel;¶	}¶	¶	@Override¶	public void setView(final ViewInterface aView) {¶		this.view = aView;¶	}¶¶	@Override¶	public void propertyChange(final PropertyChangeEvent evt) {¶		this.view.viewTracePropertyChange(evt);¶	}¶	¶}¶")]]]></diff>
+  </Command>
+  <Command __id="2178" _type="ShellCommand" date="Wed Feb 10 14:53:41 EST 2021" starttimestamp="1612981830530" timestamp="4990590" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2180" _type="SelectTextCommand" caretOffset="294" date="Wed Feb 10 14:53:49 EST 2021" end="294" start="285" starttimestamp="1612981830530" timestamp="4999218" />
+  <Command __id="2181" _type="MoveCaretCommand" caretOffset="2152" date="Wed Feb 10 14:53:54 EST 2021" docOffset="2759" starttimestamp="1612981830530" timestamp="5004373" />
+  <Command __id="2182" _type="MoveCaretCommand" caretOffset="2155" date="Wed Feb 10 14:53:55 EST 2021" docOffset="2762" starttimestamp="1612981830530" timestamp="5004773" />
+  <Command __id="2183" _type="MoveCaretCommand" caretOffset="2167" date="Wed Feb 10 14:53:55 EST 2021" docOffset="2774" starttimestamp="1612981830530" timestamp="5005457" />
+  <Command __id="2184" _type="MoveCaretCommand" caretOffset="2156" date="Wed Feb 10 14:53:56 EST 2021" docOffset="2763" starttimestamp="1612981830530" timestamp="5005856" />
+  <Command __id="2185" _type="MoveCaretCommand" caretOffset="2034" date="Wed Feb 10 14:53:56 EST 2021" docOffset="2641" starttimestamp="1612981830530" timestamp="5006362" />
+  <Command __id="2186" _type="MoveCaretCommand" caretOffset="1759" date="Wed Feb 10 14:53:58 EST 2021" docOffset="2366" starttimestamp="1612981830530" timestamp="5007491" />
+  <Command __id="2187" _type="MoveCaretCommand" caretOffset="1669" date="Wed Feb 10 14:53:58 EST 2021" docOffset="2276" starttimestamp="1612981830530" timestamp="5007789" />
+  <Command __id="2188" _type="MoveCaretCommand" caretOffset="1533" date="Wed Feb 10 14:53:59 EST 2021" docOffset="2140" starttimestamp="1612981830530" timestamp="5008923" />
+  <Command __id="2189" _type="ShellCommand" date="Wed Feb 10 14:54:00 EST 2021" starttimestamp="1612981830530" timestamp="5009560" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2190" _type="ShellCommand" date="Wed Feb 10 14:54:00 EST 2021" starttimestamp="1612981830530" timestamp="5010458" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2179" _type="DiffBasedFileOpenCommand" date="Wed Feb 10 14:53:49 EST 2021" docASTNodeCount="508" docActiveCodeLength="3369" docExpressionCount="331" docLength="3369" projectName="PhysicsSimulation" starttimestamp="1612981830530" timestamp="4999061">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/mainpanel/MainPanel.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package components.mainpanel;
+
+import java.util.ArrayList;
+import java.util.List;
+import components.pendulum.imageprotractor.ImageProtractor;
+import components.pendulum.imageprotractor.ImageProtractorInterface;
+import components.pendulum.pendulum.ObserverPendulum;
+import components.pendulum.pendulum.ObserverPendulumInterface;
+import components.ruler.Ruler;
+import components.ruler.RulerInterface;
+import models.pendulum.PendulumModelFactory;
+import models.pendulum.PendulumModelInterface;
+import util.annotations.EditablePropertyNames;
+import util.annotations.PropertyNames;
+import util.annotations.StructurePattern;
+import util.annotations.StructurePatternNames;
+
+@StructurePattern(StructurePatternNames.BEAN_PATTERN)
+@PropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor"})
+@EditablePropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor"})
+public class MainPanel implements MainPanelInterface{
+	
+	public static double gravity = PendulumModelFactory.DEFAULT_GRAVITY, 
+			friction = PendulumModelFactory.DEFAULT_FRICTION;
+	private int numberOfPendulum = 0;
+	private List<ObserverPendulumInterface> pendulum = new ArrayList<ObserverPendulumInterface> ();
+	private RulerInterface ruler = new Ruler(20, 20, 675, 60);
+	private ImageProtractorInterface protractor = new ImageProtractor(100, -80, 200, 200);
+	private boolean enable = true;
+
+
+	public MainPanel() {
+		increaseNumberOfPendulum();
+	}
+
+	@Override
+	public void setGravity(double g) {
+		gravity = g;
+		setModel();
+	}
+
+	@Override
+	public void setFriction(double f) {
+		friction = f;
+		setModel();
+	}
+
+	@Override
+	public double getGravity() {
+		return gravity;
+	}
+
+	@Override
+	public double getFriction() {
+		return friction;
+	}
+
+
+	@Override
+	public List<ObserverPendulumInterface> getPendulum() {
+		return pendulum;
+	}
+
+
+	@Override
+	public RulerInterface getRuler() {
+		return ruler;
+	}
+
+	@Override
+	public void setRuler(RulerInterface newRuler) {
+		ruler = newRuler;
+	}
+
+
+	@Override
+	public int getNumberOfPendulum() {
+		return numberOfPendulum;
+	}
+
+	
+	@Override
+	public ImageProtractorInterface getProtractor() {
+		return protractor;
+	}
+
+	@Override
+	public void setProtractor(ImageProtractorInterface newProtractor) {
+		protractor = newProtractor;
+	}
+
+	@Override
+	public void setModel() {
+		for (int i = 0; i < numberOfPendulum; i ++) {
+			pendulum.get(i).setModel();
+		}
+	}
+
+	@Override
+	public void pause() {
+		if (enable) {
+			for (int i = 0; i < numberOfPendulum; i ++) {
+				pendulum.get(i).stop();
+			}
+			enable = false;
+		}
+		else {
+			for (int i = 0; i < numberOfPendulum; i ++) {
+				pendulum.get(i).resume();
+			}
+			enable = true;
+		}
+	}
+
+	@Override
+	public void reset() {
+		for (int i = 0; i < numberOfPendulum; i ++) {
+			pendulum.get(i).setAngle(0);
+		}
+	}
+
+	@Override
+	public void increaseNumberOfPendulum() {
+		if (numberOfPendulum < PendulumModelFactory.MAX_CAPACITY) {
+			PendulumModelInterface newModel = PendulumModelFactory.getDefaultModel();
+			pendulum.add(new ObserverPendulum(newModel, enable));
+			numberOfPendulum ++;
+		}
+	}
+
+	@Override
+	public void decreaseNumberOfPendulum() {
+		if (numberOfPendulum > 0) {
+			numberOfPendulum --;
+			pendulum.get(numberOfPendulum).getAnimator().interrupt();
+			pendulum.get(numberOfPendulum).getModel().removePropertyChangeListener(pendulum.get(numberOfPendulum));
+			pendulum.remove(numberOfPendulum);
+		}
+	}
+
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="2191" _type="ShellCommand" date="Wed Feb 10 14:54:59 EST 2021" starttimestamp="1612981830530" timestamp="5069173" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2192" _type="ShellCommand" date="Wed Feb 10 14:55:00 EST 2021" starttimestamp="1612981830530" timestamp="5069774" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2194" _type="MoveCaretCommand" caretOffset="0" date="Wed Feb 10 14:55:08 EST 2021" docOffset="0" starttimestamp="1612981830530" timestamp="5077663" />
+  <Command __id="2193" _type="DiffBasedFileOpenCommand" date="Wed Feb 10 14:55:08 EST 2021" docASTNodeCount="126" docActiveCodeLength="718" docExpressionCount="94" docLength="718" projectName="PhysicsSimulation" starttimestamp="1612981830530" timestamp="5077524">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/main/TestFrame.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package main;
+
+import javax.swing.JButton;
+import javax.swing.JSlider;
+
+import bus.uigen.OEFrame;
+import bus.uigen.ObjectEditor;
+import components.mainpanel.MainPanel;
+import components.mainpanel.MainPanelInterface;
+import components.pendulum.load.Load;
+import components.pendulum.load.LoadInterface;
+import components.pendulum.protractor.Protractor;
+import components.pendulum.protractor.ProtractorInterface;
+import components.pendulum.string.PendulumString;
+import components.pendulum.string.PendulumStringInterface;
+import javafx.scene.control.Slider;
+
+public class TestFrame {
+	public static void main(String[] args) {
+		MainPanelInterface panel = new MainPanel();
+		OEFrame frame = ObjectEditor.edit(panel);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="2201" _type="RunCommand" date="Wed Feb 10 14:55:26 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1612981830530" timestamp="5095528" type="Run" />
+  <Command __id="2202" _type="RunCommand" date="Wed Feb 10 14:55:26 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1612981830530" timestamp="5095528" type="Run" />
+  <Command __id="2203" _type="ShellCommand" date="Wed Feb 10 14:55:26 EST 2021" starttimestamp="1612981830530" timestamp="5095544" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2205" _type="MoveCaretCommand" caretOffset="1533" date="Wed Feb 10 14:55:29 EST 2021" docOffset="2140" starttimestamp="1612981830530" timestamp="5099288" />
+  <Command __id="2206" _type="MoveCaretCommand" caretOffset="1760" date="Wed Feb 10 14:55:36 EST 2021" docOffset="2367" starttimestamp="1612981830530" timestamp="5106272" />
+  <Command __id="2207" _type="MoveCaretCommand" caretOffset="1647" date="Wed Feb 10 14:55:42 EST 2021" docOffset="2254" starttimestamp="1612981830530" timestamp="5111838" />
+  <Command __id="2209" _type="InsertStringCommand" date="Wed Feb 10 14:55:43 EST 2021" starttimestamp="1612981830530" timestamp="5112617" timestamp2="5112617">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="2211" _type="InsertStringCommand" date="Wed Feb 10 14:55:43 EST 2021" starttimestamp="1612981830530" timestamp="5113176" timestamp2="5113176">
+    <data><![CDATA[@]]></data>
+  </Command>
+  <Command __id="2213" _type="InsertStringCommand" date="Wed Feb 10 14:55:44 EST 2021" starttimestamp="1612981830530" timestamp="5113633" timestamp2="5113633">
+    <data><![CDATA[V]]></data>
+  </Command>
+  <Command __id="2215" _type="InsertStringCommand" date="Wed Feb 10 14:55:44 EST 2021" starttimestamp="1612981830530" timestamp="5113785" timestamp2="5113785">
+    <data><![CDATA[I]]></data>
+  </Command>
+  <Command __id="2217" _type="InsertStringCommand" date="Wed Feb 10 14:55:44 EST 2021" starttimestamp="1612981830530" timestamp="5114030" timestamp2="5114030">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <Command __id="2219" _type="InsertStringCommand" date="Wed Feb 10 14:55:44 EST 2021" starttimestamp="1612981830530" timestamp="5114151" timestamp2="5114151">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="2221" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:55:45 EST 2021" starttimestamp="1612981830530" timestamp="5114546" />
+  <Command __id="2223" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:55:45 EST 2021" starttimestamp="1612981830530" timestamp="5114700" />
+  <Command __id="2225" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:55:45 EST 2021" starttimestamp="1612981830530" timestamp="5114843" />
+  <Command __id="2227" _type="InsertStringCommand" date="Wed Feb 10 14:55:45 EST 2021" starttimestamp="1612981830530" timestamp="5115428" timestamp2="5115428">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="2229" _type="InsertStringCommand" date="Wed Feb 10 14:55:46 EST 2021" starttimestamp="1612981830530" timestamp="5115546" timestamp2="5115546">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <Command __id="2231" _type="InsertStringCommand" date="Wed Feb 10 14:55:46 EST 2021" starttimestamp="1612981830530" timestamp="5115639" timestamp2="5115639">
+    <data><![CDATA[i]]></data>
+  </Command>
+  <Command __id="2233" _type="InsertStringCommand" date="Wed Feb 10 14:55:46 EST 2021" starttimestamp="1612981830530" timestamp="5115851" timestamp2="5115851">
+    <data><![CDATA[b]]></data>
+  </Command>
+  <Command __id="2235" _type="InsertStringCommand" date="Wed Feb 10 14:55:46 EST 2021" starttimestamp="1612981830530" timestamp="5116036" timestamp2="5116036">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="2237" _type="InsertStringCommand" date="Wed Feb 10 14:55:46 EST 2021" starttimestamp="1612981830530" timestamp="5116108" timestamp2="5116108">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="2239" _type="InsertStringCommand" date="Wed Feb 10 14:55:47 EST 2021" starttimestamp="1612981830530" timestamp="5116724" timestamp2="5116724">
+    <data><![CDATA[(]]></data>
+  </Command>
+  <Command __id="2240" _type="InsertStringCommand" date="Wed Feb 10 14:55:47 EST 2021" starttimestamp="1612981830530" timestamp="5116757" timestamp2="5116757">
+    <data><![CDATA[)]]></data>
+  </Command>
+  <Command __id="2241" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:55:47 EST 2021" starttimestamp="1612981830530" timestamp="5117249" />
+  <Command __id="2243" _type="InsertStringCommand" date="Wed Feb 10 14:55:47 EST 2021" starttimestamp="1612981830530" timestamp="5117426" timestamp2="5117426">
+    <data><![CDATA[f]]></data>
+  </Command>
+  <Command __id="2245" _type="InsertStringCommand" date="Wed Feb 10 14:55:48 EST 2021" starttimestamp="1612981830530" timestamp="5117645" timestamp2="5117645">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="2247" _type="InsertStringCommand" date="Wed Feb 10 14:55:48 EST 2021" starttimestamp="1612981830530" timestamp="5117810" timestamp2="5117810">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="2249" _type="InsertStringCommand" date="Wed Feb 10 14:55:48 EST 2021" starttimestamp="1612981830530" timestamp="5117926" timestamp2="5117926">
+    <data><![CDATA[s]]></data>
+  </Command>
+  <Command __id="2251" _type="InsertStringCommand" date="Wed Feb 10 14:55:48 EST 2021" starttimestamp="1612981830530" timestamp="5118011" timestamp2="5118011">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="2204" _type="DiffBasedFileOpenCommand" date="Wed Feb 10 14:55:29 EST 2021" docASTNodeCount="508" docActiveCodeLength="3369" docExpressionCount="331" docLength="3369" projectName="PhysicsSimulation" starttimestamp="1612981830530" timestamp="5099225">
+    <filePath><![CDATA[/home/leonard/Source/PhysicsSimulation/src/components/mainpanel/MainPanel.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package components.mainpanel;¶¶import java.util.ArrayList;¶import java.util.List;¶import components.pendulum.imageprotractor.ImageProtractor;¶import components.pendulum.imageprotractor.ImageProtractorInterface;¶import components.pendulum.pendulum.ObserverPendulum;¶import components.pendulum.pendulum.ObserverPendulumInterface;¶import components.ruler.Ruler;¶import components.ruler.RulerInterface;¶import models.pendulum.PendulumModelFactory;¶import models.pendulum.PendulumModelInterface;¶import util.annotations.EditablePropertyNames;¶import util.annotations.PropertyNames;¶import util.annotations.StructurePattern;¶import util.annotations.StructurePatternNames;¶¶@StructurePattern(StructurePatternNames.BEAN_PATTERN)¶@PropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor"})¶@EditablePropertyNames({"gravity", "friction", "pendulum", "ruler", "protractor"})¶public class MainPanel implements MainPanelInterface{¶	¶	public static double gravity = PendulumModelFactory.DEFAULT_GRAVITY, ¶			friction = PendulumModelFactory.DEFAULT_FRICTION;¶	private int numberOfPendulum = 0;¶	private List<ObserverPendulumInterface> pendulum = new ArrayList<ObserverPendulumInterface> ();¶	private RulerInterface ruler = new Ruler(20, 20, 675, 60);¶	private ImageProtractorInterface protractor = new ImageProtractor(100, -80, 200, 200);¶	private boolean enable = true;¶¶¶	public MainPanel() {¶		increaseNumberOfPendulum();¶	}¶¶	@Override¶	public void setGravity(double g) {¶		gravity = g;¶		setModel();¶	}¶¶	@Override¶	public void setFriction(double f) {¶		friction = f;¶		setModel();¶	}¶¶	@Override¶	public double getGravity() {¶		return gravity;¶	}¶¶	@Override¶	public double getFriction() {¶		return friction;¶	}¶¶¶	@Override¶	public List<ObserverPendulumInterface> getPendulum() {¶		return pendulum;¶	}¶¶¶	@Override¶	public RulerInterface getRuler() {¶		return ruler;¶	}¶¶	@Override¶	public void setRuler(RulerInterface newRuler) {¶		ruler = newRuler;¶	}¶¶¶	@Override¶	public int getNumberOfPendulum() {¶		return numberOfPendulum;¶	}¶¶	¶	@Override¶	public ImageProtractorInterface getProtractor() {¶		return protractor;¶	}¶¶	@Override¶	public void setProtractor(ImageProtractorInterface newProtractor) {¶		protractor = newProtractor;¶	}¶¶	@Override¶	public void setModel() {¶		for (int i = 0; i < numberOfPendulum; i ++) {¶			pendulum.get(i).setModel();¶		}¶	}¶¶	@Override¶	public void pause() {¶		if (enable) {¶			for (int i = 0; i < numberOfPendulum; i ++) {¶				pendulum.get(i).stop();¶			}¶			enable = false;¶		}¶		else {¶			for (int i = 0; i < numberOfPendulum; i ++) {¶				pendulum.get(i).resume();¶			}¶			enable = true;¶		}¶	}¶¶	@Override¶	public void reset() {¶		for (int i = 0; i < numberOfPendulum; i ++) {¶			pendulum.get(i).setAngle(0);¶		}¶	}¶¶	@Override¶	public void increaseNumberOfPendulum() {¶		if (numberOfPendulum < PendulumModelFactory.MAX_CAPACITY) {¶			PendulumModelInterface newModel = PendulumModelFactory.getDefaultModel();¶			pendulum.add(new ObserverPendulum(newModel, enable));¶			numberOfPendulum ++;¶		}¶	}¶¶	@Override¶	public void decreaseNumberOfPendulum() {¶		if (numberOfPendulum > 0) {¶			numberOfPendulum --;¶			pendulum.get(numberOfPendulum).getAnimator().interrupt();¶			pendulum.get(numberOfPendulum).getModel().removePropertyChangeListener(pendulum.get(numberOfPendulum));¶			pendulum.remove(numberOfPendulum);¶		}¶	}¶¶¶}¶")]]]></diff>
+  </Command>
+  <DocumentChange __id="2208" _type="Insert" date="Wed Feb 10 14:55:43 EST 2021" docASTNodeCount="510" docActiveCodeLength="3376" docExpressionCount="333" docLength="3376" length="7" offset="2254" repeat="6" starttimestamp="1612981830530" timestamp="5112616" timestamp2="5114150">
+    <text><![CDATA[
+	@VIsi]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2220" _type="Delete" date="Wed Feb 10 14:55:45 EST 2021" docASTNodeCount="510" docActiveCodeLength="3373" docExpressionCount="333" docLength="3373" endLine="92" length="3" offset="2258" repeat="3" startLine="92" starttimestamp="1612981830530" timestamp="5114545" timestamp2="5114842">
+    <text><![CDATA[Isi]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2226" _type="Insert" date="Wed Feb 10 14:55:45 EST 2021" docASTNodeCount="511" docActiveCodeLength="3386" docExpressionCount="334" docLength="3386" length="13" offset="2258" repeat="12" starttimestamp="1612981830530" timestamp="5115427" timestamp2="5118010">
+    <text><![CDATA[isible(false)]]></text>
+  </DocumentChange>
+  <Command __id="2252" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Wed Feb 10 14:55:48 EST 2021" starttimestamp="1612981830530" timestamp="5118424" />
+  <Command __id="2259" _type="SelectTextCommand" caretOffset="1649" date="Wed Feb 10 14:55:53 EST 2021" end="1664" start="1649" starttimestamp="1612981830530" timestamp="5122988" />
+  <Command __id="2260" _type="CopyCommand" date="Wed Feb 10 14:55:53 EST 2021" starttimestamp="1612981830530" timestamp="5123171" />
+  <Command __id="2261" _type="MoveCaretCommand" caretOffset="1366" date="Wed Feb 10 14:56:03 EST 2021" docOffset="2006" starttimestamp="1612981830530" timestamp="5132622" />
+  <Command __id="2263" _type="InsertStringCommand" date="Wed Feb 10 14:56:03 EST 2021" starttimestamp="1612981830530" timestamp="5133241" timestamp2="5133241">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="2265" _type="PasteCommand" date="Wed Feb 10 14:56:03 EST 2021" starttimestamp="1612981830530" timestamp="5133399" />
+  <Command __id="2266" _type="MoveCaretCommand" caretOffset="1653" date="Wed Feb 10 14:56:04 EST 2021" docOffset="2293" starttimestamp="1612981830530" timestamp="5134128" />
+  <Command __id="2267" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Wed Feb 10 14:56:05 EST 2021" starttimestamp="1612981830530" timestamp="5134491" />
+  <Command __id="2270" _type="MoveCaretCommand" caretOffset="1449" date="Wed Feb 10 14:56:05 EST 2021" docOffset="2089" starttimestamp="1612981830530" timestamp="5134721" />
+  <Command __id="2271" _type="MoveCaretCommand" caretOffset="1366" date="Wed Feb 10 14:56:05 EST 2021" docOffset="2006" starttimestamp="1612981830530" timestamp="5135171" />
+  <Command __id="2272" _type="MoveCaretCommand" caretOffset="1353" date="Wed Feb 10 14:56:06 EST 2021" docOffset="1993" starttimestamp="1612981830530" timestamp="5135637" />
+  <Command __id="2273" _type="MoveCaretCommand" caretOffset="1350" date="Wed Feb 10 14:56:06 EST 2021" docOffset="1990" starttimestamp="1612981830530" timestamp="5136104" />
+  <Command __id="2274" _type="MoveCaretCommand" caretOffset="1449" date="Wed Feb 10 14:56:11 EST 2021" docOffset="2089" starttimestamp="1612981830530" timestamp="5141088" />
+  <Command __id="2275" _type="MoveCaretCommand" caretOffset="1417" date="Wed Feb 10 14:56:11 EST 2021" docOffset="2057" starttimestamp="1612981830530" timestamp="5141390" />
+  <Command __id="2276" _type="MoveCaretCommand" caretOffset="1446" date="Wed Feb 10 14:56:12 EST 2021" docOffset="2086" starttimestamp="1612981830530" timestamp="5141723" />
+  <Command __id="2277" _type="SelectTextCommand" caretOffset="1368" date="Wed Feb 10 14:56:19 EST 2021" end="1383" start="1368" starttimestamp="1612981830530" timestamp="5148772" />
+  <DocumentChange __id="2257" _type="Insert" date="Wed Feb 10 14:55:51 EST 2021" docASTNodeCount="517" docActiveCodeLength="3419" docExpressionCount="339" docLength="3419" length="33" offset="665" repeat="2" starttimestamp="1612981830530" timestamp="5121163" timestamp2="5121164">
+    <text><![CDATA[
+import util.annotations.Visible;]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2262" _type="Insert" date="Wed Feb 10 14:56:03 EST 2021" docASTNodeCount="517" docActiveCodeLength="3421" docExpressionCount="339" docLength="3421" length="2" offset="2006" starttimestamp="1612981830530" timestamp="5133239">
+    <text><![CDATA[
+	]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2264" _type="Replace" date="Wed Feb 10 14:56:03 EST 2021" docASTNodeCount="520" docActiveCodeLength="3436" docExpressionCount="342" docLength="3436" endLine="77" insertionLength="16" int_docASTNodeCount="517" int_docActiveCodeLength="3420" int_docExpressionCount="339" int_docLength="3420" length="1" offset="2007" startLine="77" starttimestamp="1612981830530" timestamp="5133397">
+    <deletedText><![CDATA[	]]></deletedText>
+    <insertedText><![CDATA[	@Visible(false)]]></insertedText>
+  </DocumentChange>
+  <Command __id="2278" _type="MoveCaretCommand" caretOffset="1366" date="Wed Feb 10 14:56:20 EST 2021" docOffset="2006" starttimestamp="1612981830530" timestamp="5149922" />
+  <Command __id="2279" _type="MoveCaretCommand" caretOffset="1383" date="Wed Feb 10 14:56:20 EST 2021" docOffset="2023" starttimestamp="1612981830530" timestamp="5150222" />
+  <Command __id="2281" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:23 EST 2021" starttimestamp="1612981830530" timestamp="5152661" />
+  <Command __id="2283" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:23 EST 2021" starttimestamp="1612981830530" timestamp="5152910" />
+  <Command __id="2285" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:23 EST 2021" starttimestamp="1612981830530" timestamp="5152960" />
+  <Command __id="2287" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:23 EST 2021" starttimestamp="1612981830530" timestamp="5153010" />
+  <Command __id="2289" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:23 EST 2021" starttimestamp="1612981830530" timestamp="5153060" />
+  <Command __id="2291" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:23 EST 2021" starttimestamp="1612981830530" timestamp="5153110" />
+  <Command __id="2293" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:23 EST 2021" starttimestamp="1612981830530" timestamp="5153159" />
+  <Command __id="2295" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:23 EST 2021" starttimestamp="1612981830530" timestamp="5153208" />
+  <Command __id="2297" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:23 EST 2021" starttimestamp="1612981830530" timestamp="5153259" />
+  <Command __id="2299" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:23 EST 2021" starttimestamp="1612981830530" timestamp="5153309" />
+  <Command __id="2301" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:23 EST 2021" starttimestamp="1612981830530" timestamp="5153359" />
+  <Command __id="2303" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:23 EST 2021" starttimestamp="1612981830530" timestamp="5153408" />
+  <Command __id="2305" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:24 EST 2021" starttimestamp="1612981830530" timestamp="5153585" />
+  <Command __id="2307" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:24 EST 2021" starttimestamp="1612981830530" timestamp="5153749" />
+  <Command __id="2309" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:24 EST 2021" starttimestamp="1612981830530" timestamp="5153926" />
+  <Command __id="2311" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:24 EST 2021" starttimestamp="1612981830530" timestamp="5154242" />
+  <Command __id="2313" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:25 EST 2021" starttimestamp="1612981830530" timestamp="5154589" />
+  <Command __id="2314" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Wed Feb 10 14:56:25 EST 2021" starttimestamp="1612981830530" timestamp="5155075" />
+  <Command __id="2317" _type="SelectTextCommand" caretOffset="1412" date="Wed Feb 10 14:56:27 EST 2021" end="1428" start="1412" starttimestamp="1612981830530" timestamp="5157238" />
+  <Command __id="2318" _type="CopyCommand" date="Wed Feb 10 14:56:27 EST 2021" starttimestamp="1612981830530" timestamp="5157420" />
+  <Command __id="2333" _type="RunCommand" date="Wed Feb 10 14:56:36 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1612981830530" timestamp="5165526" type="Run" />
+  <Command __id="2334" _type="RunCommand" date="Wed Feb 10 14:56:36 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1612981830530" timestamp="5165526" type="Run" />
+  <Command __id="2335" _type="ShellCommand" date="Wed Feb 10 14:56:36 EST 2021" starttimestamp="1612981830530" timestamp="5166423" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2336" _type="ConsoleOutput" date="Wed Feb 10 14:56:37 EST 2021" overflow="false" starttimestamp="1612981830530" timestamp="5166947" type="ConsoleOutput">
+    <outputString><![CDATA[ObjectEditor(Version 22, built on Sat Jan 16 20:25:10 EST 2021). Copyright Prasun Dewan, 2012, All rights reserved. US Patent Appl. No.: 12/532,327
+E*** For editable property pendulum of MainPanel please define a setter with the header:
+	public void setPendulum(java.util.List <parameter name>)
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"W*** public void components.ruler.Ruler.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: height of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** public void components.pendulum.imageprotractor.ImageProtractor.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: height of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** The Y property of .protractor = -80 is < 0. Parts of it may not be visible¶W*** Implicit property animator of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** Implicit property model of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** public void components.pendulum.string.PendulumString.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: stroke of class class components.pendulum.string.PendulumString not considered editable as it is not in editable property names list. ¶¶W*** public void components.pendulum.load.Load.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: color of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: filled of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: height of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶"), Diff(INSERT,"ObjectEditor(Version 22, built on Sat Jan 16 20:25:10 EST 2021). Copyright Prasun Dewan, 2012, All rights reserved. US Patent Appl. No.: 12/532,327¶E*** For editable property pendulum of MainPanel please define a setter with the header:¶	public void setPendulum(java.util.List <parameter name>)"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="2337" _type="ConsoleOutput" date="Wed Feb 10 14:56:37 EST 2021" overflow="false" starttimestamp="1612981830530" timestamp="5167055" type="ConsoleOutput">
+    <outputString><![CDATA[W*** public void components.ruler.Ruler.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: height of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: x of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"ObjectEditor(Version 22, built on Sat Jan 16 20:25:10 EST 2021). Copyright Prasun Dewan, 2012, All rights res"), Diff(INSERT,"W*** public void components.ruler.Ruler.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: height of class class components.ruler.Ruler not consid"), Diff(EQUAL,"er"), Diff(DELETE,"v"), Diff(EQUAL,"ed"), Diff(DELETE,". US Patent Appl. No.: 12/532,327¶E*** For editable property pendulum of MainPanel please define a setter with the header:¶	public void setPendulum(java.util.List <parameter name>)"), Diff(INSERT," editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="2338" _type="ConsoleOutput" date="Wed Feb 10 14:56:37 EST 2021" overflow="false" starttimestamp="1612981830530" timestamp="5167160" type="ConsoleOutput">
+    <outputString><![CDATA[W*** public void components.pendulum.imageprotractor.ImageProtractor.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: height of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: x of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** The Y property of .protractor = -80 is < 0. Parts of it may not be visible
+W*** Implicit property animator of  ObserverPendulum ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** Implicit property model of  ObserverPendulum ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** public void components.pendulum.string.PendulumString.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: stroke of class class components.pendulum.string.PendulumString not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"W*** public void components."), Diff(DELETE,"ruler.Rule"), Diff(INSERT,"pendulum.imageprotractor.ImageProtracto"), Diff(EQUAL,"r.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: height of class class components."), Diff(DELETE,"ruler.Rule"), Diff(INSERT,"pendulum.imageprotractor.ImageProtracto"), Diff(EQUAL,"r not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components."), Diff(DELETE,"ruler.Rule"), Diff(INSERT,"pendulum.imageprotractor.ImageProtracto"), Diff(EQUAL,"r not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components."), Diff(DELETE,"ruler.Rule"), Diff(INSERT,"pendulum.imageprotractor.ImageProtracto"), Diff(EQUAL,"r not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components."), Diff(DELETE,"ruler.Ruler"), Diff(INSERT,"pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** The Y property of .protractor = -80 is < 0. Parts of it may not be visible¶W*** Implicit property animator of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** Implicit property model of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** public void components.pendulum.string.PendulumString.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: stroke of class class components.pendulum.string.PendulumString"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶")]]]></diff>
+  </Command>
+  <Command __id="2339" _type="ConsoleOutput" date="Wed Feb 10 14:56:37 EST 2021" overflow="false" starttimestamp="1612981830530" timestamp="5167245" type="ConsoleOutput">
+    <outputString><![CDATA[W*** public void components.pendulum.load.Load.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: color of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: filled of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: height of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"W*** public void components.pendulum."), Diff(DELETE,"imageprotractor.ImageProtractor"), Diff(INSERT,"load.Load"), Diff(EQUAL,".addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: "), Diff(DELETE,"height"), Diff(INSERT,"color"), Diff(EQUAL," of class class components.pendulum."), Diff(DELETE,"imageprotractor.ImageProtractor"), Diff(INSERT,"load.Load"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: "), Diff(DELETE,"width"), Diff(INSERT,"filled"), Diff(EQUAL," of class class components.pendulum."), Diff(DELETE,"imageprotractor.ImageProtractor"), Diff(INSERT,"load.Load"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: "), Diff(DELETE,"x"), Diff(INSERT,"height"), Diff(EQUAL," of class class components.pendulum."), Diff(DELETE,"imageprotractor.ImageProtractor"), Diff(INSERT,"load.Load"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: "), Diff(DELETE,"y of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** The Y property of .protractor = -80 is < 0. Parts of it may not be visible¶W*** Implicit property animator of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** Implicit property model of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** public void components.pendulum.string.PendulumString.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: stroke of class class components.pendulum.string.PendulumString"), Diff(INSERT,"width of class class components.pendulum.load.Load"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶")]]]></diff>
+  </Command>
+  <Command __id="2340" _type="ShellCommand" date="Wed Feb 10 14:56:43 EST 2021" starttimestamp="1612981830530" timestamp="5173339" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2341" _type="SelectTextCommand" caretOffset="188" date="Wed Feb 10 14:56:45 EST 2021" end="206" start="188" starttimestamp="1612981830530" timestamp="5174504" />
+  <Command __id="2342" _type="CopyCommand" date="Wed Feb 10 14:56:45 EST 2021" starttimestamp="1612981830530" timestamp="5175255" />
+  <Command __id="2344" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Wed Feb 10 14:56:46 EST 2021" starttimestamp="1612981830530" timestamp="5175772" />
+  <Command __id="2345" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:46 EST 2021" starttimestamp="1612981830530" timestamp="5176413" />
+  <Command __id="2346" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5176662" />
+  <Command __id="2347" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5176713" />
+  <Command __id="2348" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5176763" />
+  <Command __id="2349" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5176812" />
+  <Command __id="2350" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5176863" />
+  <Command __id="2351" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5176913" />
+  <Command __id="2352" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5176963" />
+  <Command __id="2353" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5177013" />
+  <Command __id="2354" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5177064" />
+  <Command __id="2355" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5177114" />
+  <Command __id="2356" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5177164" />
+  <Command __id="2357" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5177214" />
+  <Command __id="2358" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5177264" />
+  <Command __id="2359" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5177314" />
+  <Command __id="2360" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5177363" />
+  <Command __id="2361" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:47 EST 2021" starttimestamp="1612981830530" timestamp="5177413" />
+  <Command __id="2362" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:48 EST 2021" starttimestamp="1612981830530" timestamp="5177598" />
+  <Command __id="2363" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:48 EST 2021" starttimestamp="1612981830530" timestamp="5177848" />
+  <Command __id="2364" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:48 EST 2021" starttimestamp="1612981830530" timestamp="5177898" />
+  <Command __id="2365" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:48 EST 2021" starttimestamp="1612981830530" timestamp="5177949" />
+  <Command __id="2366" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:48 EST 2021" starttimestamp="1612981830530" timestamp="5177998" />
+  <Command __id="2367" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:48 EST 2021" starttimestamp="1612981830530" timestamp="5178049" />
+  <Command __id="2368" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:48 EST 2021" starttimestamp="1612981830530" timestamp="5178120" />
+  <Command __id="2369" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:48 EST 2021" starttimestamp="1612981830530" timestamp="5178150" />
+  <Command __id="2370" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:48 EST 2021" starttimestamp="1612981830530" timestamp="5178201" />
+  <Command __id="2371" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:48 EST 2021" starttimestamp="1612981830530" timestamp="5178251" />
+  <Command __id="2372" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:48 EST 2021" starttimestamp="1612981830530" timestamp="5178302" />
+  <Command __id="2373" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:48 EST 2021" starttimestamp="1612981830530" timestamp="5178353" />
+  <Command __id="2374" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:48 EST 2021" starttimestamp="1612981830530" timestamp="5178403" />
+  <Command __id="2375" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:48 EST 2021" starttimestamp="1612981830530" timestamp="5178454" />
+  <Command __id="2376" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5178504" />
+  <Command __id="2377" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5178554" />
+  <Command __id="2378" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5178605" />
+  <Command __id="2379" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5178655" />
+  <Command __id="2380" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5178705" />
+  <Command __id="2381" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5178755" />
+  <Command __id="2382" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5178805" />
+  <Command __id="2383" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5178855" />
+  <Command __id="2384" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5178905" />
+  <Command __id="2385" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5178955" />
+  <Command __id="2386" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5179005" />
+  <Command __id="2387" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5179055" />
+  <Command __id="2388" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5179105" />
+  <Command __id="2389" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5179155" />
+  <DocumentChange __id="2280" _type="Delete" date="Wed Feb 10 14:56:23 EST 2021" docASTNodeCount="517" docActiveCodeLength="3419" docExpressionCount="339" docLength="3419" endLine="77" length="17" offset="2006" repeat="17" startLine="76" starttimestamp="1612981830530" timestamp="5152659" timestamp2="5154587">
+    <text><![CDATA[
+	@Visible(false)]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2321" _type="Insert" date="Wed Feb 10 14:56:32 EST 2021" docASTNodeCount="518" docActiveCodeLength="3439" docExpressionCount="340" docLength="3439" length="20" offset="826" repeat="4" starttimestamp="1612981830530" timestamp="5162234" timestamp2="5163115">
+    <text><![CDATA[, "numberOfPendulum"]]></text>
+  </DocumentChange>
+  <DocumentChange __id="2343" _type="Delete" date="Wed Feb 10 14:56:46 EST 2021" docASTNodeCount="517" docActiveCodeLength="3421" docExpressionCount="339" docLength="3421" endLine="19" length="18" offset="828" startLine="19" starttimestamp="1612981830530" timestamp="5175768">
+    <text><![CDATA["numberOfPendulum"]]></text>
+  </DocumentChange>
+  <Command __id="2390" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5179205" />
+  <Command __id="2391" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5179255" />
+  <Command __id="2392" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5179305" />
+  <Command __id="2393" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5179355" />
+  <Command __id="2394" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5179405" />
+  <Command __id="2395" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:49 EST 2021" starttimestamp="1612981830530" timestamp="5179455" />
+  <Command __id="2396" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:50 EST 2021" starttimestamp="1612981830530" timestamp="5179505" />
+  <Command __id="2397" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:50 EST 2021" starttimestamp="1612981830530" timestamp="5179555" />
+  <Command __id="2398" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:50 EST 2021" starttimestamp="1612981830530" timestamp="5179605" />
+  <Command __id="2399" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:50 EST 2021" starttimestamp="1612981830530" timestamp="5179655" />
+  <Command __id="2400" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:50 EST 2021" starttimestamp="1612981830530" timestamp="5179705" />
+  <Command __id="2401" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:50 EST 2021" starttimestamp="1612981830530" timestamp="5179755" />
+  <Command __id="2402" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_PREVIOUS" date="Wed Feb 10 14:56:50 EST 2021" starttimestamp="1612981830530" timestamp="5179806" />
+  <Command __id="2412" _type="RunCommand" date="Wed Feb 10 14:56:55 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1612981830530" timestamp="5184896" type="Run" />
+  <Command __id="2413" _type="RunCommand" date="Wed Feb 10 14:56:55 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1612981830530" timestamp="5184896" type="Run" />
+  <Command __id="2414" _type="ShellCommand" date="Wed Feb 10 14:56:56 EST 2021" starttimestamp="1612981830530" timestamp="5185837" type="ECLIPSE_MINIMIZED" />
+  <Command __id="2415" _type="ShellCommand" date="Wed Feb 10 14:56:56 EST 2021" starttimestamp="1612981830530" timestamp="5185838" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2416" _type="ShellCommand" date="Wed Feb 10 14:57:14 EST 2021" starttimestamp="1612981830530" timestamp="5204136" type="ECLIPSE_MAXIMIZED" />
+  <Command __id="2417" _type="ShellCommand" date="Wed Feb 10 14:57:14 EST 2021" starttimestamp="1612981830530" timestamp="5204138" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2426" _type="RunCommand" date="Wed Feb 10 14:57:47 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1612981830530" timestamp="5237065" type="Run" />
+  <Command __id="2427" _type="RunCommand" date="Wed Feb 10 14:57:47 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1612981830530" timestamp="5237066" type="Run" />
+  <Command __id="2428" _type="ShellCommand" date="Wed Feb 10 14:57:47 EST 2021" starttimestamp="1612981830530" timestamp="5237090" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2429" _type="ShellCommand" date="Wed Feb 10 14:58:08 EST 2021" starttimestamp="1612981830530" timestamp="5258388" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2437" _type="RunCommand" date="Wed Feb 10 14:59:41 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1612981830530" timestamp="5351138" type="Run" />
+  <Command __id="2438" _type="RunCommand" date="Wed Feb 10 14:59:41 EST 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1612981830530" timestamp="5351138" type="Run" />
+  <Command __id="2439" _type="ShellCommand" date="Wed Feb 10 14:59:44 EST 2021" starttimestamp="1612981830530" timestamp="5353970" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2440" _type="MoveCaretCommand" caretOffset="787" date="Wed Feb 10 14:59:46 EST 2021" docOffset="1427" starttimestamp="1612981830530" timestamp="5356274" />
+  <Command __id="2441" _type="ShellCommand" date="Wed Feb 10 15:00:10 EST 2021" starttimestamp="1612981830530" timestamp="5380021" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2442" _type="ShellCommand" date="Wed Feb 10 15:00:19 EST 2021" starttimestamp="1612981830530" timestamp="5389020" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2443" _type="MoveCaretCommand" caretOffset="2195" date="Wed Feb 10 15:00:20 EST 2021" docOffset="2835" starttimestamp="1612981830530" timestamp="5389986" />
+  <Command __id="2444" _type="ShellCommand" date="Wed Feb 10 15:00:37 EST 2021" starttimestamp="1612981830530" timestamp="5406803" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2445" _type="ShellCommand" date="Wed Feb 10 15:00:50 EST 2021" starttimestamp="1612981830530" timestamp="5419937" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2446" _type="ShellCommand" date="Wed Feb 10 15:01:03 EST 2021" starttimestamp="1612981830530" timestamp="5433303" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2447" _type="ShellCommand" date="Wed Feb 10 15:17:40 EST 2021" starttimestamp="1612981830530" timestamp="6429964" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="2448" _type="ShellCommand" date="Wed Feb 10 15:17:40 EST 2021" starttimestamp="1612981830530" timestamp="6430085" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="2449" _type="ShellCommand" date="Wed Feb 10 15:17:42 EST 2021" starttimestamp="1612981830530" timestamp="6432117" type="ECLIPSE_CLOSED" />
+</Events>
