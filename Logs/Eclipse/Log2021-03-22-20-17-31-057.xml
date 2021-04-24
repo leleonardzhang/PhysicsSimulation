@@ -1,0 +1,753 @@
+<Events startTimestamp="1616458651057" logVersion="1.0.0.202101171653">
+  <Command __id="7" _type="EclipseCommand" commandID="" date="Mon Mar 22 20:18:04 EDT 2021" starttimestamp="1616458651057" timestamp="33424" />
+  <Command __id="9" _type="MoveCaretCommand" caretOffset="0" date="Mon Mar 22 20:18:08 EDT 2021" docOffset="0" starttimestamp="1616458651057" timestamp="37179" />
+  <Command __id="21" _type="ShellCommand" date="Mon Mar 22 20:19:26 EDT 2021" starttimestamp="1616458651057" timestamp="115127" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="22" _type="MoveCaretCommand" caretOffset="206" date="Mon Mar 22 20:19:27 EDT 2021" docOffset="718" starttimestamp="1616458651057" timestamp="116927" />
+  <Command __id="23" _type="SelectTextCommand" caretOffset="15" date="Mon Mar 22 20:19:30 EDT 2021" end="70" start="15" starttimestamp="1616458651057" timestamp="119549" />
+  <Command __id="25" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 20:19:31 EDT 2021" starttimestamp="1616458651057" timestamp="120257" />
+  <Command __id="26" _type="SelectTextCommand" caretOffset="161" date="Mon Mar 22 20:19:32 EDT 2021" end="499" start="161" starttimestamp="1616458651057" timestamp="121506" />
+  <Command __id="28" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 20:19:32 EDT 2021" starttimestamp="1616458651057" timestamp="121718" />
+  <Command __id="30" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 20:19:33 EDT 2021" starttimestamp="1616458651057" timestamp="122089" />
+  <Command __id="31" _type="MoveCaretCommand" caretOffset="16" date="Mon Mar 22 20:19:33 EDT 2021" docOffset="16" starttimestamp="1616458651057" timestamp="122772" />
+  <Command __id="33" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 20:19:34 EDT 2021" starttimestamp="1616458651057" timestamp="123300" />
+  <Command __id="35" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 20:19:34 EDT 2021" starttimestamp="1616458651057" timestamp="123467" />
+  <Command __id="36" _type="MoveCaretCommand" caretOffset="319" date="Mon Mar 22 20:19:34 EDT 2021" docOffset="319" starttimestamp="1616458651057" timestamp="123928" />
+  <Command __id="37" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Mon Mar 22 20:19:35 EDT 2021" starttimestamp="1616458651057" timestamp="124497" />
+  <Command __id="38" _type="EclipseCommand" commandID="" date="Mon Mar 22 20:19:35 EDT 2021" starttimestamp="1616458651057" timestamp="124640" />
+  <Command __id="39" _type="EclipseCommand" commandID="" date="Mon Mar 22 20:19:35 EDT 2021" starttimestamp="1616458651057" timestamp="124663" />
+  <Command __id="8" _type="DiffBasedFileOpenCommand" date="Mon Mar 22 20:18:08 EDT 2021" docASTNodeCount="126" docActiveCodeLength="718" docExpressionCount="94" docLength="718" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="36962">
+    <filePath><![CDATA[C:\Users\leleo\eclipse-workspace\PhysicsSimulation\src\main\TestFrame.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package main;
+
+import javax.swing.JButton;
+import javax.swing.JSlider;
+
+import bus.uigen.OEFrame;
+import bus.uigen.ObjectEditor;
+import components.mainpanel.MainPanel;
+import components.mainpanel.MainPanelInterface;
+import components.pendulum.load.Load;
+import components.pendulum.load.LoadInterface;
+import components.pendulum.protractor.Protractor;
+import components.pendulum.protractor.ProtractorInterface;
+import components.pendulum.string.PendulumString;
+import components.pendulum.string.PendulumStringInterface;
+import javafx.scene.control.Slider;
+
+public class TestFrame {
+	public static void main(String[] args) {
+		MainPanelInterface panel = new MainPanel();
+		OEFrame frame = ObjectEditor.edit(panel);
+	}
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="24" _type="Delete" date="Mon Mar 22 20:19:31 EDT 2021" docASTNodeCount="114" docActiveCodeLength="663" docExpressionCount="84" docLength="663" endLine="3" length="55" offset="15" startLine="2" starttimestamp="1616458651057" timestamp="120237">
+    <text><![CDATA[import javax.swing.JButton;
+import javax.swing.JSlider;]]></text>
+  </DocumentChange>
+  <DocumentChange __id="27" _type="Delete" date="Mon Mar 22 20:19:32 EDT 2021" docASTNodeCount="58" docActiveCodeLength="324" docExpressionCount="35" docLength="324" endLine="14" length="339" offset="160" repeat="2" startLine="7" starttimestamp="1616458651057" timestamp="121715" timestamp2="122087">
+    <text><![CDATA[
+import components.pendulum.load.Load;
+import components.pendulum.load.LoadInterface;
+import components.pendulum.protractor.Protractor;
+import components.pendulum.protractor.ProtractorInterface;
+import components.pendulum.string.PendulumString;
+import components.pendulum.string.PendulumStringInterface;
+import javafx.scene.control.Slider;]]></text>
+  </DocumentChange>
+  <DocumentChange __id="32" _type="Delete" date="Mon Mar 22 20:19:34 EDT 2021" docASTNodeCount="58" docActiveCodeLength="322" docExpressionCount="35" docLength="322" endLine="3" length="2" offset="14" repeat="2" startLine="1" starttimestamp="1616458651057" timestamp="123299" timestamp2="123466">
+    <text><![CDATA[
+
+]]></text>
+  </DocumentChange>
+  <Command __id="40" _type="MoveCaretCommand" caretOffset="316" date="Mon Mar 22 20:19:40 EDT 2021" docOffset="316" starttimestamp="1616458651057" timestamp="129517" />
+  <Command __id="42" _type="InsertStringCommand" date="Mon Mar 22 20:19:41 EDT 2021" starttimestamp="1616458651057" timestamp="130638" timestamp2="130638">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="44" _type="InsertStringCommand" date="Mon Mar 22 20:19:42 EDT 2021" starttimestamp="1616458651057" timestamp="131009" timestamp2="131009">
+    <data><![CDATA[f]]></data>
+  </Command>
+  <Command __id="46" _type="InsertStringCommand" date="Mon Mar 22 20:19:42 EDT 2021" starttimestamp="1616458651057" timestamp="131191" timestamp2="131191">
+    <data><![CDATA[r]]></data>
+  </Command>
+  <Command __id="48" _type="InsertStringCommand" date="Mon Mar 22 20:19:42 EDT 2021" starttimestamp="1616458651057" timestamp="131289" timestamp2="131289">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="50" _type="InsertStringCommand" date="Mon Mar 22 20:19:42 EDT 2021" starttimestamp="1616458651057" timestamp="131422" timestamp2="131422">
+    <data><![CDATA[m]]></data>
+  </Command>
+  <Command __id="52" _type="InsertStringCommand" date="Mon Mar 22 20:19:43 EDT 2021" starttimestamp="1616458651057" timestamp="132096" timestamp2="132096">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="54" _type="InsertStringCommand" date="Mon Mar 22 20:19:43 EDT 2021" starttimestamp="1616458651057" timestamp="132464" timestamp2="132464">
+    <data><![CDATA[.]]></data>
+  </Command>
+  <DocumentChange __id="41" _type="Insert" date="Mon Mar 22 20:19:41 EDT 2021" docASTNodeCount="62" docActiveCodeLength="332" docExpressionCount="38" docLength="332" length="10" offset="316" repeat="8" starttimestamp="1616458651057" timestamp="130633" timestamp2="134307">
+    <text><![CDATA[
+		frame.s]]></text>
+  </DocumentChange>
+  <Command __id="55" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="true" date="Mon Mar 22 20:19:44 EDT 2021" start_end="START" starttimestamp="1616458651057" timestamp="133810" />
+  <DocumentChange __id="57" _type="Insert" date="Mon Mar 22 20:19:47 EDT 2021" docASTNodeCount="62" docActiveCodeLength="334" docExpressionCount="38" docLength="334" length="2" offset="326" repeat="2" starttimestamp="1616458651057" timestamp="136672" timestamp2="136841">
+    <text><![CDATA[et]]></text>
+  </DocumentChange>
+  <Command __id="59" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="false" date="Mon Mar 22 20:19:52 EDT 2021" start_end="END" starttimestamp="1616458651057" timestamp="141668" />
+  <Command __id="61" _type="InsertStringCommand" date="Mon Mar 22 20:19:52 EDT 2021" starttimestamp="1616458651057" timestamp="141711" timestamp2="141711">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="65" _type="DiffBasedFileOpenCommand" date="Mon Mar 22 20:19:59 EDT 2021" docASTNodeCount="90" docActiveCodeLength="546" docExpressionCount="62" docLength="546" projectName="TaskBox" starttimestamp="1616458651057" timestamp="148271">
+    <filePath><![CDATA[C:\Users\leleo\eclipse-workspace\TaskBox\src\main\TaskPanel.java]]></filePath>
+    <diff><![CDATA[null]]></diff>
+    <snapshot><![CDATA[package main;
+
+import bus.uigen.OEFrame;
+import bus.uigen.ObjectEditor;
+import components.composedGraph.ComposedGraph;
+import components.composedGraph.ComposedGraphInterface;
+import components.curve.point.CurvePoint;
+import components.mainpanel.MainPanel;
+import components.mainpanel.MainPanelInterface;
+
+public class TaskPanel {
+
+	public static void main(String[] args) {
+		MainPanelInterface panel = new MainPanel();
+		OEFrame frame = ObjectEditor.edit(panel);
+		frame.setSize(600, 1000);
+		frame.setLocation(0, 0);
+
+	}
+
+}
+]]></snapshot>
+  </Command>
+  <Command __id="66" _type="MoveCaretCommand" caretOffset="266" date="Mon Mar 22 20:19:59 EDT 2021" docOffset="535" starttimestamp="1616458651057" timestamp="148390" />
+  <Command __id="67" _type="DiffBasedFileOpenCommand" date="Mon Mar 22 20:20:04 EDT 2021" docASTNodeCount="64" docActiveCodeLength="351" docExpressionCount="40" docLength="351" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="153229">
+    <filePath><![CDATA[C:\Users\leleo\eclipse-workspace\PhysicsSimulation\src\main\TestFrame.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package main;¶¶"), Diff(DELETE,"import javax.swing.JButton;¶import javax.swing.JSlider;¶¶"), Diff(EQUAL,"import bus.uigen.OEFrame;¶"), Diff(INSERT,""), Diff(EQUAL,"import bus.uigen.ObjectEditor;¶import components.mainpanel.MainPanel;¶import components.mainpanel.MainPanelInterface;"), Diff(DELETE,"¶import components.pendulum.load.Load;¶import components.pendulum.load.LoadInterface;¶import components.pendulum.protractor.Protractor;¶import components.pendulum.protractor.ProtractorInterface;¶import components.pendulum.string.PendulumString;¶import components.pendulum.string.PendulumStringInterface;¶import javafx.scene.control.Slider;"), Diff(EQUAL,"¶¶public class TestFrame {¶	public static void main(String[] args) {¶		MainPanelInterface panel = new MainPanel();¶"), Diff(DELETE,""), Diff(EQUAL,"		OEFrame frame = ObjectEditor.edit(panel);¶	"), Diff(INSERT,"	frame.setSize(arg0, arg1);¶	"), Diff(EQUAL,"}¶}¶")]]]></diff>
+    <snapshot><![CDATA[package main;
+
+import bus.uigen.OEFrame;
+import bus.uigen.ObjectEditor;
+import components.mainpanel.MainPanel;
+import components.mainpanel.MainPanelInterface;
+
+public class TestFrame {
+	public static void main(String[] args) {
+		MainPanelInterface panel = new MainPanel();
+		OEFrame frame = ObjectEditor.edit(panel);
+		frame.setSize(arg0, arg1);
+	}
+}
+]]></snapshot>
+  </Command>
+  <Command __id="68" _type="SelectTextCommand" caretOffset="337" date="Mon Mar 22 20:20:04 EDT 2021" end="337" start="333" starttimestamp="1616458651057" timestamp="153351" />
+  <DocumentChange __id="69" _type="Delete" date="Mon Mar 22 20:20:07 EDT 2021" docASTNodeCount="63" docActiveCodeLength="347" docExpressionCount="39" docLength="347" endLine="11" length="4" offset="333" repeat="4" startLine="11" starttimestamp="1616458651057" timestamp="156640" timestamp2="157362">
+    <text><![CDATA[arg0]]></text>
+  </DocumentChange>
+  <Command __id="70" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 20:20:07 EDT 2021" starttimestamp="1616458651057" timestamp="156642" />
+  <Command __id="72" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 20:20:07 EDT 2021" starttimestamp="1616458651057" timestamp="156793" />
+  <Command __id="74" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 20:20:07 EDT 2021" starttimestamp="1616458651057" timestamp="156940" />
+  <Command __id="76" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 20:20:08 EDT 2021" starttimestamp="1616458651057" timestamp="157363" />
+  <Command __id="78" _type="InsertStringCommand" date="Mon Mar 22 20:20:08 EDT 2021" starttimestamp="1616458651057" timestamp="157903" timestamp2="157903">
+    <data><![CDATA[6]]></data>
+  </Command>
+  <Command __id="80" _type="InsertStringCommand" date="Mon Mar 22 20:20:09 EDT 2021" starttimestamp="1616458651057" timestamp="158073" timestamp2="158073">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <Command __id="82" _type="InsertStringCommand" date="Mon Mar 22 20:20:09 EDT 2021" starttimestamp="1616458651057" timestamp="158231" timestamp2="158231">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <Command __id="83" _type="SelectTextCommand" caretOffset="338" date="Mon Mar 22 20:20:11 EDT 2021" end="342" start="338" starttimestamp="1616458651057" timestamp="159996" />
+  <Command __id="85" _type="InsertStringCommand" date="Mon Mar 22 20:20:11 EDT 2021" starttimestamp="1616458651057" timestamp="160199" timestamp2="160199">
+    <data><![CDATA[2]]></data>
+  </Command>
+  <Command __id="87" _type="InsertStringCommand" date="Mon Mar 22 20:20:11 EDT 2021" starttimestamp="1616458651057" timestamp="160468" timestamp2="160468">
+    <data><![CDATA[5]]></data>
+  </Command>
+  <Command __id="89" _type="InsertStringCommand" date="Mon Mar 22 20:20:11 EDT 2021" starttimestamp="1616458651057" timestamp="160742" timestamp2="160742">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <Command __id="91" _type="InsertStringCommand" date="Mon Mar 22 20:20:11 EDT 2021" starttimestamp="1616458651057" timestamp="160872" timestamp2="160872">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <Command __id="92" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Mon Mar 22 20:20:12 EDT 2021" starttimestamp="1616458651057" timestamp="161659" />
+  <Command __id="93" _type="EclipseCommand" commandID="" date="Mon Mar 22 20:20:12 EDT 2021" starttimestamp="1616458651057" timestamp="161764" />
+  <Command __id="94" _type="EclipseCommand" commandID="" date="Mon Mar 22 20:20:12 EDT 2021" starttimestamp="1616458651057" timestamp="161786" />
+  <Command __id="95" _type="MoveCaretCommand" caretOffset="210" date="Mon Mar 22 20:20:13 EDT 2021" docOffset="210" starttimestamp="1616458651057" timestamp="162195" />
+  <Command __id="107" _type="ShellCommand" date="Mon Mar 22 20:24:10 EDT 2021" starttimestamp="1616458651057" timestamp="399100" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="108" _type="RunCommand" date="Mon Mar 22 20:24:10 EDT 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="399301" type="Run" />
+  <Command __id="109" _type="RunCommand" date="Mon Mar 22 20:24:10 EDT 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="399301" type="Run" />
+  <DocumentChange __id="77" _type="Insert" date="Mon Mar 22 20:20:08 EDT 2021" docASTNodeCount="64" docActiveCodeLength="350" docExpressionCount="40" docLength="350" length="3" offset="333" repeat="3" starttimestamp="1616458651057" timestamp="157901" timestamp2="158229">
+    <text><![CDATA[600]]></text>
+  </DocumentChange>
+  <DocumentChange __id="84" _type="Replace" date="Mon Mar 22 20:20:11 EDT 2021" docASTNodeCount="64" docActiveCodeLength="347" docExpressionCount="40" docLength="347" endLine="11" insertionLength="1" int_docASTNodeCount="64" int_docActiveCodeLength="346" int_docExpressionCount="40" int_docLength="346" length="4" offset="338" startLine="11" starttimestamp="1616458651057" timestamp="160195">
+    <deletedText><![CDATA[arg1]]></deletedText>
+    <insertedText><![CDATA[2]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="86" _type="Insert" date="Mon Mar 22 20:20:11 EDT 2021" docASTNodeCount="64" docActiveCodeLength="350" docExpressionCount="40" docLength="350" length="3" offset="339" repeat="3" starttimestamp="1616458651057" timestamp="160466" timestamp2="160871">
+    <text><![CDATA[500]]></text>
+  </DocumentChange>
+  <Command __id="110" _type="SelectTextCommand" caretOffset="338" date="Mon Mar 22 20:24:16 EDT 2021" end="342" start="338" starttimestamp="1616458651057" timestamp="405350" />
+  <DocumentChange __id="111" _type="Replace" date="Mon Mar 22 20:24:18 EDT 2021" docASTNodeCount="64" docActiveCodeLength="347" docExpressionCount="40" docLength="347" endLine="11" insertionLength="1" int_docASTNodeCount="64" int_docActiveCodeLength="346" int_docExpressionCount="40" int_docLength="346" length="4" offset="338" startLine="11" starttimestamp="1616458651057" timestamp="407581">
+    <deletedText><![CDATA[2500]]></deletedText>
+    <insertedText><![CDATA[1]]></insertedText>
+  </DocumentChange>
+  <Command __id="112" _type="InsertStringCommand" date="Mon Mar 22 20:24:18 EDT 2021" starttimestamp="1616458651057" timestamp="407586" timestamp2="407586">
+    <data><![CDATA[1]]></data>
+  </Command>
+  <DocumentChange __id="113" _type="Insert" date="Mon Mar 22 20:24:18 EDT 2021" docASTNodeCount="64" docActiveCodeLength="348" docExpressionCount="40" docLength="348" length="1" offset="339" starttimestamp="1616458651057" timestamp="407735">
+    <text><![CDATA[1]]></text>
+  </DocumentChange>
+  <Command __id="114" _type="InsertStringCommand" date="Mon Mar 22 20:24:18 EDT 2021" starttimestamp="1616458651057" timestamp="407737" timestamp2="407737">
+    <data><![CDATA[1]]></data>
+  </Command>
+  <DocumentChange __id="115" _type="Delete" date="Mon Mar 22 20:24:19 EDT 2021" docASTNodeCount="64" docActiveCodeLength="347" docExpressionCount="40" docLength="347" endLine="11" length="1" offset="339" startLine="11" starttimestamp="1616458651057" timestamp="408725">
+    <text><![CDATA[1]]></text>
+  </DocumentChange>
+  <Command __id="116" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 20:24:19 EDT 2021" starttimestamp="1616458651057" timestamp="408726" />
+  <Command __id="118" _type="InsertStringCommand" date="Mon Mar 22 20:24:20 EDT 2021" starttimestamp="1616458651057" timestamp="409064" timestamp2="409064">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <Command __id="120" _type="InsertStringCommand" date="Mon Mar 22 20:24:20 EDT 2021" starttimestamp="1616458651057" timestamp="409249" timestamp2="409249">
+    <data><![CDATA[5]]></data>
+  </Command>
+  <Command __id="122" _type="InsertStringCommand" date="Mon Mar 22 20:24:20 EDT 2021" starttimestamp="1616458651057" timestamp="409321" timestamp2="409321">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <Command __id="143" _type="ShellCommand" date="Mon Mar 22 20:26:56 EDT 2021" starttimestamp="1616458651057" timestamp="565102" type="ECLIPSE_GAINED_FOCUS" />
+  <DocumentChange __id="117" _type="Insert" date="Mon Mar 22 20:24:20 EDT 2021" docASTNodeCount="64" docActiveCodeLength="350" docExpressionCount="40" docLength="350" length="3" offset="339" repeat="3" starttimestamp="1616458651057" timestamp="409062" timestamp2="409319">
+    <text><![CDATA[050]]></text>
+  </DocumentChange>
+  <DocumentChange __id="124" _type="Replace" date="Mon Mar 22 20:24:22 EDT 2021" docASTNodeCount="64" docActiveCodeLength="348" docExpressionCount="40" docLength="348" endLine="11" insertionLength="1" int_docASTNodeCount="63" int_docActiveCodeLength="347" int_docExpressionCount="39" int_docLength="347" length="3" offset="333" startLine="11" starttimestamp="1616458651057" timestamp="411658">
+    <deletedText><![CDATA[600]]></deletedText>
+    <insertedText><![CDATA[2]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="126" _type="Insert" date="Mon Mar 22 20:24:23 EDT 2021" docASTNodeCount="64" docActiveCodeLength="351" docExpressionCount="40" docLength="351" length="3" offset="334" repeat="3" starttimestamp="1616458651057" timestamp="412150" timestamp2="412495">
+    <text><![CDATA[500]]></text>
+  </DocumentChange>
+  <DocumentChange __id="145" _type="Replace" date="Mon Mar 22 20:26:59 EDT 2021" docASTNodeCount="64" docActiveCodeLength="349" docExpressionCount="40" docLength="349" endLine="11" insertionLength="1" int_docASTNodeCount="64" int_docActiveCodeLength="348" int_docExpressionCount="40" int_docLength="348" length="3" offset="334" startLine="11" starttimestamp="1616458651057" timestamp="568654">
+    <deletedText><![CDATA[500]]></deletedText>
+    <insertedText><![CDATA[0]]></insertedText>
+  </DocumentChange>
+  <Command __id="144" _type="SelectTextCommand" caretOffset="334" date="Mon Mar 22 20:26:59 EDT 2021" end="337" start="334" starttimestamp="1616458651057" timestamp="568058" />
+  <Command __id="146" _type="InsertStringCommand" date="Mon Mar 22 20:26:59 EDT 2021" starttimestamp="1616458651057" timestamp="568659" timestamp2="568659">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <Command __id="148" _type="InsertStringCommand" date="Mon Mar 22 20:26:59 EDT 2021" starttimestamp="1616458651057" timestamp="568814" timestamp2="568814">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <Command __id="150" _type="InsertStringCommand" date="Mon Mar 22 20:27:01 EDT 2021" starttimestamp="1616458651057" timestamp="570130" timestamp2="570130">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <Command __id="151" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Mon Mar 22 20:27:01 EDT 2021" starttimestamp="1616458651057" timestamp="570397" />
+  <Command __id="152" _type="EclipseCommand" commandID="" date="Mon Mar 22 20:27:01 EDT 2021" starttimestamp="1616458651057" timestamp="570493" />
+  <Command __id="153" _type="EclipseCommand" commandID="" date="Mon Mar 22 20:27:01 EDT 2021" starttimestamp="1616458651057" timestamp="570509" />
+  <Command __id="165" _type="ShellCommand" date="Mon Mar 22 20:27:12 EDT 2021" starttimestamp="1616458651057" timestamp="581043" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="166" _type="RunCommand" date="Mon Mar 22 20:27:12 EDT 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="581241" type="Run" />
+  <Command __id="167" _type="RunCommand" date="Mon Mar 22 20:27:12 EDT 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="581241" type="Run" />
+  <Command __id="168" _type="MoveCaretCommand" caretOffset="336" date="Mon Mar 22 20:27:18 EDT 2021" docOffset="336" starttimestamp="1616458651057" timestamp="586955" />
+  <Command __id="169" _type="MoveCaretCommand" caretOffset="333" date="Mon Mar 22 20:27:19 EDT 2021" docOffset="333" starttimestamp="1616458651057" timestamp="587987" />
+  <Command __id="171" _type="InsertStringCommand" date="Mon Mar 22 20:27:19 EDT 2021" starttimestamp="1616458651057" timestamp="588403" timestamp2="588403">
+    <data><![CDATA[1]]></data>
+  </Command>
+  <Command __id="173" _type="InsertStringCommand" date="Mon Mar 22 20:27:19 EDT 2021" starttimestamp="1616458651057" timestamp="588621" timestamp2="588621">
+    <data><![CDATA[5]]></data>
+  </Command>
+  <Command __id="175" _type="InsertStringCommand" date="Mon Mar 22 20:27:19 EDT 2021" starttimestamp="1616458651057" timestamp="588783" timestamp2="588783">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <Command __id="177" _type="InsertStringCommand" date="Mon Mar 22 20:27:19 EDT 2021" starttimestamp="1616458651057" timestamp="588934" timestamp2="588934">
+    <data><![CDATA[0]]></data>
+  </Command>
+  <Command __id="178" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Mon Mar 22 20:27:20 EDT 2021" starttimestamp="1616458651057" timestamp="589308" />
+  <Command __id="179" _type="EclipseCommand" commandID="" date="Mon Mar 22 20:27:20 EDT 2021" starttimestamp="1616458651057" timestamp="589400" />
+  <Command __id="180" _type="EclipseCommand" commandID="" date="Mon Mar 22 20:27:20 EDT 2021" starttimestamp="1616458651057" timestamp="589418" />
+  <Command __id="181" _type="ShellCommand" date="Mon Mar 22 20:27:21 EDT 2021" starttimestamp="1616458651057" timestamp="590419" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="193" _type="EclipseCommand" commandID="org.eclipse.debug.ui.commands.Terminate" date="Mon Mar 22 20:32:53 EDT 2021" starttimestamp="1616458651057" timestamp="921989" />
+  <Command __id="194" _type="RunCommand" date="Mon Mar 22 20:32:53 EDT 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="922028" type="Run" />
+  <Command __id="195" _type="RunCommand" date="Mon Mar 22 20:32:53 EDT 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="922028" type="Run" />
+  <DocumentChange __id="147" _type="Insert" date="Mon Mar 22 20:26:59 EDT 2021" docASTNodeCount="64" docActiveCodeLength="351" docExpressionCount="40" docLength="351" length="2" offset="335" repeat="2" starttimestamp="1616458651057" timestamp="568812" timestamp2="570128">
+    <text><![CDATA[00]]></text>
+  </DocumentChange>
+  <DocumentChange __id="170" _type="Replace" date="Mon Mar 22 20:27:19 EDT 2021" docASTNodeCount="64" docActiveCodeLength="348" docExpressionCount="40" docLength="348" endLine="11" insertionLength="1" int_docASTNodeCount="63" int_docActiveCodeLength="347" int_docExpressionCount="39" int_docLength="347" length="4" offset="333" startLine="11" starttimestamp="1616458651057" timestamp="588399">
+    <deletedText><![CDATA[2000]]></deletedText>
+    <insertedText><![CDATA[1]]></insertedText>
+  </DocumentChange>
+  <DocumentChange __id="172" _type="Insert" date="Mon Mar 22 20:27:19 EDT 2021" docASTNodeCount="64" docActiveCodeLength="351" docExpressionCount="40" docLength="351" length="3" offset="334" repeat="3" starttimestamp="1616458651057" timestamp="588619" timestamp2="588932">
+    <text><![CDATA[500]]></text>
+  </DocumentChange>
+  <Command __id="196" _type="SelectTextCommand" caretOffset="334" date="Mon Mar 22 20:32:55 EDT 2021" end="337" start="334" starttimestamp="1616458651057" timestamp="924806" />
+  <DocumentChange __id="197" _type="Replace" date="Mon Mar 22 20:32:57 EDT 2021" docASTNodeCount="64" docActiveCodeLength="349" docExpressionCount="40" docLength="349" endLine="11" insertionLength="1" int_docASTNodeCount="64" int_docActiveCodeLength="348" int_docExpressionCount="40" int_docLength="348" length="3" offset="334" startLine="11" starttimestamp="1616458651057" timestamp="926324">
+    <deletedText><![CDATA[500]]></deletedText>
+    <insertedText><![CDATA[4]]></insertedText>
+  </DocumentChange>
+  <Command __id="198" _type="InsertStringCommand" date="Mon Mar 22 20:32:57 EDT 2021" starttimestamp="1616458651057" timestamp="926329" timestamp2="926329">
+    <data><![CDATA[4]]></data>
+  </Command>
+  <Command __id="206" _type="RunCommand" date="Mon Mar 22 20:32:59 EDT 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="928491" type="Run" />
+  <Command __id="207" _type="RunCommand" date="Mon Mar 22 20:32:59 EDT 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="928491" type="Run" />
+  <Command __id="208" _type="ConsoleOutput" date="Mon Mar 22 20:32:59 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="928699" type="ConsoleOutput">
+    <outputString><![CDATA[0.0
+0.0
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"W*** Implicitly editable property: x of class class components.barchart.bar.BarPair not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.barchart.bar.BarPair not considered editable as it is not in editable property names list. ¶¶W*** public void components.timer.TimerView.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: time of class class components.timer.TimerView not considered editable as it is not in editable property names list. ¶¶W*** public void components.barchart.bar.Bar.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)"), Diff(INSERT,"0.0¶0.0"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="209" _type="ShellCommand" date="Mon Mar 22 20:33:00 EDT 2021" starttimestamp="1616458651057" timestamp="929375" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="210" _type="ConsoleOutput" date="Mon Mar 22 20:33:00 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="929471" type="ConsoleOutput">
+    <outputString><![CDATA[ObjectEditor(Version 22, built on Wed Feb 17 11:47:24 EST 2021). Copyright Prasun Dewan, 2012, All rights reserved. US Patent Appl. No.: 12/532,327
+E*** For editable property pendulum of MainPanel please define a setter with the header:
+	public void setPendulum(java.util.List <parameter name>)
+E*** For property gravity of MainPanel please define a getter with the header:
+	public <T> getGravity()
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"0.0¶0.0"), Diff(INSERT,"ObjectEditor(Version 22, built on Wed Feb 17 11:47:24 EST 2021). Copyright Prasun Dewan, 2012, All rights reserved. US Patent Appl. No.: 12/532,327¶E*** For editable property pendulum of MainPanel please define a setter with the header:¶	public void setPendulum(java.util.List <parameter name>)¶E*** For property gravity of MainPanel please define a getter with the header:¶	public <T> getGravity()"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="211" _type="ConsoleOutput" date="Mon Mar 22 20:33:00 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="929632" type="ConsoleOutput">
+    <outputString><![CDATA[W*** public void components.ruler.Ruler.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: height of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: x of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"ObjectEditor(Version 22, built on Wed Feb 17 11:47:24 EST 2021). Copyright Prasun Dewan, 2012, All rights res"), Diff(INSERT,"W*** public void components.ruler.Ruler.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: height of class class components.ruler.Ruler not consid"), Diff(EQUAL,"er"), Diff(DELETE,"v"), Diff(EQUAL,"ed"), Diff(DELETE,". US Patent Appl. No.: 12/532,327"), Diff(INSERT," editable as it is not in editable property names list. ¶"), Diff(EQUAL,"¶"), Diff(DELETE,"E"), Diff(INSERT,"W"), Diff(EQUAL,"*** "), Diff(DELETE,"For"), Diff(INSERT,"Implicitly"), Diff(EQUAL," editable property"), Diff(DELETE," pendulum of MainPanel please define a setter with the header:¶	public void setPendulum(java.util.List <parameter name>)"), Diff(INSERT,": width of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶"), Diff(EQUAL,"¶"), Diff(DELETE,"E"), Diff(INSERT,"W"), Diff(EQUAL,"*** "), Diff(DELETE,"For"), Diff(INSERT,"Implicitly editable"), Diff(EQUAL," property"), Diff(DELETE," gravity of MainPanel please define a getter with the header:¶	public <T> getGravity()"), Diff(INSERT,": y of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="212" _type="ConsoleOutput" date="Mon Mar 22 20:33:00 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="929773" type="ConsoleOutput">
+    <outputString><![CDATA[W*** public void components.pendulum.imageprotractor.ImageProtractor.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: height of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: x of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicit property animator of  ObserverPendulum ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** Implicitly editable property: barPair of class class components.pendulum.pendulum.ObserverPendulum not considered editable as it is not in editable property names list. 
+
+W*** Implicit property model of  ObserverPendulum ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** public void components.pendulum.load.Load.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: color of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: filled of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: height of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** public void components.pendulum.string.PendulumString.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: stroke of class class components.pendulum.string.PendulumString not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"W*** public void components."), Diff(DELETE,"ruler.Rule"), Diff(INSERT,"pendulum.imageprotractor.ImageProtracto"), Diff(EQUAL,"r.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: height of class class components."), Diff(DELETE,"ruler.Rule"), Diff(INSERT,"pendulum.imageprotractor.ImageProtracto"), Diff(EQUAL,"r not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components."), Diff(DELETE,"ruler.Ruler not considered editable as it is not in editable property names list. ¶"), Diff(INSERT,"pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicit property animator of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter."), Diff(EQUAL,"¶W*** Implicitly editable property: "), Diff(DELETE,"x"), Diff(INSERT,"barPair"), Diff(EQUAL," of class class components."), Diff(DELETE,"ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.ruler.Ruler"), Diff(INSERT,"pendulum.pendulum.ObserverPendulum not considered editable as it is not in editable property names list. ¶¶W*** Implicit property model of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** public void components.pendulum.load.Load.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: color of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: filled of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: height of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** public void components.pendulum.string.PendulumString.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: stroke of class class components.pendulum.string.PendulumString"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶")]]]></diff>
+  </Command>
+  <Command __id="213" _type="ConsoleOutput" date="Mon Mar 22 20:33:00 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="929885" type="ConsoleOutput">
+    <outputString><![CDATA[W*** Implicitly editable property: x of class class components.barchart.bar.BarPair not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.barchart.bar.BarPair not considered editable as it is not in editable property names list. 
+
+W*** public void components.timer.TimerView.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: time of class class components.timer.TimerView not considered editable as it is not in editable property names list. 
+
+W*** public void components.barchart.bar.Bar.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"W*** public void components.pendulum.imageprotractor.ImageProtractor.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶"), Diff(EQUAL,"W*** Implicitly editable property: "), Diff(DELETE,"height"), Diff(INSERT,"x"), Diff(EQUAL," of class class components."), Diff(DELETE,"pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components.pendulum.imageprotractor.ImageProtracto"), Diff(INSERT,"barchart.bar.BarPai"), Diff(EQUAL,"r not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: "), Diff(DELETE,"x"), Diff(INSERT,"y"), Diff(EQUAL," of class class components."), Diff(DELETE,"pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.pendulum.imageprotractor.ImageProtracto"), Diff(INSERT,"barchart.bar.BarPai"), Diff(EQUAL,"r not considered editable as it is not in editable property names list. ¶¶W*** "), Diff(DELETE,"Implicit property animator of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** Implicitly editable property: barPair of class class components.pendulum.pendulum.ObserverPendulum not considered editable as it is not in editable property names list. ¶¶W*** Implicit property model of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** public void components.pendulum.load.Load"), Diff(INSERT,"public void components.timer.TimerView"), Diff(EQUAL,".addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: "), Diff(DELETE,"color of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: filled of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: height of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** public void components.pendulum.string.PendulumString.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: stroke of class class components.pendulum.string.PendulumString not considered editable as it is not in editable property names list. ¶"), Diff(INSERT,"time of class class components.timer.TimerView not considered editable as it is not in editable property names list. ¶¶W*** public void components.barchart.bar.Bar.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="217" _type="RunCommand" date="Mon Mar 22 20:42:35 EDT 2021" kind="HitBreakPoint" projectName="TaskBox" starttimestamp="1616458651057" timestamp="1504258" type="Run" />
+  <Command __id="218" _type="ShellCommand" date="Mon Mar 22 20:42:36 EDT 2021" starttimestamp="1616458651057" timestamp="1505144" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="219" _type="ConsoleOutput" date="Mon Mar 22 20:42:36 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="1505255" type="ConsoleOutput">
+    <outputString><![CDATA[ObjectEditor(Version 22, built on Wed Feb 17 11:47:24 EST 2021). Copyright Prasun Dewan, 2012, All rights reserved. US Patent Appl. No.: 12/532,327
+W*** Implicitly editable property: currentPage of class class components.mainpanel.MainPanel not considered editable as it is not in editable property names list. 
+
+W*** Implicit property currentPageIndex of  MainPanel ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** Implicitly editable property: currentPageIndex of class class components.mainpanel.MainPanel not considered editable as it is not in editable property names list. 
+
+W*** Implicit property pages of  MainPanel ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** Implicitly editable property: pages of class class components.mainpanel.MainPanel not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(INSERT,"ObjectEditor(Version 22, built on Wed Feb 17 11:47:24 EST 2021). Copyright Prasun Dewan, 2012, All rights reserved. US Patent Appl. No.: 12/532,327¶"), Diff(EQUAL,"W*** Implicitly editable property: "), Diff(DELETE,"x"), Diff(INSERT,"currentPage"), Diff(EQUAL," of class class components."), Diff(DELETE,"barchart.bar.BarPair"), Diff(INSERT,"mainpanel.MainPanel"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶"), Diff(INSERT,"W*** Implicit property currentPageIndex of  MainPanel ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶"), Diff(EQUAL,"W*** Implicitly editable property: "), Diff(DELETE,"y"), Diff(INSERT,"currentPageIndex"), Diff(EQUAL," of class class components."), Diff(DELETE,"barchart.bar.BarPair"), Diff(INSERT,"mainpanel.MainPanel"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶W*** "), Diff(DELETE,"public void components.timer.TimerView.addPropertyChangeListener(java.beans.PropertyChangeListener) should be a"), Diff(INSERT,"Implicit property pages of  MainPanel ignored as it is not in property names list. ¶ A"), Diff(EQUAL,"ssociate"), Diff(DELETE,"d with"), Diff(EQUAL," annotation"), Diff(DELETE,":"), Diff(EQUAL," @"), Diff(DELETE,"ObserverRegisterer(Property Listen"), Diff(INSERT,"Visible(false) with its gett"), Diff(EQUAL,"er"), Diff(DELETE,")"), Diff(INSERT,"."), Diff(EQUAL,"¶W*** Implicitly editable property: "), Diff(DELETE,"time"), Diff(INSERT,"pages"), Diff(EQUAL," of class class components."), Diff(DELETE,"timer.TimerView"), Diff(INSERT,"mainpanel.MainPanel"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶"), Diff(DELETE,"W*** public void components.barchart.bar.Bar.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶")]]]></diff>
+  </Command>
+  <Command __id="220" _type="ShellCommand" date="Mon Mar 22 20:42:36 EDT 2021" starttimestamp="1616458651057" timestamp="1505330" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="221" _type="ConsoleOutput" date="Mon Mar 22 20:42:36 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="1505434" type="ConsoleOutput">
+    <outputString><![CDATA[W*** Implicitly editable property: lines of class class components.composedGraph.ComposedGraph not considered editable as it is not in editable property names list. 
+
+W*** Implicit property XStep of  Plane ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** Implicitly editable property: XStep of class class components.plane.plane.Plane not considered editable as it is not in editable property names list. 
+
+W*** Implicit property YStep of  Plane ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** Implicitly editable property: YStep of class class components.plane.plane.Plane not considered editable as it is not in editable property names list. 
+
+W*** Implicit property x of  Plane ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** Implicitly editable property: x of class class components.plane.plane.Plane not considered editable as it is not in editable property names list. 
+
+W*** Implicit property y of  Plane ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** Implicitly editable property: y of class class components.plane.plane.Plane not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"ObjectEditor(Version 22, built o"), Diff(INSERT,"W*** Implicitly editable property: lines of class class components.composedGraph.ComposedGraph not considered editable as it is not i"), Diff(EQUAL,"n "), Diff(DELETE,"W"), Diff(EQUAL,"ed"), Diff(DELETE," Feb 17 11:47:24 EST 2021). Copyright Prasun Dewan, 2012, All rights reserved. US Patent Appl. No.: 12/532,327"), Diff(INSERT,"itable property names list. ¶¶W*** Implicit property XStep of  Plane ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** Implicitly editable property: XStep of class class components.plane.plane.Plane not considered editable as it is not in editable property names list. ¶¶W*** Implicit property YStep of  Plane ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter."), Diff(EQUAL,"¶W*** Implicitly editable property: "), Diff(DELETE,"currentPage"), Diff(INSERT,"YStep"), Diff(EQUAL," of class class components."), Diff(DELETE,"mainpanel.MainP"), Diff(INSERT,"plane.plane.Pl"), Diff(EQUAL,"ane"), Diff(DELETE,"l"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶W*** Implicit property "), Diff(DELETE,"currentPageInde"), Diff(EQUAL,"x of  "), Diff(DELETE,"Main"), Diff(EQUAL,"P"), Diff(INSERT,"l"), Diff(EQUAL,"ane"), Diff(DELETE,"l"), Diff(EQUAL," ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** Implicitly editable property: "), Diff(DELETE,"currentPageInde"), Diff(EQUAL,"x of class class components."), Diff(DELETE,"mainpanel.MainP"), Diff(INSERT,"plane.plane.Pl"), Diff(EQUAL,"ane"), Diff(DELETE,"l"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶W*** Implicit property "), Diff(DELETE,"pages of  MainP"), Diff(INSERT,"y of  Pl"), Diff(EQUAL,"ane"), Diff(DELETE,"l"), Diff(EQUAL," ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** Implicitly editable property: "), Diff(DELETE,"pages"), Diff(INSERT,"y"), Diff(EQUAL," of class class components."), Diff(DELETE,"mainpanel.MainP"), Diff(INSERT,"plane.plane.Pl"), Diff(EQUAL,"ane"), Diff(DELETE,"l"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶")]]]></diff>
+  </Command>
+  <Command __id="222" _type="ConsoleOutput" date="Mon Mar 22 20:42:36 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="1505503" type="ConsoleOutput">
+    <outputString><![CDATA[W*** Implicit property height of  PlaneTick ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** Implicitly editable property: height of class class components.plane.lines.PlaneTick not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: text of class class components.plane.lines.PlaneTick not considered editable as it is not in editable property names list. 
+
+W*** Implicit property width of  PlaneTick ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** Implicitly editable property: width of class class components.plane.lines.PlaneTick not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: x of class class components.plane.lines.PlaneTick not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.plane.lines.PlaneTick not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"W*** Implicit"), Diff(DELETE,"ly editable property: lines of class class components.composedGraph.ComposedGraph not considered editable as it is not in editable property names list. ¶¶W*** Implicit property XStep"), Diff(INSERT," property height"), Diff(EQUAL," of  Plane"), Diff(INSERT,"Tick"), Diff(EQUAL," ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** Implicitly editable property: "), Diff(DELETE,"XStep"), Diff(INSERT,"height"), Diff(EQUAL," of class class components.plane."), Diff(DELETE,"pla"), Diff(INSERT,"li"), Diff(EQUAL,"ne"), Diff(INSERT,"s"), Diff(EQUAL,".Plane"), Diff(INSERT,"Tick"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶"), Diff(DELETE,"W*** Implicit property YStep of  Plane ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶"), Diff(EQUAL,"W*** Implicitly editable property: "), Diff(DELETE,"YStep"), Diff(INSERT,"text"), Diff(EQUAL," of class class components.plane."), Diff(DELETE,"pla"), Diff(INSERT,"li"), Diff(EQUAL,"ne"), Diff(INSERT,"s"), Diff(EQUAL,".Plane"), Diff(INSERT,"Tick"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶W*** Implicit property "), Diff(DELETE,"x"), Diff(INSERT,"width"), Diff(EQUAL," of  Plane"), Diff(INSERT,"Tick"), Diff(EQUAL," ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** Implicitly editable property: "), Diff(DELETE,"x"), Diff(INSERT,"width"), Diff(EQUAL," of class class components.plane."), Diff(DELETE,"pla"), Diff(INSERT,"li"), Diff(EQUAL,"ne"), Diff(INSERT,"s"), Diff(EQUAL,".Plane"), Diff(INSERT,"Tick"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶W*** Implicit"), Diff(INSERT,"ly editable"), Diff(EQUAL," property"), Diff(DELETE," y"), Diff(INSERT,": x"), Diff(EQUAL," of "), Diff(DELETE," Plane ignored"), Diff(INSERT,"class class components.plane.lines.PlaneTick not considered editable"), Diff(EQUAL," as it is not in "), Diff(INSERT,"editable "), Diff(EQUAL,"property names list. ¶"), Diff(DELETE," Associate annotation @Visible(false) with its getter."), Diff(EQUAL,"¶W*** Implicitly editable property: y of class class components.plane."), Diff(DELETE,"pla"), Diff(INSERT,"li"), Diff(EQUAL,"ne"), Diff(INSERT,"s"), Diff(EQUAL,".Plane"), Diff(INSERT,"Tick"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶")]]]></diff>
+  </Command>
+  <Command __id="223" _type="ConsoleOutput" date="Mon Mar 22 20:42:36 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="1505644" type="ConsoleOutput">
+    <outputString><![CDATA[W*** Implicitly editable property: line of class class components.plane.lines.YLineTick not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: tick of class class components.plane.lines.YLineTick not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: color of class class components.plane.lines.YLine not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: height of class class components.plane.lines.YLine not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: stroke of class class components.plane.lines.YLine not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.plane.lines.YLine not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: x of class class components.plane.lines.YLine not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.plane.lines.YLine not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"W*** Implicit"), Diff(DELETE," property height of  PlaneTick ignored"), Diff(INSERT,"ly editable property: line of class class components.plane.lines.YLineTick not considered editable"), Diff(EQUAL," as it is not in "), Diff(INSERT,"editable "), Diff(EQUAL,"property names list. ¶"), Diff(DELETE," Associate annotation @Visible(false) with its getter."), Diff(EQUAL,"¶W*** Implicitly editable property: "), Diff(DELETE,"height"), Diff(INSERT,"tick"), Diff(EQUAL," of class class components.plane.lines."), Diff(DELETE,"Pla"), Diff(INSERT,"YLi"), Diff(EQUAL,"neTick not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: "), Diff(DELETE,"text"), Diff(INSERT,"color"), Diff(EQUAL," of class class components.plane.lines."), Diff(DELETE,"PlaneTick"), Diff(INSERT,"YLine"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶W*** Implicit"), Diff(DELETE," property width of  PlaneTick ignored"), Diff(INSERT,"ly editable property: height of class class components.plane.lines.YLine not considered editable"), Diff(EQUAL," as it is not in "), Diff(INSERT,"editable "), Diff(EQUAL,"property names list. ¶"), Diff(DELETE," Associate annotation @Visible(false) w"), Diff(INSERT,"¶W*** Implicitly editable property: stroke of class class components.plane.lines.YLine not considered editable as "), Diff(EQUAL,"it"), Diff(DELETE,"h"), Diff(EQUAL," i"), Diff(DELETE,"ts getter."), Diff(INSERT,"s not in editable property names list. ¶"), Diff(EQUAL,"¶W*** Implicitly editable property: width of class class components.plane.lines."), Diff(DELETE,"PlaneTick"), Diff(INSERT,"YLine"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.plane.lines."), Diff(DELETE,"PlaneTick"), Diff(INSERT,"YLine"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.plane.lines."), Diff(DELETE,"PlaneTick"), Diff(INSERT,"YLine"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶")]]]></diff>
+  </Command>
+  <Command __id="224" _type="ConsoleOutput" date="Mon Mar 22 20:42:36 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="1505721" type="ConsoleOutput">
+    <outputString><![CDATA[W*** Implicitly editable property: line of class class components.plane.lines.XLineTick not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: tick of class class components.plane.lines.XLineTick not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: color of class class components.plane.lines.XLine not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: height of class class components.plane.lines.XLine not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: stroke of class class components.plane.lines.XLine not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.plane.lines.XLine not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: x of class class components.plane.lines.XLine not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.plane.lines.XLine not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"W*** Implicitly editable property: line of class class components.plane.lines."), Diff(DELETE,"Y"), Diff(INSERT,"X"), Diff(EQUAL,"LineTick not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: tick of class class components.plane.lines."), Diff(DELETE,"Y"), Diff(INSERT,"X"), Diff(EQUAL,"LineTick not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: color of class class components.plane.lines."), Diff(DELETE,"Y"), Diff(INSERT,"X"), Diff(EQUAL,"Line not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: height of class class components.plane.lines."), Diff(DELETE,"Y"), Diff(INSERT,"X"), Diff(EQUAL,"Line not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: stroke of class class components.plane.lines."), Diff(DELETE,"Y"), Diff(INSERT,"X"), Diff(EQUAL,"Line not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components.plane.lines."), Diff(DELETE,"Y"), Diff(INSERT,"X"), Diff(EQUAL,"Line not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.plane.lines."), Diff(DELETE,"Y"), Diff(INSERT,"X"), Diff(EQUAL,"Line not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.plane.lines."), Diff(DELETE,"Y"), Diff(INSERT,"X"), Diff(EQUAL,"Line not considered editable as it is not in editable property names list. ¶¶")]]]></diff>
+  </Command>
+  <Command __id="225" _type="ConsoleOutput" date="Mon Mar 22 20:42:36 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="1505791" type="ConsoleOutput">
+    <outputString><![CDATA[W*** Value: null of Root.Current Page not in range.
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"W*** "), Diff(DELETE,"Implicitly editable property: line of class class components.plane.lines.XLineTick not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: tick of class class components.plane.lines.XLineTick not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: color of class class components.plane.lines.XLine not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: height of class class components.plane.lines.XLine not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: stroke of class class components.plane.lines.XLine not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components.plane.lines.XLine not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.plane.lines.XLine not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.plane.lines.XLine not considered editable as it is not in editable property names list. ¶"), Diff(INSERT,"Value: null of Root.Current Page not in range."), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="226" _type="ConsoleOutput" date="Mon Mar 22 20:42:37 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="1506221" type="ConsoleOutput">
+    <outputString><![CDATA[---
+
+
+
+ < >---
+
+
+
+ < >]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"W*** Value: null of Root.Current Page not in range.¶"), Diff(INSERT,"---¶¶¶¶ < >---¶¶¶¶ < >")]]]></diff>
+  </Command>
+  <Command __id="227" _type="ShellCommand" date="Mon Mar 22 20:59:22 EDT 2021" starttimestamp="1616458651057" timestamp="2511151" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="228" _type="ShellCommand" date="Mon Mar 22 20:59:23 EDT 2021" starttimestamp="1616458651057" timestamp="2512701" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="229" _type="RunCommand" date="Mon Mar 22 20:59:23 EDT 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="2512918" type="Run" />
+  <Command __id="230" _type="RunCommand" date="Mon Mar 22 20:59:23 EDT 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="2512919" type="Run" />
+  <Command __id="231" _type="ShellCommand" date="Mon Mar 22 20:59:24 EDT 2021" starttimestamp="1616458651057" timestamp="2513020" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="232" _type="ShellCommand" date="Mon Mar 22 20:59:25 EDT 2021" starttimestamp="1616458651057" timestamp="2514625" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="233" _type="RunCommand" date="Mon Mar 22 20:59:25 EDT 2021" kind="HitBreakPoint" projectName="TaskBox" starttimestamp="1616458651057" timestamp="2514813" type="Run" />
+  <Command __id="234" _type="RunCommand" date="Mon Mar 22 20:59:25 EDT 2021" kind="HitBreakPoint" projectName="TaskBox" starttimestamp="1616458651057" timestamp="2514813" type="Run" />
+  <Command __id="235" _type="ShellCommand" date="Mon Mar 22 20:59:27 EDT 2021" starttimestamp="1616458651057" timestamp="2516663" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="236" _type="ShellCommand" date="Mon Mar 22 21:39:10 EDT 2021" starttimestamp="1616458651057" timestamp="4899340" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="237" _type="ShellCommand" date="Mon Mar 22 21:39:10 EDT 2021" starttimestamp="1616458651057" timestamp="4899372" type="ECLIPSE_LOST_FOCUS" />
+  <DocumentChange __id="199" _type="Insert" date="Mon Mar 22 20:32:57 EDT 2021" docASTNodeCount="64" docActiveCodeLength="351" docExpressionCount="40" docLength="351" length="2" offset="335" repeat="2" starttimestamp="1616458651057" timestamp="926447" timestamp2="926604">
+    <text><![CDATA[00]]></text>
+  </DocumentChange>
+  <Command __id="215" _type="DiffBasedFileOpenCommand" date="Mon Mar 22 20:42:34 EDT 2021" docASTNodeCount="90" docActiveCodeLength="546" docExpressionCount="62" docLength="546" projectName="TaskBox" starttimestamp="1616458651057" timestamp="1503004">
+    <filePath><![CDATA[C:\Users\leleo\eclipse-workspace\TaskBox\src\main\TaskPanel.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package main;¶¶import bus.uigen.OEFrame;¶import bus.uigen.ObjectEditor;¶import components.composedGraph.ComposedGraph;¶import components.composedGraph.ComposedGraphInterface;¶import components.curve.point.CurvePoint;¶import components.mainpanel.MainPanel;¶import components.mainpanel.MainPanelInterface;¶¶public class TaskPanel {¶¶	public static void main(String[] args) {¶		MainPanelInterface panel = new MainPanel();¶		OEFrame frame = ObjectEditor.edit(panel);¶		frame.setSize(600, 1000);¶		frame.setLocation(0, 0);¶¶	}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="242" _type="CopyCommand" date="Mon Mar 22 21:39:19 EDT 2021" starttimestamp="1616458651057" timestamp="4908476" />
+  <Command __id="244" _type="SelectTextCommand" caretOffset="182" date="Mon Mar 22 21:39:22 EDT 2021" end="182" start="173" starttimestamp="1616458651057" timestamp="4911473" />
+  <Command __id="250" _type="DiffBasedFileOpenCommand" date="Mon Mar 22 21:39:27 EDT 2021" docASTNodeCount="90" docActiveCodeLength="546" docExpressionCount="62" docLength="546" projectName="TaskBox" starttimestamp="1616458651057" timestamp="4916793">
+    <filePath><![CDATA[C:\Users\leleo\eclipse-workspace\TaskBox\src\main\TaskPanel.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package main;¶¶import bus.uigen.OEFrame;¶import bus.uigen.ObjectEditor;¶import components.composedGraph.ComposedGraph;¶import components.composedGraph.ComposedGraphInterface;¶import components.curve.point.CurvePoint;¶import components.mainpanel.MainPanel;¶import components.mainpanel.MainPanelInterface;¶¶public class TaskPanel {¶¶	public static void main(String[] args) {¶		MainPanelInterface panel = new MainPanel();¶		OEFrame frame = ObjectEditor.edit(panel);¶		frame.setSize(600, 1000);¶		frame.setLocation(0, 0);¶¶	}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="245" _type="MoveCaretCommand" caretOffset="345" date="Mon Mar 22 21:39:24 EDT 2021" docOffset="345" starttimestamp="1616458651057" timestamp="4913323" />
+  <Command __id="247" _type="InsertStringCommand" date="Mon Mar 22 21:39:24 EDT 2021" starttimestamp="1616458651057" timestamp="4913866" timestamp2="4913866">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="249" _type="PasteCommand" date="Mon Mar 22 21:39:25 EDT 2021" starttimestamp="1616458651057" timestamp="4914240" />
+  <Command __id="251" _type="SelectTextCommand" caretOffset="240" date="Mon Mar 22 21:39:27 EDT 2021" end="264" start="240" starttimestamp="1616458651057" timestamp="4916928" />
+  <Command __id="253" _type="MoveCaretCommand" caretOffset="372" date="Mon Mar 22 21:39:30 EDT 2021" docOffset="372" starttimestamp="1616458651057" timestamp="4919421" />
+  <Command __id="267" _type="RunCommand" date="Mon Mar 22 21:39:35 EDT 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="4923984" type="Run" />
+  <Command __id="268" _type="RunCommand" date="Mon Mar 22 21:39:35 EDT 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="4923984" type="Run" />
+  <Command __id="269" _type="ConsoleOutput" date="Mon Mar 22 21:39:35 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="4924293" type="ConsoleOutput">
+    <outputString><![CDATA[0.0
+0.0
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"---¶¶¶¶ < >---¶¶¶¶ < >"), Diff(INSERT,"0.0¶0.0¶")]]]></diff>
+  </Command>
+  <Command __id="270" _type="ShellCommand" date="Mon Mar 22 21:39:35 EDT 2021" starttimestamp="1616458651057" timestamp="4924828" type="ECLIPSE_LOST_FOCUS" />
+  <Command __id="271" _type="ConsoleOutput" date="Mon Mar 22 21:39:35 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="4924930" type="ConsoleOutput">
+    <outputString><![CDATA[ObjectEditor(Version 22, built on Wed Feb 17 11:47:24 EST 2021). Copyright Prasun Dewan, 2012, All rights reserved. US Patent Appl. No.: 12/532,327
+E*** For editable property pendulum of MainPanel please define a setter with the header:
+	public void setPendulum(java.util.List <parameter name>)
+E*** For property gravity of MainPanel please define a getter with the header:
+	public <T> getGravity()
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"0.0¶0.0"), Diff(INSERT,"ObjectEditor(Version 22, built on Wed Feb 17 11:47:24 EST 2021). Copyright Prasun Dewan, 2012, All rights reserved. US Patent Appl. No.: 12/532,327¶E*** For editable property pendulum of MainPanel please define a setter with the header:¶	public void setPendulum(java.util.List <parameter name>)¶E*** For property gravity of MainPanel please define a getter with the header:¶	public <T> getGravity()"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="272" _type="ConsoleOutput" date="Mon Mar 22 21:39:36 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="4925093" type="ConsoleOutput">
+    <outputString><![CDATA[W*** public void components.ruler.Ruler.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: height of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: x of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.ruler.Ruler not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"ObjectEditor(Version 22, built on Wed Feb 17 11:47:24 EST 2021). Copyright Prasun Dewan, 2012, All rights res"), Diff(INSERT,"W*** public void components.ruler.Ruler.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: height of class class components.ruler.Ruler not consid"), Diff(EQUAL,"er"), Diff(DELETE,"v"), Diff(EQUAL,"ed"), Diff(DELETE,". US Patent Appl. No.: 12/532,327"), Diff(INSERT," editable as it is not in editable property names list. ¶"), Diff(EQUAL,"¶"), Diff(DELETE,"E"), Diff(INSERT,"W"), Diff(EQUAL,"*** "), Diff(DELETE,"For"), Diff(INSERT,"Implicitly"), Diff(EQUAL," editable property"), Diff(DELETE," pendulum of MainPanel please define a setter with the header:¶	public void setPendulum(java.util.List <parameter name>)"), Diff(INSERT,": width of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶"), Diff(EQUAL,"¶"), Diff(DELETE,"E"), Diff(INSERT,"W"), Diff(EQUAL,"*** "), Diff(DELETE,"For"), Diff(INSERT,"Implicitly editable"), Diff(EQUAL," property"), Diff(DELETE," gravity of MainPanel please define a getter with the header:¶	public <T> getGravity()"), Diff(INSERT,": y of class class components.ruler.Ruler not considered editable as it is not in editable property names list. ¶"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="273" _type="ConsoleOutput" date="Mon Mar 22 21:39:36 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="4925234" type="ConsoleOutput">
+    <outputString><![CDATA[W*** public void components.pendulum.imageprotractor.ImageProtractor.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: height of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: x of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. 
+
+W*** Implicit property animator of  ObserverPendulum ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** Implicitly editable property: barPair of class class components.pendulum.pendulum.ObserverPendulum not considered editable as it is not in editable property names list. 
+
+W*** Implicit property model of  ObserverPendulum ignored as it is not in property names list. 
+ Associate annotation @Visible(false) with its getter.
+W*** public void components.pendulum.load.Load.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: color of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: filled of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: height of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: width of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. 
+
+W*** public void components.pendulum.string.PendulumString.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: stroke of class class components.pendulum.string.PendulumString not considered editable as it is not in editable property names list. 
+
+]]></outputString>
+    <diff><![CDATA[[Diff(EQUAL,"W*** public void components."), Diff(DELETE,"ruler.Rule"), Diff(INSERT,"pendulum.imageprotractor.ImageProtracto"), Diff(EQUAL,"r.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: height of class class components."), Diff(DELETE,"ruler.Rule"), Diff(INSERT,"pendulum.imageprotractor.ImageProtracto"), Diff(EQUAL,"r not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components."), Diff(DELETE,"ruler.Ruler not considered editable as it is not in editable property names list. ¶"), Diff(INSERT,"pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: x of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicit property animator of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter."), Diff(EQUAL,"¶W*** Implicitly editable property: "), Diff(DELETE,"x"), Diff(INSERT,"barPair"), Diff(EQUAL," of class class components."), Diff(DELETE,"ruler.Ruler not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.ruler.Ruler"), Diff(INSERT,"pendulum.pendulum.ObserverPendulum not considered editable as it is not in editable property names list. ¶¶W*** Implicit property model of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** public void components.pendulum.load.Load.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: color of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: filled of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: height of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** public void components.pendulum.string.PendulumString.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: stroke of class class components.pendulum.string.PendulumString"), Diff(EQUAL," not considered editable as it is not in editable property names list. ¶¶")]]]></diff>
+  </Command>
+  <Command __id="274" _type="ConsoleOutput" date="Mon Mar 22 21:39:36 EDT 2021" overflow="false" starttimestamp="1616458651057" timestamp="4925334" type="ConsoleOutput">
+    <outputString><![CDATA[W*** Implicitly editable property: x of class class components.barchart.bar.BarPair not considered editable as it is not in editable property names list. 
+
+W*** Implicitly editable property: y of class class components.barchart.bar.BarPair not considered editable as it is not in editable property names list. 
+
+W*** public void components.timer.TimerView.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+W*** Implicitly editable property: time of class class components.timer.TimerView not considered editable as it is not in editable property names list. 
+
+W*** public void components.barchart.bar.Bar.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)
+]]></outputString>
+    <diff><![CDATA[[Diff(DELETE,"W*** public void components.pendulum.imageprotractor.ImageProtractor.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶"), Diff(EQUAL,"W*** Implicitly editable property: "), Diff(DELETE,"height"), Diff(INSERT,"x"), Diff(EQUAL," of class class components."), Diff(DELETE,"pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components.pendulum.imageprotractor.ImageProtracto"), Diff(INSERT,"barchart.bar.BarPai"), Diff(EQUAL,"r not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: "), Diff(DELETE,"x"), Diff(INSERT,"y"), Diff(EQUAL," of class class components."), Diff(DELETE,"pendulum.imageprotractor.ImageProtractor not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: y of class class components.pendulum.imageprotractor.ImageProtracto"), Diff(INSERT,"barchart.bar.BarPai"), Diff(EQUAL,"r not considered editable as it is not in editable property names list. ¶¶W*** "), Diff(DELETE,"Implicit property animator of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** Implicitly editable property: barPair of class class components.pendulum.pendulum.ObserverPendulum not considered editable as it is not in editable property names list. ¶¶W*** Implicit property model of  ObserverPendulum ignored as it is not in property names list. ¶ Associate annotation @Visible(false) with its getter.¶W*** public void components.pendulum.load.Load"), Diff(INSERT,"public void components.timer.TimerView"), Diff(EQUAL,".addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: "), Diff(DELETE,"color of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: filled of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: height of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** Implicitly editable property: width of class class components.pendulum.load.Load not considered editable as it is not in editable property names list. ¶¶W*** public void components.pendulum.string.PendulumString.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)¶W*** Implicitly editable property: stroke of class class components.pendulum.string.PendulumString not considered editable as it is not in editable property names list. ¶"), Diff(INSERT,"time of class class components.timer.TimerView not considered editable as it is not in editable property names list. ¶¶W*** public void components.barchart.bar.Bar.addPropertyChangeListener(java.beans.PropertyChangeListener) should be associated with annotation: @ObserverRegisterer(Property Listener)"), Diff(EQUAL,"¶")]]]></diff>
+  </Command>
+  <Command __id="252" _type="DiffBasedFileOpenCommand" date="Mon Mar 22 21:39:30 EDT 2021" docASTNodeCount="70" docActiveCodeLength="378" docExpressionCount="45" docLength="378" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="4919250">
+    <filePath><![CDATA[C:\Users\leleo\eclipse-workspace\PhysicsSimulation\src\main\TestFrame.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package main;¶¶import bus.uigen.OEFrame;¶import bus.uigen.ObjectEditor;¶import components.mainpanel.MainPanel;¶import components.mainpanel.MainPanelInterface;¶¶public class TestFrame {¶	public static void main(String[] args) {¶		MainPanelInterface panel = new MainPanel();¶		OEFrame frame = ObjectEditor.edit(panel);¶		frame.setSize(1400, 1050);¶	"), Diff(INSERT,"	frame.setLocation(0, 0);¶	"), Diff(EQUAL,"}¶}¶")]]]></diff>
+    <snapshot><![CDATA[package main;
+
+import bus.uigen.OEFrame;
+import bus.uigen.ObjectEditor;
+import components.mainpanel.MainPanel;
+import components.mainpanel.MainPanelInterface;
+
+public class TestFrame {
+	public static void main(String[] args) {
+		MainPanelInterface panel = new MainPanel();
+		OEFrame frame = ObjectEditor.edit(panel);
+		frame.setSize(1400, 1050);
+		frame.setLocation(0, 0);
+	}
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="256" _type="Delete" date="Mon Mar 22 21:39:32 EDT 2021" docASTNodeCount="69" docActiveCodeLength="377" docExpressionCount="44" docLength="377" endLine="12" length="1" offset="366" startLine="12" starttimestamp="1616458651057" timestamp="4921756">
+    <text><![CDATA[0]]></text>
+  </DocumentChange>
+  <DocumentChange __id="258" _type="Insert" date="Mon Mar 22 21:39:33 EDT 2021" docASTNodeCount="70" docActiveCodeLength="380" docExpressionCount="45" docLength="380" length="3" offset="366" repeat="3" starttimestamp="1616458651057" timestamp="4921965" timestamp2="4922277">
+    <text><![CDATA[600]]></text>
+  </DocumentChange>
+  <Command __id="276" _type="DiffBasedFileOpenCommand" date="Mon Mar 22 21:39:38 EDT 2021" docASTNodeCount="90" docActiveCodeLength="546" docExpressionCount="62" docLength="546" projectName="TaskBox" starttimestamp="1616458651057" timestamp="4927441">
+    <filePath><![CDATA[C:\Users\leleo\eclipse-workspace\TaskBox\src\main\TaskPanel.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package main;¶¶import bus.uigen.OEFrame;¶import bus.uigen.ObjectEditor;¶import components.composedGraph.ComposedGraph;¶import components.composedGraph.ComposedGraphInterface;¶import components.curve.point.CurvePoint;¶import components.mainpanel.MainPanel;¶import components.mainpanel.MainPanelInterface;¶¶public class TaskPanel {¶¶	public static void main(String[] args) {¶		MainPanelInterface panel = new MainPanel();¶		OEFrame frame = ObjectEditor.edit(panel);¶		frame.setSize(600, 1000);¶		frame.setLocation(0, 0);¶¶	}¶¶}¶")]]]></diff>
+  </Command>
+  <Command __id="291" _type="ShellCommand" date="Mon Mar 22 22:14:29 EDT 2021" starttimestamp="1616458651057" timestamp="7018376" type="ECLIPSE_GAINED_FOCUS" />
+  <Command __id="292" _type="RunCommand" date="Mon Mar 22 22:14:29 EDT 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="7018599" type="Run" />
+  <Command __id="293" _type="RunCommand" date="Mon Mar 22 22:14:29 EDT 2021" kind="HitBreakPoint" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="7018599" type="Run" />
+  <Command __id="295" _type="MoveCaretCommand" caretOffset="369" date="Mon Mar 22 22:14:33 EDT 2021" docOffset="369" starttimestamp="1616458651057" timestamp="7022566" />
+  <Command __id="296" _type="MoveCaretCommand" caretOffset="374" date="Mon Mar 22 22:14:34 EDT 2021" docOffset="374" starttimestamp="1616458651057" timestamp="7023439" />
+  <Command __id="297" _type="MoveCaretCommand" caretOffset="316" date="Mon Mar 22 22:14:36 EDT 2021" docOffset="316" starttimestamp="1616458651057" timestamp="7025407" />
+  <Command __id="294" _type="DiffBasedFileOpenCommand" date="Mon Mar 22 22:14:33 EDT 2021" docASTNodeCount="70" docActiveCodeLength="380" docExpressionCount="45" docLength="380" projectName="PhysicsSimulation" starttimestamp="1616458651057" timestamp="7022457">
+    <filePath><![CDATA[C:\Users\leleo\eclipse-workspace\PhysicsSimulation\src\main\TestFrame.java]]></filePath>
+    <diff><![CDATA[[Diff(EQUAL,"package main;¶¶import bus.uigen.OEFrame;¶import bus.uigen.ObjectEditor;¶import components.mainpanel.MainPanel;¶import components.mainpanel.MainPanelInterface;¶¶public class TestFrame {¶	public static void main(String[] args) {¶		MainPanelInterface panel = new MainPanel();¶		OEFrame frame = ObjectEditor.edit(panel);¶		frame.setSize(1400, 1050);¶		frame.setLocation("), Diff(INSERT,"60"), Diff(EQUAL,"0, 0);¶	}¶}¶")]]]></diff>
+    <snapshot><![CDATA[package main;
+
+import bus.uigen.OEFrame;
+import bus.uigen.ObjectEditor;
+import components.mainpanel.MainPanel;
+import components.mainpanel.MainPanelInterface;
+
+public class TestFrame {
+	public static void main(String[] args) {
+		MainPanelInterface panel = new MainPanel();
+		OEFrame frame = ObjectEditor.edit(panel);
+		frame.setSize(1400, 1050);
+		frame.setLocation(600, 0);
+	}
+}
+]]></snapshot>
+  </Command>
+  <DocumentChange __id="301" _type="Insert" date="Mon Mar 22 22:14:41 EDT 2021" docASTNodeCount="73" docActiveCodeLength="388" docExpressionCount="47" docLength="388" length="8" offset="272" repeat="6" starttimestamp="1616458651057" timestamp="7030721" timestamp2="7031778">
+    <text><![CDATA[
+		PANEL]]></text>
+  </DocumentChange>
+  <DocumentChange __id="313" _type="Delete" date="Mon Mar 22 22:14:43 EDT 2021" docASTNodeCount="70" docActiveCodeLength="383" docExpressionCount="45" docLength="383" endLine="10" length="5" offset="275" repeat="5" startLine="10" starttimestamp="1616458651057" timestamp="7032246" timestamp2="7032810">
+    <text><![CDATA[PANEL]]></text>
+  </DocumentChange>
+  <DocumentChange __id="323" _type="Insert" date="Mon Mar 22 22:14:44 EDT 2021" docASTNodeCount="75" docActiveCodeLength="392" docExpressionCount="49" docLength="392" length="9" offset="275" repeat="9" starttimestamp="1616458651057" timestamp="7033187" timestamp2="7035028">
+    <text><![CDATA[panel.get]]></text>
+  </DocumentChange>
+  <Command __id="298" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.LINE_UP" date="Mon Mar 22 22:14:40 EDT 2021" starttimestamp="1616458651057" timestamp="7029703" />
+  <Command __id="299" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Mon Mar 22 22:14:41 EDT 2021" starttimestamp="1616458651057" timestamp="7030102" />
+  <Command __id="300" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.COLUMN_NEXT" date="Mon Mar 22 22:14:41 EDT 2021" starttimestamp="1616458651057" timestamp="7030444" />
+  <Command __id="302" _type="InsertStringCommand" date="Mon Mar 22 22:14:41 EDT 2021" starttimestamp="1616458651057" timestamp="7030723" timestamp2="7030723">
+    <data><![CDATA[]]></data>
+  </Command>
+  <Command __id="304" _type="InsertStringCommand" date="Mon Mar 22 22:14:42 EDT 2021" starttimestamp="1616458651057" timestamp="7031276" timestamp2="7031276">
+    <data><![CDATA[P]]></data>
+  </Command>
+  <Command __id="306" _type="InsertStringCommand" date="Mon Mar 22 22:14:42 EDT 2021" starttimestamp="1616458651057" timestamp="7031415" timestamp2="7031415">
+    <data><![CDATA[A]]></data>
+  </Command>
+  <Command __id="308" _type="InsertStringCommand" date="Mon Mar 22 22:14:42 EDT 2021" starttimestamp="1616458651057" timestamp="7031579" timestamp2="7031579">
+    <data><![CDATA[N]]></data>
+  </Command>
+  <Command __id="310" _type="InsertStringCommand" date="Mon Mar 22 22:14:42 EDT 2021" starttimestamp="1616458651057" timestamp="7031640" timestamp2="7031640">
+    <data><![CDATA[E]]></data>
+  </Command>
+  <Command __id="312" _type="InsertStringCommand" date="Mon Mar 22 22:14:42 EDT 2021" starttimestamp="1616458651057" timestamp="7031779" timestamp2="7031779">
+    <data><![CDATA[L]]></data>
+  </Command>
+  <Command __id="314" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:43 EDT 2021" starttimestamp="1616458651057" timestamp="7032247" />
+  <Command __id="316" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:43 EDT 2021" starttimestamp="1616458651057" timestamp="7032405" />
+  <Command __id="318" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:43 EDT 2021" starttimestamp="1616458651057" timestamp="7032535" />
+  <Command __id="320" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:43 EDT 2021" starttimestamp="1616458651057" timestamp="7032674" />
+  <Command __id="322" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:43 EDT 2021" starttimestamp="1616458651057" timestamp="7032811" />
+  <Command __id="324" _type="InsertStringCommand" date="Mon Mar 22 22:14:44 EDT 2021" starttimestamp="1616458651057" timestamp="7033188" timestamp2="7033188">
+    <data><![CDATA[p]]></data>
+  </Command>
+  <Command __id="326" _type="InsertStringCommand" date="Mon Mar 22 22:14:44 EDT 2021" starttimestamp="1616458651057" timestamp="7033274" timestamp2="7033274">
+    <data><![CDATA[a]]></data>
+  </Command>
+  <Command __id="328" _type="InsertStringCommand" date="Mon Mar 22 22:14:44 EDT 2021" starttimestamp="1616458651057" timestamp="7033499" timestamp2="7033499">
+    <data><![CDATA[n]]></data>
+  </Command>
+  <Command __id="330" _type="InsertStringCommand" date="Mon Mar 22 22:14:44 EDT 2021" starttimestamp="1616458651057" timestamp="7033569" timestamp2="7033569">
+    <data><![CDATA[e]]></data>
+  </Command>
+  <Command __id="332" _type="InsertStringCommand" date="Mon Mar 22 22:14:45 EDT 2021" starttimestamp="1616458651057" timestamp="7034337" timestamp2="7034337">
+    <data><![CDATA[l]]></data>
+  </Command>
+  <Command __id="334" _type="InsertStringCommand" date="Mon Mar 22 22:14:45 EDT 2021" starttimestamp="1616458651057" timestamp="7034529" timestamp2="7034529">
+    <data><![CDATA[.]]></data>
+  </Command>
+  <Command __id="335" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="true" date="Mon Mar 22 22:14:45 EDT 2021" start_end="START" starttimestamp="1616458651057" timestamp="7034530" />
+  <Command __id="344" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="false" date="Mon Mar 22 22:14:48 EDT 2021" start_end="END" starttimestamp="1616458651057" timestamp="7037815" />
+  <Command __id="346" _type="InsertStringCommand" date="Mon Mar 22 22:14:49 EDT 2021" starttimestamp="1616458651057" timestamp="7037977" timestamp2="7037977">
+    <data><![CDATA[d]]></data>
+  </Command>
+  <Command __id="348" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:49 EDT 2021" starttimestamp="1616458651057" timestamp="7038433" />
+  <Command __id="350" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:49 EDT 2021" starttimestamp="1616458651057" timestamp="7038579" />
+  <Command __id="352" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:49 EDT 2021" starttimestamp="1616458651057" timestamp="7038719" />
+  <Command __id="354" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:49 EDT 2021" starttimestamp="1616458651057" timestamp="7038863" />
+  <Command __id="356" _type="InsertStringCommand" date="Mon Mar 22 22:14:50 EDT 2021" starttimestamp="1616458651057" timestamp="7039453" timestamp2="7039453">
+    <data><![CDATA[.]]></data>
+  </Command>
+  <Command __id="357" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="true" date="Mon Mar 22 22:14:50 EDT 2021" start_end="START" starttimestamp="1616458651057" timestamp="7039454" />
+  <Command __id="360" _type="AssistCommand" assist_type="CONTENT_ASSIST" auto_activated="false" date="Mon Mar 22 22:14:50 EDT 2021" start_end="END" starttimestamp="1616458651057" timestamp="7039747" />
+  <Command __id="362" _type="InsertStringCommand" date="Mon Mar 22 22:14:51 EDT 2021" starttimestamp="1616458651057" timestamp="7039947" timestamp2="7039947">
+    <data><![CDATA[d]]></data>
+  </Command>
+  <Command __id="364" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:51 EDT 2021" starttimestamp="1616458651057" timestamp="7040240" />
+  <Command __id="366" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:51 EDT 2021" starttimestamp="1616458651057" timestamp="7040412" />
+  <Command __id="368" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:51 EDT 2021" starttimestamp="1616458651057" timestamp="7040541" />
+  <Command __id="370" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:51 EDT 2021" starttimestamp="1616458651057" timestamp="7040694" />
+  <Command __id="372" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:52 EDT 2021" starttimestamp="1616458651057" timestamp="7040987" />
+  <Command __id="374" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:52 EDT 2021" starttimestamp="1616458651057" timestamp="7041513" />
+  <Command __id="376" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:52 EDT 2021" starttimestamp="1616458651057" timestamp="7041531" />
+  <Command __id="378" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:52 EDT 2021" starttimestamp="1616458651057" timestamp="7041562" />
+  <Command __id="380" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:52 EDT 2021" starttimestamp="1616458651057" timestamp="7041593" />
+  <Command __id="382" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:52 EDT 2021" starttimestamp="1616458651057" timestamp="7041625" />
+  <Command __id="384" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:52 EDT 2021" starttimestamp="1616458651057" timestamp="7041657" />
+  <Command __id="386" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.DELETE_PREVIOUS" date="Mon Mar 22 22:14:52 EDT 2021" starttimestamp="1616458651057" timestamp="7041820" />
+  <Command __id="387" _type="EclipseCommand" commandID="org.eclipse.ui.file.save" date="Mon Mar 22 22:14:53 EDT 2021" starttimestamp="1616458651057" timestamp="7042269" />
+  <Command __id="388" _type="EclipseCommand" commandID="" date="Mon Mar 22 22:14:53 EDT 2021" starttimestamp="1616458651057" timestamp="7042368" />
+  <Command __id="389" _type="EclipseCommand" commandID="" date="Mon Mar 22 22:14:53 EDT 2021" starttimestamp="1616458651057" timestamp="7042383" />
+  <Command __id="390" _type="EclipseCommand" commandID="eventLogger.styledTextCommand.LINE_DOWN" date="Mon Mar 22 22:14:53 EDT 2021" starttimestamp="1616458651057" timestamp="7042666" />
+  <Command __id="392" _type="InsertStringCommand" date="Mon Mar 22 22:14:54 EDT 2021" starttimestamp="1616458651057" timestamp="7043029" timestamp2="7043029">
+    <data><![CDATA[\]]></data>
+  </Command>
+  <DocumentChange __id="339" _type="Delete" date="Mon Mar 22 22:14:48 EDT 2021" docASTNodeCount="72" docActiveCodeLength="389" docExpressionCount="47" docLength="389" endLine="10" length="3" offset="281" repeat="3" startLine="10" starttimestamp="1616458651057" timestamp="7036981" timestamp2="7037282">
+    <text><![CDATA[get]]></text>
+  </DocumentChange>
+  <DocumentChange __id="342" _type="Insert" date="Mon Mar 22 22:14:48 EDT 2021" docASTNodeCount="75" docActiveCodeLength="392" docExpressionCount="49" docLength="392" length="3" offset="281" repeat="3" starttimestamp="1616458651057" timestamp="7037662" timestamp2="7037975">
+    <text><![CDATA[add]]></text>
+  </DocumentChange>
+  <DocumentChange __id="347" _type="Delete" date="Mon Mar 22 22:14:49 EDT 2021" docASTNodeCount="73" docActiveCodeLength="388" docExpressionCount="47" docLength="388" endLine="10" length="4" offset="280" repeat="4" startLine="10" starttimestamp="1616458651057" timestamp="7038432" timestamp2="7038862">
+    <text><![CDATA[.add]]></text>
+  </DocumentChange>
+  <DocumentChange __id="355" _type="Insert" date="Mon Mar 22 22:14:50 EDT 2021" docASTNodeCount="75" docActiveCodeLength="392" docExpressionCount="49" docLength="392" length="4" offset="280" repeat="4" starttimestamp="1616458651057" timestamp="7039451" timestamp2="7039945">
+    <text><![CDATA[.add]]></text>
+  </DocumentChange>
+  <DocumentChange __id="363" _type="Delete" date="Mon Mar 22 22:14:51 EDT 2021" docASTNodeCount="70" docActiveCodeLength="380" docExpressionCount="45" docLength="380" endLine="10" length="12" offset="272" repeat="12" startLine="9" starttimestamp="1616458651057" timestamp="7040239" timestamp2="7041818">
+    <text><![CDATA[
+		panel.add]]></text>
+  </DocumentChange>
+  <DocumentChange __id="391" _type="Insert" date="Mon Mar 22 22:14:54 EDT 2021" docASTNodeCount="70" docActiveCodeLength="384" docExpressionCount="45" docLength="384" length="4" offset="316" repeat="2" starttimestamp="1616458651057" timestamp="7043026" timestamp2="7043031">
+    <text><![CDATA[\
+		]]></text>
+  </DocumentChange>
+  <DocumentChange __id="395" _type="Delete" date="Mon Mar 22 22:14:54 EDT 2021" docASTNodeCount="70" docActiveCodeLength="381" docExpressionCount="45" docLength="381" endLine="11" length="3" offset="317" repeat="3" startLine="10" starttimestamp="1616458651057" timestamp="7043672" timestamp2="7043978">
+    <text><![CDATA[
+		]]></text>
+  </DocumentChange>
+</Events>
